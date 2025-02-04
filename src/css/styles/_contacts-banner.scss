@@ -1,0 +1,73 @@
+.contacts-banner {
+    border-radius: 17px;
+    background-color: var(--light_blue_3);
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    @media(min-width: $md) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &::after {
+        background: var(--light_blue_1);
+        content: '';
+        filter: blur(107px);
+        height: 400px;
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 400px;
+        z-index: 1;
+    }
+
+    &::before {
+        background: var(--violet);
+        content: '';
+        filter: blur(107px);
+        height: 194px;
+        left: 55%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 194px;
+    }
+
+    &__inner {
+        background-image: url("../images/backgrounds/banner-bg.svg");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        padding: 24px 20px 48px;
+        position: relative;
+        width: 100%;
+        z-index: 2;
+        @media(min-width: $sm) {
+            padding: 40px 60px;
+        }
+    }
+
+    &__image {
+        min-width: 180px;
+        position: relative;
+        width: 180px;
+        z-index: 2;
+        @media(max-width: $md - 0.01px) {
+            display: none;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    .contacts-link {
+        @include hover {
+            background-color: var(--blue_6);
+        }
+        @include active {
+            background-color: var(--blue_6);
+        }
+    }
+}

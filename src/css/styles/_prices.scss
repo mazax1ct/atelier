@@ -1,0 +1,47 @@
+.prices {
+    &__menu-block {
+        margin-bottom: 24px;
+        @media(min-width: $sm) {
+            align-items: flex-start;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px 24px;
+            justify-content: space-between;
+        }
+
+        .tabs-menu {
+            margin-bottom: 0;
+            @media(max-width: $sm - 0.01px) {
+                flex-wrap: nowrap;
+                gap: 10px;
+                margin-left: calc(0.01px - var(--container_padding));
+                margin-right: calc(0.01px - var(--container_padding));
+                overflow-x: auto;
+                padding-left: var(--container_padding);
+                padding-right: var(--container_padding);
+                white-space: nowrap;
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+            }
+        }
+
+        .download-link {
+            white-space: nowrap;
+            width: 486px;
+            @media(max-width: $sm - 0.01px) {
+                display: none;
+            }
+        }
+    }
+
+    &__bottom {
+        margin-top: 24px;
+        @media(min-width: $sm) {
+            display: none;
+        }
+
+        .download-link {
+            width: 100%;
+        }
+    }
+}

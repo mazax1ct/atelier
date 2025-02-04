@@ -1,0 +1,47 @@
+.show-more {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 24px;
+    text-align: right;
+    @media(min-width: $sm) {
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-top: 32px;
+    }
+
+    &__button {
+        @include button-reset;
+        align-items: center;
+        color: var(--blue_1);
+        display: inline-flex;
+        font-size: 20px;
+        font-weight: 700;
+        height: 40px;
+        transition: color 0.3s;
+        text-decoration: none;
+        @include hover {
+            color: var(--blue_7);
+        }
+        @include active {
+            color: var(--blue_8);
+        }
+        @media(min-width: $sm) {
+            order: 2;
+        }
+    }
+
+    .button {
+        @media(max-width: $sm - 0.01px) {
+            width: 100%;
+        }
+        @media(min-width: $sm) {
+            min-width: 162px;
+            order: 1;
+        }
+        @media(min-width: $hd) {
+            min-width: 180px;
+        }
+    }
+}

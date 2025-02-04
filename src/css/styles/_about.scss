@@ -1,0 +1,206 @@
+.about {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+
+    &__inner {
+        position: relative;
+        z-index: 2;
+    }
+
+    &__bg {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 1;
+
+        &--type_1 {
+            &::after,
+            &::before {
+                left: 0;
+                top: 0;
+            }
+
+            .about__bg-inner {
+                left: 0;
+                transform: translate(-50%, -50%);
+                top: 0;
+            }
+        }
+
+        &--type_2 {
+            &::after,
+            &::before {
+                bottom: 0;
+                left: auto;
+                right: 0;
+                top: auto;
+            }
+
+            .about__bg-inner {
+                bottom: 0;
+                left: auto;
+                right: 0;
+                transform: translate(50%, 50%);
+                top: auto;
+            }
+        }
+
+        &::after,
+        &::before {
+            content: '';
+            position: absolute;
+            filter: blur(107px);
+        }
+
+        &::after {
+            background: var(--violet);
+            width: 248px;
+            height: 248px;
+        }
+
+        &::before {
+            width: 600px;
+            height: 600px;
+            background: var(--light_blue_1);
+        }
+    }
+
+    &__bg-inner {
+        background-image: url("../images/backgrounds/figure-bg.svg");
+        background-repeat: no-repeat;
+        height: 1250px;
+        position: absolute;
+        width: 1250px;
+        z-index: 1;
+    }
+
+    &__columns {
+        @media(min-width: $md) {
+            display: flex;
+            gap: 24px;
+        }
+        @media(min-width: $hd) {
+            align-items: flex-end;
+        }
+    }
+
+    &__column {
+        @media(min-width: $md) {
+            width: calc((100% - 24px) / 2);
+        }
+
+        &:not(:last-child) {
+            @media(max-width: $md - 0.01px) {
+                margin-bottom: 32px;
+            }
+        }
+
+        .simple-slider {
+            margin-bottom: 24px;
+        }
+
+        .simple-slider__slider {
+            img {
+                height: 320px;
+                @media(min-width: $sm) {
+                    height: 500px;
+                }
+            }
+        }
+
+        .simple-slider__dots {
+            display: none;
+        }
+    }
+
+    &__text {
+        margin-bottom: 24px;
+        max-width: 535px;
+    }
+
+    &__info {
+        @media(min-width: $sm) {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0 24px;
+        }
+    }
+
+    &__info-block {
+        border-bottom: 1px solid var(--blue_6);
+        padding-top: 16px;
+        padding-bottom: 24px;
+        @media(min-width: $sm) {
+            padding-top: 32px;
+            padding-bottom: 32px;
+        }
+
+        &:nth-child(1),
+        &:nth-child(2) {
+            @media(min-width: $sm) {
+                flex-grow: 1;
+                max-width: 260px;
+            }
+        }
+
+        &:last-child {
+            border-bottom: none;
+            width: 100%;
+            @media(min-width: $sm) {
+                padding-top: 24px;
+            }
+        }
+
+        &:first-child {
+            border-top: 1px solid var(--blue_6);
+        }
+    }
+
+    &__info-title {
+        font-size: 26px;
+        font-weight: 900;
+        line-height: 1.23076;
+        margin-bottom: 5px;
+        @media(min-width: $sm) {
+            font-size: 32px;
+            line-height: 1.25;
+        }
+    }
+
+    &__info-text {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+
+    &__button {
+        width: 100%;
+        @media(min-width: $sm) {
+            max-width: 180px;
+        }
+    }
+
+    &__socials {
+        @media(min-width: $sm) {
+            align-items: center;
+            display: flex;
+            gap: 16px;
+            justify-content: flex-end;
+        }
+        @media(min-width: $md) {
+            justify-content: space-between;
+        }
+    }
+
+    &__socials-text {
+        font-weight: 500;
+        line-height: 1.2;
+        max-width: 330px;
+        @media(max-width: $sm - 0.01px) {
+            margin-bottom: 16px;
+        }
+    }
+}
