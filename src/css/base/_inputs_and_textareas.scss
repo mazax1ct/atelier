@@ -1,33 +1,9 @@
 .input-group {
-    @include hover {
-        .input-group__input {
-            &:not(:disabled) {
-                border-color: var(--blue_6);
-
-                & ~ .input-group__calendar-icon {
-                    fill: var(--blue_1);
-                }
-            }
-        }
-
-        .input-group__textarea {
-            &:not(:disabled) {
-                border-color: var(--blue_6);
-            }
-        }
-    }
-
     &.is-filled {
-        .input-group__clear {
-            display: block;
-        }
-
-        &.input-group--simple {
-            .input-group__label {
-                color: var(--blue_4);
-                font-size: 12px;
-                top: 8px;
-            }
+        .input-group__label {
+            color: var(--dark_grey);
+            font-size: 12px;
+            top: 8px;
         }
 
         &.input-group--textarea {
@@ -61,22 +37,15 @@
 
     &.error {
         .input-group__input {
-            border-color: var(--red_1);
+            border-color: var(--warning);
 
             &:focus {
-                border-color: var(--red_1) !important;
+                border-color: var(--warning);
             }
         }
 
         .input-group__pseudo-textarea {
-            border-color: var(--red_1) !important;
-        }
-        @include hover {
-            .input-group__input {
-                &:not(:disabled) {
-                    border-color: var(--red_1);
-                }
-            }
+            border-color: var(--warning);
         }
     }
 
@@ -101,134 +70,6 @@
         .input-group__pseudo-textarea {
             border-color: var(--grey_7) !important;
             background-color: var(--grey_1);
-        }
-    }
-
-    &--simple {
-        .input-group__input {
-            padding: 25px 16px 10px;
-
-            &:focus {
-                & + .input-group__label {
-                    color: var(--blue_4);
-                    font-size: 12px;
-                    top: 8px;
-                }
-            }
-        }
-    }
-
-    &--phone {
-        .input-group__input {
-            padding: 18px 16px 18px 150px;
-
-            &::-webkit-input-placeholder {
-                color: var(--blue_3);
-                opacity: 1;
-            }
-
-            &::-moz-placeholder {
-                color: var(--blue_3);
-                opacity: 1;
-            }
-
-            &:-ms-input-placeholder {
-                color: var(--blue_3);
-                opacity: 1;
-            }
-
-            &:focus::-webkit-input-placeholder {
-                color: var(--grey_6);
-                opacity: 1;
-            }
-
-            &:focus::-moz-placeholder {
-                color: var(--grey_6);
-                opacity: 1;
-            }
-
-            &:focus::-ms-input-placeholder {
-                color: var(--grey_6);
-                opacity: 1;
-            }
-
-            &:disabled {
-                &::-webkit-input-placeholder {
-                    color: var(--grey_7);
-                    opacity: 1;
-                }
-
-                &::-moz-placeholder {
-                    color: var(--grey_7);
-                    opacity: 1;
-                }
-
-                &:-ms-input-placeholder {
-                    color: var(--grey_7);
-                    opacity: 1;
-                }
-            }
-        }
-
-        .input-group__label {
-            align-items: center;
-            display: flex;
-
-            .flag {
-                background-position: 50% 50%;
-                background-size: 100% 100%;
-                background-color: transparent;
-                background-repeat: no-repeat;
-                height: 13px;
-                margin-left: 12px;
-                margin-right: 10px;
-                min-width: 13px;
-                width: 13px;
-
-                &--ru {
-                    background-image: url("../images/icons/ru.png");
-                }
-            }
-        }
-    }
-
-    &--datepicker {
-        &.is-open {
-            .input-group__input {
-                border-radius: 7px 7px 0 0;
-            }
-
-            .input-group__label {
-                color: var(--blue_4);
-                font-size: 12px;
-                top: 8px;
-            }
-        }
-
-        .input-group__input {
-            &:focus ~ .input-group__calendar-icon {
-                fill: var(--blue_1);
-            }
-
-            &:focus {
-                border-radius: 7px 7px 0 0;
-            }
-        }
-
-        .input-group__calendar-icon {
-            fill: var(--blue_3);
-            height: 16px;
-            left: auto;
-            pointer-events: none;
-            position: absolute;
-            right: 16px;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 16px;
-        }
-
-        .input-group__clear {
-            right: 42px;
         }
     }
 
@@ -274,33 +115,44 @@
     }
 
     &__input {
-        border-radius: 7px;
-        border: 1px solid transparent;
-        background-color: var(--light_blue_1);
-        color: inherit;
-        font-size: 16px;
+        border-radius: 0;
+        border: 2px solid var(--stroke);
+        background-color: var(--bg);
+        color: var(--black);
+        font-size: 15px;
         font-weight: 400;
-        height: 56px;
+        height: 50px;
+        padding: 24px 16px 10px;
         transition: background-color 0.3s, border-color 0.3s;
         width: 100%;
+        @media(min-width: $sm) {
+            height: 56px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        @media(min-width: $hd) {
+            font-size: 18px;
+            height: 64px;
+            line-height: 1.32;
+        }
 
         &::-webkit-input-placeholder {
-            color: var(--grey_6);
+            color: var(--dark_grey);
             opacity: 0;
         }
 
         &::-moz-placeholder {
-            color: var(--grey_6);
+            color: var(--dark_grey);
             opacity: 0;
         }
 
         &:-ms-input-placeholder {
-            color: var(--grey_6);
+            color: var(--dark_grey);
             opacity: 0;
         }
 
         &:focus {
-            border-color: var(--blue_1) !important;
+            border-color: var(--black);
 
             &::-webkit-input-placeholder {
                 opacity: 1;
@@ -312,6 +164,12 @@
 
             &:-ms-input-placeholder {
                 opacity: 1;
+            }
+
+            & + .input-group__label {
+                color: var(--dark_grey);
+                font-size: 12px;
+                top: 8px;
             }
         }
 
@@ -433,9 +291,9 @@
     }
 
     &__label {
-        font-size: 16px;
+        font-size: 15px;
         left: 0;
-        line-height: 1.25;
+        line-height: 1.33333;
         overflow: hidden;
         padding-left: 16px;
         padding-right: 16px;
@@ -443,43 +301,28 @@
         pointer-events: none;
         transition: all 0.3s;
         text-overflow: ellipsis;
-        top: 18px;
+        top: 14px;
         white-space: nowrap;
         width: 100%;
-    }
-
-    &__clear {
-        @include button-reset;
-        @include active-area;
-        display: none;
-        height: 16px;
-        left: auto;
-        position: absolute;
-        right: 16px;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 16px;
-        z-index: 2;
-        @include hover {
-            svg {
-                fill: var(--blue_1);
-            }
+        @media(min-width: $sm) {
+            padding-left: 20px;
+            padding-right: 20px;
+            top: 18px;
         }
-
-        svg {
-            fill: var(--blue_4);
-            display: block;
-            height: 16px;
-            width: 16px;
+        @media(min-width: $hd) {
+            font-size: 18px;
+            line-height: 1.32;
+            top: 21px;
         }
     }
 }
 
 .error-text {
-    color: var(--red_1);
-    font-size: 13px;
-    line-height: 1.23076;
-    margin-bottom: 8px;
+    color: var(--warning);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.33333;
+    margin-top: 12px;
 }
 
 textarea {

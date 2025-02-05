@@ -1,19 +1,5 @@
 @font-face {
     font-family: 'Montserrat';
-    src: url("../fonts/subset-Montserrat-Black.woff2") format('woff2'), url("../fonts/subset-Montserrat-Black.woff") format('woff');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Montserrat';
-    src: url("../fonts/subset-Montserrat-ExtraBold.woff2") format('woff2'), url("../fonts/subset-Montserrat-ExtraBold.woff") format('woff');
-    font-weight: 800;
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Montserrat';
     src: url("../fonts/subset-Montserrat-Bold.woff2") format('woff2'), url("../fonts/subset-Montserrat-Bold.woff") format('woff');
     font-weight: 700;
     font-style: normal;
@@ -34,9 +20,23 @@
     font-display: swap;
 }
 @font-face {
-    font-family: 'Montserrat';
-    src: url("../fonts/subset-Montserrat-Regular.woff2") format('woff2'), url("../fonts/subset-Montserrat-Regular.woff") format('woff');
-    font-weight: normal;
+    font-family: 'Nunito';
+    src: url("../fonts/subset-Nunito-ExtraBold.woff2") format('woff2'), url("../fonts/subset-Nunito-ExtraBold.woff") format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Nunito';
+    src: url("../fonts/subset-Nunito-Bold.woff2") format('woff2'), url("../fonts/subset-Nunito-Bold.woff") format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Nunito';
+    src: url("../fonts/subset-Nunito-Regular.woff2") format('woff2'), url("../fonts/subset-Nunito-Regular.woff") format('woff');
+    font-weight: 400;
     font-style: normal;
     font-display: swap;
 }

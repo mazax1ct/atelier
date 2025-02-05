@@ -34,82 +34,6 @@
                 </li>
             </ul>
 
-            <h1>Оформление медкнижек в Ивантеевке</h1>
-
-            <h2>Красная кнопка</h2>
-
-            <a class="button button--red" href="#">Запись на приём</a><br>
-
-            <a class="button button--red disabled" href="#">Запись на приём</a><br>
-
-            <button class="button button--red" type="button">Запись на приём</button><br>
-
-            <button class="button button--red" type="button" disabled>Запись на приём</button><br>
-
-            <h2>Синяя кнопка</h2>
-
-            <a class="button button--blue" href="#">Запись на приём</a><br>
-
-            <a class="button button--blue disabled" href="#">Запись на приём</a><br>
-
-            <button class="button button--blue" type="button">Запись на приём</button><br>
-
-            <button class="button button--blue" type="button" disabled>Запись на приём</button><br>
-
-            <h2>Голубая кнопка</h2>
-
-            <a class="button button--light_blue" href="#">Запись на приём</a><br>
-
-            <a class="button button--light_blue disabled" href="#">Запись на приём</a><br>
-
-            <button class="button button--light_blue" type="button">Запись на приём</button><br>
-
-            <button class="button button--light_blue" type="button" disabled>Запись на приём</button><br>
-
-            <h2>Белая кнопка</h2>
-
-            <a class="button button--white" href="#">Запись на приём</a><br>
-
-            <a class="button button--white disabled" href="#">Запись на приём</a><br>
-
-            <button class="button button--white" type="button">Запись на приём</button><br>
-
-            <button class="button button--white" type="button" disabled>Запись на приём</button><br>
-
-            <h2>Ссылка для скачивания документа</h2>
-
-            <a class="download-link" href="#">
-                <span>Скачать выписку лицензии в PDF</span>
-            </a>
-
-            <br><br>
-
-            <a class="download-link" href="#">
-                <span>Скачать выписку лицензии в PDF</span>
-                <svg aria-hidden="true">
-                    <use xlink:href="images/sprite.svg#download_icon" />
-                </svg>
-            </a>
-
-            <br><br>
-
-            <a class="download-link_2" href="#">
-                <svg class="download-link_2__icon" aria-hidden="true">
-                    <use xlink:href="images/sprite.svg#document_icon" />
-                </svg>
-                <span class="download-link_2__text">
-                    <span class="download-link_2__title">Скачать выписку лицензии в PDF</span>
-                    <span class="download-link_2__link">
-                        <span>Открыть файл</span>
-                        <svg aria-hidden="true">
-                            <use xlink:href="images/sprite.svg#arrow_right" />
-                        </svg>
-                    </span>
-                </span>
-            </a>
-
-            <br><br>
-
             <h2>Чекбоксы</h2>
 
             <label class="checkbox">
@@ -152,50 +76,36 @@
 
             <h2>Поля ввода</h2>
 
-            <div class="input-group input-group--simple">
+            <div class="input-group">
                 <div class="input-group__inner">
                     <div class="input-group__input-container">
-                        <input id="inp" class="js-input-group__input input-group__input" type="text" name="" placeholder="ФИО пациента">
+                        <input id="inp" class="js-input-group__input input-group__input" type="text" name="">
                         <label class="input-group__label" for="inp">ФИО пациента<span class="required">*</span></label>
                     </div>
-                    <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
-                        <svg aria-hidden="true">
-                            <use xlink:href="images/sprite.svg#clear_icon" />
-                        </svg>
-                    </button>
                 </div>
             </div>
 
             <br>
 
-            <div class="input-group input-group--simple error">
-                <p class="error-text">Заполните это поле</p>
+            <div class="input-group error">
                 <div class="input-group__inner">
                     <div class="input-group__input-container">
-                        <input id="inp_2" class="js-input-group__input input-group__input" type="text" name="" placeholder="ФИО пациента">
+                        <input id="inp_2" class="js-input-group__input input-group__input" type="text" name="">
                         <label class="input-group__label" for="inp_2">ФИО пациента<span class="required">*</span></label>
                     </div>
-                    <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
-                        <svg aria-hidden="true">
-                            <use xlink:href="images/sprite.svg#clear_icon" />
-                        </svg>
-                    </button>
                 </div>
+
+                <p class="error-text">Заполните это поле</p>
             </div>
 
             <br>
 
-            <div class="input-group input-group--simple">
+            <div class="input-group">
                 <div class="input-group__inner">
                     <div class="input-group__input-container">
-                        <input id="inp_3" class="js-input-group__input input-group__input" type="text" name="" placeholder="ФИО пациента" disabled>
+                        <input id="inp_3" class="js-input-group__input input-group__input" type="text" name="" disabled>
                         <label class="input-group__label" for="inp_3">ФИО пациента<span class="required">*</span></label>
                     </div>
-                    <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
-                        <svg aria-hidden="true">
-                            <use xlink:href="images/sprite.svg#clear_icon" />
-                        </svg>
-                    </button>
                 </div>
             </div>
 
@@ -206,147 +116,6 @@
                     <div class="input-group__input-container">
                         <input id="inp_4" class="js-input-group__input input-group__input" type="text" name="" value="Константинопольский Константин Константинович" placeholder="ФИО пациента" disabled>
                         <label class="input-group__label" for="inp_4">ФИО пациента<span class="required">*</span></label>
-                    </div>
-                    <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
-                        <svg aria-hidden="true">
-                            <use xlink:href="images/sprite.svg#clear_icon" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-
-            <br>
-
-            <div class="input-group input-group--phone">
-                <div class="input-group__inner">
-                    <div class="input-group__input-container">
-                        <input id="inp_5" class="js-phone-mask js-input-group__input input-group__input" type="tel" name="" placeholder="(XXX) XXX-XX-XX">
-                        <label class="input-group__label" for="inp_5">Телефон<span class="required">*</span> <span class="flag flag--ru"></span> +7</label>
-                    </div>
-                    <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
-                        <svg aria-hidden="true">
-                            <use xlink:href="images/sprite.svg#clear_icon" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-
-            <br>
-
-            <div class="input-group input-group--phone error">
-                <p class="error-text">Заполните это поле</p>
-                <div class="input-group__inner">
-                    <div class="input-group__input-container">
-                        <input id="inp_5" class="js-phone-mask js-input-group__input input-group__input" type="tel" name="" placeholder="(XXX) XXX-XX-XX">
-                        <label class="input-group__label" for="inp_5">Телефон<span class="required">*</span> <span class="flag flag--ru"></span> +7</label>
-                    </div>
-                    <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
-                        <svg aria-hidden="true">
-                            <use xlink:href="images/sprite.svg#clear_icon" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-
-            <br>
-
-            <div class="input-group input-group--phone">
-                <div class="input-group__inner">
-                    <div class="input-group__input-container">
-                        <input id="inp_6" class="js-phone-mask js-input-group__input input-group__input" type="tel" name="" placeholder="(XXX) XXX-XX-XX" disabled>
-                        <label class="input-group__label" for="inp_6">Телефон<span class="required">*</span> <span class="flag flag--ru"></span> +7</label>
-                    </div>
-                    <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
-                        <svg aria-hidden="true">
-                            <use xlink:href="images/sprite.svg#clear_icon" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-
-            <br>
-
-            <div class="input-group input-group--phone is-disabled">
-                <div class="input-group__inner">
-                    <div class="input-group__input-container">
-                        <input id="inp_7" class="js-phone-mask js-input-group__input input-group__input" type="tel" name="" value="(981) 915-12-48" placeholder="(XXX) XXX-XX-XX" disabled>
-                        <label class="input-group__label" for="inp_7">Телефон<span class="required">*</span> <span class="flag flag--ru"></span> +7</label>
-                    </div>
-                    <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
-                        <svg aria-hidden="true">
-                            <use xlink:href="images/sprite.svg#clear_icon" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-
-            <br>
-
-            <div class="input-group input-group--simple input-group--datepicker">
-                <div class="input-group__inner">
-                    <div class="input-group__input-container">
-                        <input id="inp_8" class="js-input-group__input js-date-mask input-group__input" type="text" name="" placeholder="дд.мм.гггг">
-                        <label class="input-group__label" for="inp_8">Дата рождения<span class="required">*</span></label>
-                        <svg class="input-group__calendar-icon" aria-hidden="true">
-                            <use xlink:href="images/sprite.svg#calendar_icon" />
-                        </svg>
-                    </div>
-                    <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
-                        <svg aria-hidden="true">
-                            <use xlink:href="images/sprite.svg#clear_icon" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-
-            <br>
-
-            <div class="input-group input-group--simple input-group--datepicker">
-                <div class="input-group__inner">
-                    <div class="input-group__input-container">
-                        <input id="inp_8_1" class="js-input-group__input js-date-mask-range input-group__input" type="text" name="" placeholder="дд.мм.гггг - дд.мм.гггг">
-                        <label class="input-group__label" for="inp_8_1">Выберите период<span class="required">*</span></label>
-                        <svg class="input-group__calendar-icon" aria-hidden="true">
-                            <use xlink:href="images/sprite.svg#calendar_icon" />
-                        </svg>
-                    </div>
-                    <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
-                        <svg aria-hidden="true">
-                            <use xlink:href="images/sprite.svg#clear_icon" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-
-            <br>
-
-            <div class="input-group input-group--simple input-group--datepicker is-disabled">
-                <div class="input-group__inner">
-                    <div class="input-group__input-container">
-                        <input id="inp_9" class="js-input-group__input input-group__input" type="text" name="" placeholder="дд.мм.гггг" disabled>
-                        <label class="input-group__label" for="inp_9">Дата рождения<span class="required">*</span></label>
-                        <svg class="input-group__calendar-icon" aria-hidden="true">
-                            <use xlink:href="images/sprite.svg#calendar_icon" />
-                        </svg>
-                    </div>
-                    <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
-                        <svg aria-hidden="true">
-                            <use xlink:href="images/sprite.svg#clear_icon" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-
-            <br>
-
-            <div class="input-group input-group--simple input-group--datepicker is-filled is-disabled">
-                <div class="input-group__inner">
-                    <div class="input-group__input-container">
-                        <input id="inp_10" class="js-input-group__input input-group__input" type="text" name="" value="23.03.2024" placeholder="дд.мм.гггг" disabled>
-                        <label class="input-group__label" for="inp_10">Дата рождения<span class="required">*</span></label>
-                        <svg class="input-group__calendar-icon" aria-hidden="true">
-                            <use xlink:href="images/sprite.svg#calendar_icon" />
-                        </svg>
                     </div>
                     <button class="js-input-group__clear input-group__clear" type="button" title="Очистить">
                         <svg aria-hidden="true">

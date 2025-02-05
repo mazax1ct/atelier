@@ -1,0 +1,15 @@
+.social-links {
+    display: flex;
+    gap: 32px;
+}
+
+.social-link {
+    display: block;
+    height: 32px;
+    width: 32px;
+
+    svg {
+        height: 32px;
+        width: 32px;
+    }
+}
