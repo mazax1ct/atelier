@@ -11,8 +11,16 @@
     }
 
     &.is-scrolled {
+        box-shadow: 0 0 3px 0 rgba(0,0,0,0.1);
         position: fixed;
         transition: transform 0.2s;
+    }
+
+    &.is-open {
+        & > .container {
+            position: relative;
+            z-index: 11;
+        }
     }
 
     &__top {
@@ -25,7 +33,7 @@
         }
         @media(min-width: $hd) {
             margin-bottom: 10px;
-            padding-top: 25px;
+            padding-top: 24px;
         }
     }
 
@@ -105,6 +113,9 @@
         @media(max-width: $hd - 0.02px) {
             display: none;
         }
+        @media(min-width: $hd) {
+            padding-bottom: 15px;
+        }
     }
 
     &__catalog-toggler {
@@ -129,102 +140,118 @@
             width: 32px;
         }
     }
+
+    &__catalog {
+        background-color: #fff;
+        border-top: 1px solid var(--stroke);
+        display: none;
+        height: calc(100dvh - 170px);
+        left: 0;
+        padding-top: 40px;
+        position: fixed;
+        top: 170px;
+        right: 0;
+        z-index: 10;
+    }
 }
 
 .collapsing-menu {
-    flex-grow: 1;
-    max-width: 998px;
     margin-left: auto;
     margin-right: auto;
-}
+    width: calc(100% - 38%);
 
-.tabs {
-    position: relative;
+    &__nav {
+        position: relative;
 
-    &:not(.--jsfied) {
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-    }
+        &:not(.--jsfied) {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
 
-    .--hidden {
-        display: none;
-    }
+        .--hidden {
+            display: none;
+        }
 
-    .-primary {
-        @include list-reset;
-        display: flex;
+        .-primary {
+            @include list-reset;
+            display: flex;
 
-        > li {
-            flex-grow: 1;
+            > li {
+                flex-grow: 1;
 
-            > button,
-            > a {
-                align-items: center;
-                display: flex;
-                gap: 8px;
-                font-size: 18px;
-                font-weight: 800;
-                height: 40px;
-                line-height: 1.33333;
-                padding: 8px 24px;
-                text-decoration: none;
-                white-space: nowrap;
+                > button,
+                > a {
+                    align-items: center;
+                    display: flex;
+                    gap: 8px;
+                    font-size: 18px;
+                    font-weight: 800;
+                    height: 40px;
+                    line-height: 1.33333;
+                    padding: 8px 24px;
+                    text-decoration: none;
+                    transition: color 0.3s;
+                    white-space: nowrap;
+                }
+
+                > button {
+                    background-color: transparent;
+                    border: none;
+                    color: var(--black);
+                    cursor: pointer;
+                    @include hover {
+                        color: var(--dark_grey);
+                    }
+
+                    svg {
+                        fill: currentColor;
+                        height: 20px;
+                        width: 20px;
+                    }
+                }
             }
 
-            > button {
-                background-color: transparent;
-                border: none;
-                color: var(--black);
-                cursor: pointer;
-
-                svg {
-                    fill: currentColor;
-                    height: 20px;
-                    width: 20px;
+            .-more {
+                > button span {
+                    display: inline-block;
+                    transition: transform 0.2s;
                 }
             }
         }
 
-        .-more {
-            > button span {
-                display: inline-block;
-                transition: transform 0.2s;
+        &.--show-secondary .-primary {
+            .-more > button svg {
+                transform: rotate(180deg);
             }
         }
-    }
 
-    &.--show-secondary .-primary {
-        .-more > button svg {
-            transform: rotate(180deg);
+        .-secondary {
+            @include list-reset;
+            box-shadow: 0 3px 3px 0 rgba(0,0,0,0.1);
+            background-color: #fff;
+            max-width: 100%;
+            min-width: 10em;
+            display: none;
+            position: absolute;
+            padding: 10px 16px;
+            top: 100%;
+            right: 0;
+            animation: nav-secondary 0.2s;
+
+            a,
+            button {
+                display: block;
+                font-size: 16px;
+                line-height: 1.3125;
+                padding-top: 6px;
+                padding-bottom: 6px;
+                text-decoration: none;
+            }
         }
-    }
 
-    .-secondary {
-        @include list-reset;
-        box-shadow: 0 3px 3px 0 rgba(0,0,0,0.1);
-        background-color: #fff;
-        max-width: 100%;
-        min-width: 10em;
-        display: none;
-        position: absolute;
-        padding: 10px 16px;
-        top: 100%;
-        right: 0;
-        animation: nav-secondary 0.2s;
-
-        a,
-        button {
+        &.--show-secondary .-secondary {
             display: block;
-            font-size: 16px;
-            line-height: 1.3125;
-            padding-top: 6px;
-            padding-bottom: 6px;
-            text-decoration: none;
         }
-    }
-
-    &.--show-secondary .-secondary {
-        display: block;
     }
 }
 @keyframes nav-secondary {

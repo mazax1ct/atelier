@@ -4,11 +4,16 @@
 }
 
 .social-link {
+    color: var(--black);
     display: block;
     height: 32px;
     width: 32px;
+    @include hover {
+        color: var(--dark_grey);
+    }
 
     svg {
+        fill: currentColor;
         height: 32px;
         width: 32px;
     }

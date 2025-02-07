@@ -1,4 +1,4 @@
-const container = document.querySelector('.tabs');
+const container = document.querySelector('.collapsing-menu__nav');
 const primary = container.querySelector('.-primary');
 const primaryItems = container.querySelectorAll('.-primary > li:not(.-more)');
 container.classList.add('--jsfied');

@@ -1,4 +1,84 @@
+.contacts {
+    --gap: 16px;
+
+    &:not(:last-child) {
+        margin-bottom: 32px;
+        @media(min-width: $hd) {
+            margin-bottom: 96px;
+        }
+    }
+    @media(min-width: $sm) {
+        display: flex;
+        gap: var(--gap);
+    }
+    @media(min-width: $hd) {
+        --gap: 24px;
+    }
+
+    &--type_1 {
+        .contacts__block {
+            &:not(:last-child) {
+                @media(max-width: $sm - 0.02px) {
+                    border-bottom: 1px solid var(--stroke);
+                    margin-bottom: 16px;
+                    padding-bottom: 16px;
+                }
+            }
+        }
+    }
+
+    &--type_2 {
+        .contacts__block {
+            &:not(:last-child) {
+                @media(max-width: $sm - 0.02px) {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+
+    &__block {
+        @media(min-width: $sm) {
+            width: calc(100% / 2 - var(--gap) / 2);
+        }
+    }
+}
+
+.contacts-map {
+    margin-bottom: 8px;
+    @media(min-width: $hd) {
+        margin-bottom: 24px;
+    }
+
+    iframe {
+        height: 180px;
+        width: 100%;
+        @media(min-width: $sm) {
+            height: 200px;
+        }
+        @media(min-width: $hd) {
+            height: 430px;
+        }
+    }
+}
+
 .shop-info {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.28571;
+    @media(min-width: $sm) {
+        font-size: 15px;
+        line-height: 1.33333;
+    }
+    @media(min-width: $lg) {
+        font-size: 16px;
+        line-height: 1.3125;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
     p {
         &:not(:last-child) {
             margin-bottom: 12px;
