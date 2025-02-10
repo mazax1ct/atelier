@@ -1,0 +1,79 @@
+.page-columns {
+    @media(min-width: $hd) {
+        display: flex;
+        gap: 16px;
+    }
+
+    &__aside {
+        @media(max-width: $hd - 0.02px) {
+            margin-bottom: 16px;
+        }
+        @media(min-width: $hd) {
+            width: 260px;
+        }
+    }
+
+    &__content {
+        @media(min-width: $hd) {
+            width: calc(100% - 260px - 16px);
+        }
+
+        h1 {
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 1.3;
+            margin-bottom: 20px;
+            @media(min-width: $sm) {
+                font-size: 24px;
+                line-height: 1.33333;
+            }
+            @media(min-width: $fhd) {
+                font-size: 24px;
+                line-height: 1.33333;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+.left-menu {
+    @include list-reset;
+    @media(max-width: $hd - 0.02px) {
+        display: flex;
+        gap: 20px;
+    }
+
+    li {
+        &:not(:last-child) {
+            @media(min-width: $hd) {
+                margin-bottom: 2px;
+            }
+        }
+    }
+
+    a {
+        align-items: center;
+        display: flex;
+        font-size: 15px;
+        line-height: 1.33333;
+        min-height: 36px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        text-decoration: none;
+        @include hover {
+            text-decoration: underline;
+        }
+        @media(min-width: $hd) {
+            font-size: 18px;
+            min-height: 48px;
+        }
+
+        &.is-active {
+            font-weight: 700;
+            @media(max-width: $hd - 0.02px) {
+                text-decoration: underline;
+            }
+        }
+    }
+}

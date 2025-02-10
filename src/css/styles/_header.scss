@@ -33,6 +33,9 @@
         }
         @media(min-width: $hd) {
             margin-bottom: 10px;
+            padding-top: 10px;
+        }
+        @media(min-width: $fhd) {
             padding-top: 24px;
         }
     }
@@ -40,6 +43,9 @@
     &__logo {
         margin-left: auto;
         margin-right: auto;
+        @media(min-width: $hd) and (max-width: $fhd - 0.02px) {
+            width: 120px;
+        }
 
         img,
         picture {
@@ -145,13 +151,17 @@
         background-color: #fff;
         border-top: 1px solid var(--stroke);
         display: none;
-        height: calc(100dvh - 170px);
+        height: calc(100dvh - 132px);
         left: 0;
         padding-top: 40px;
         position: fixed;
-        top: 170px;
+        top: 132px;
         right: 0;
         z-index: 10;
+        @media(min-width: $fhd) {
+            height: calc(100dvh - 170px);
+            top: 170px;
+        }
     }
 }
 

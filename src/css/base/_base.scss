@@ -34,7 +34,7 @@ html {
         font-size: 15px;
         line-height: 1.33333;
     }
-    @media(min-width: $lg) {
+    @media(min-width: $fhd) {
         font-size: 16px;
         line-height: 1.3125;
     }
@@ -52,6 +52,9 @@ html {
         }
         @media(min-width: $hd) {
             padding-bottom: 0;
+            padding-top: 132px;
+        }
+        @media(min-width: $fhd) {
             padding-top: 220px;
         }
     }
@@ -63,12 +66,15 @@ html {
     margin-right: auto;
     padding-left: var(--container_padding);
     padding-right: var(--container_padding);
+    @media(min-width: $hd) and (max-width: $fhd - 0.02px) {
+        width: 94%;
+    }
 }
 
 .big-text {
     font-size: 15px;
     line-height: 1.33333;
-    @media(min-width: $hd) {
+    @media(min-width: $fhd) {
         font-size: 18px;
     }
 }
@@ -93,17 +99,10 @@ h1 {
         font-size: 28px;
         line-height: 1.28571;
     }
-    @media(min-width: $hd) {
+    @media(min-width: $fhd) {
         font-size: 32px;
         line-height: 1.3125;
         margin-bottom: 40px;
-    }
-
-    &:not(:first-child) {
-        margin-top: 32px;
-        @media(min-width: $sm) {
-            margin-top: 48px;
-        }
     }
 }
 
@@ -118,7 +117,7 @@ h2 {
         font-size: 22px;
         line-height: 1.45454;
     }
-    @media(min-width: $sm) {
+    @media(min-width: $fhd) {
         font-size: 24px;
         line-height: 1.333333;
         margin-bottom: 24px;
@@ -126,6 +125,17 @@ h2 {
 
     &:last-child {
         margin-bottom: 0;
+    }
+}
+
+h2 {
+    &.h1 {
+        &:not(:first-child) {
+            margin-top: 32px;
+            @media(min-width: $sm) {
+                margin-top: 48px;
+            }
+        }
     }
 }
 
@@ -139,7 +149,7 @@ h3 {
         font-size: 16px;
         line-height: 1.375;
     }
-    @media(min-width: $hd) {
+    @media(min-width: $fhd) {
         font-size: 20px;
         line-height: 1.2;
     }
@@ -154,7 +164,7 @@ h4 {
     font-weight: 800;
     line-height: 1.5;
     margin-bottom: 16px;
-    @media(min-width: $hd) {
+    @media(min-width: $fhd) {
         font-size: 18px;
         line-height: 1.33333;
         margin-bottom: 20px;
@@ -191,7 +201,9 @@ textarea {
     line-height: inherit;
 }
 
-p {
+ol,
+p,
+ul {
     margin-top: 0;
     margin-bottom: 16px;
     @media(min-width: $sm) {
@@ -205,16 +217,7 @@ p {
 
 ol,
 ul {
-    margin-top: 0;
-    margin-bottom: 1em;
     padding: 0;
-    @media(min-width: $sm) {
-        margin-bottom: 1.5em;
-    }
-
-    &:last-child {
-        margin-bottom: 0;
-    }
 }
 
 ol {
@@ -253,7 +256,6 @@ ul {
 .table {
     border-collapse: collapse;
     border: none;
-    font-size: 16px;
     width: 100%;
 
     th {

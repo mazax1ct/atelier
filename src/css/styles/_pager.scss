@@ -6,7 +6,7 @@
     justify-content: center;
     gap: 12px;
     margin-top: 64px;
-    @media(min-width: $lg) {
+    @media(min-width: $fhd) {
         gap: 24px;
         margin-top: 112px;
     }
@@ -33,7 +33,7 @@
         &.is-active {
             background-color: var(--beige);
         }
-        @media(min-width: $lg) {
+        @media(min-width: $fhd) {
             border-width: 4px;
             height: 48px;
             min-width: 48px;
