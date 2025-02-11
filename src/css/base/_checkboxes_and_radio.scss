@@ -1,22 +1,15 @@
 .checkbox {
-    align-items: center;
-    color: var(--blue_4);
+    align-items: flex-start;
+    color: var(--dark_grey);
     display: flex;
     gap: 8px;
-    line-height: 1.25;
-
-    &--small {
-        font-size: 12px;
-    }
+    font-size: 14px;
+    line-height: 1.28571;
 
     a {
-        color: var(--blue_1);
-        text-decoration: none;
+        color: var(--dark_grey);
         @include hover {
-            color: var(--blue_7);
-        }
-        @include active {
-            color: var(--blue_8);
+            color: var(--black);
         }
     }
 
@@ -28,8 +21,8 @@
         width: 1px;
 
         &:checked ~ .checkbox__icon {
-            background-color: var(--blue_1);
-            background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23fff' d='M11.9,5c0.1,0.1,0.2,0.3,0.2,0.5c0,0.2-0.1,0.4-0.2,0.5l-4,5c-0.1,0.1-0.2,0.1-0.2,0.2c-0.1,0-0.2,0.1-0.3,0.1c-0.1,0-0.2,0-0.3-0.1c-0.1,0-0.2-0.1-0.2-0.2L4.2,8.4C4.1,8.3,4,8.2,4,8.1S3.9,7.9,3.9,7.8c0-0.1,0-0.2,0.1-0.3c0-0.1,0.1-0.2,0.2-0.2c0.1-0.1,0.2-0.1,0.2-0.2c0.1,0,0.2-0.1,0.3-0.1c0.1,0,0.2,0,0.3,0.1s0.2,0.1,0.2,0.2l2.1,2.1L10.8,5c0.1-0.1,0.2-0.1,0.2-0.2c0.1,0,0.2-0.1,0.3-0.1c0.1,0,0.2,0,0.3,0.1C11.7,4.8,11.8,4.9,11.9,5L11.9,5z'/%3E%3C/svg%3E");
+            background-color: var(--black);
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' d='M10,17C10,17,10,17,10,17c-0.3,0-0.5-0.1-0.7-0.3l-4-4.1c-0.4-0.4-0.4-1,0-1.4c0.4-0.4,1-0.4,1.4,0l3.3,3.4l7.3-7.3c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-8,8C10.5,16.9,10.3,17,10,17z'/%3E%3C/svg%3E%0A");
         }
 
         &:not(:disabled) ~ .checkbox__icon {
@@ -37,25 +30,36 @@
         }
 
         &:disabled ~ .checkbox__icon {
-            border-color: var(--grey_7);
+            border-color: #C7CDD5;
             user-select: none;
         }
 
+        &:disabled ~ .checkbox__text {
+            color: #C7CDD5;
+
+            a {
+                color: #C7CDD5;
+            }
+        }
+
         &:checked:disabled ~ .checkbox__icon {
-            background-color: var(--grey_7);
+            background-color: #C7CDD5;
         }
     }
 
     &__icon {
-        border-radius: 3px;
-        border: 1px solid var(--blue_1);
-        background-color: var(--white_1);
+        border: 1px solid var(--black);
+        background-color: #fff;
         background-size: 100% 100%;
         background-repeat: no-repeat;
         background-position: 50% 50%;
         display: block;
-        height: 16px;
-        min-width: 16px;
-        width: 16px;
+        height: 24px;
+        min-width: 24px;
+        width: 24px;
+    }
+
+    &__text {
+        align-self: center;
     }
 }

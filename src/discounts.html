@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Atelier</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/common/favicon.html
+
+    //= template/common/fonts_preload.html
+
+    //= template/common/styles.html
+</head>
+
+<body class="page page--main_page">
+    //= template/common/header.html
+
+    <main class="page__content">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    Личный кабинет
+                </li>
+            </ul>
+
+            <div class="page-columns">
+                <div class="page-columns__aside">
+                    <ul class="left-menu">
+                        <li><a href="#">Личные данные</a></li>
+                        <li><a href="#">Заказы</a></li>
+                        <li><a class="is-active" href="#">Скидки</a></li>
+                        <li><a href="#">Выйти</a></li>
+                    </ul>
+                </div>
+
+                <div class="page-columns__content">
+                    <h1>Скидки</h1>
+
+                    <div class="discounts">
+                        <div class="status status--type_1">
+                            <div class="status__icon">
+                                <img src="images/content/discounts/bronze.svg" alt="">
+                            </div>
+                            <p class="status__text">У вас бронзовый статус, вам доступна скидка 5% при заказе от 30 000 ₽</p>
+                        </div>
+
+                        <div class="status status--type_1">
+                            <div class="status__icon">
+                                <img src="images/content/discounts/silver.svg" alt="">
+                            </div>
+                            <p class="status__text">У вас серебряный статус, Вам доступна скидка 10% при заказе от 30 000 ₽</p>
+                        </div>
+
+                        <div class="status status--type_1">
+                            <div class="status__icon">
+                                <img src="images/content/discounts/gold.svg" alt="">
+                            </div>
+                            <p class="status__text">У вас золотой статус, Вам доступна скидка 15% при заказе от 30 000 ₽</p>
+                        </div>
+
+                        <div class="status status--type_2">
+                            <div class="status__icon status__icon--type_1">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#percent_icon" />
+                                </svg>
+                            </div>
+                            <p class="status__text">Вам доступна Скидка 5% на первый заказ! Используйте промокод «welcome»</p>
+                        </div>
+
+                        <div class="status status--type_2">
+                            <div class="status__icon status__icon--type_1">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#catalog_icon" />
+                                </svg>
+                            </div>
+                            <p class="status__text">Вам доступна разовая Скидка 5% на категорию «Верхняя одежда» при заказе от 30 000 ₽</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        //= template/common/float-block.html
+    </main>
+
+    //= template/common/footer.html
+
+    //= template/common/popups.html
+
+    //= template/common/scripts.html
+</body>
+
+</html>

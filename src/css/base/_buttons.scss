@@ -1,18 +1,29 @@
 .button {
     align-items: center;
-    border: 1px solid transparent;
-    border-radius: 11px;
+    border: 2px solid transparent;
+    border-radius: 0;
     cursor: pointer;
     display: inline-flex;
-    font-size: 15px;
-    font-weight: 500;
+    font-family: var(--secondary_font);
+    font-size: 13px;
+    font-weight: 600;
     justify-content: center;
-    line-height: 1.5;
-    min-height: 45px;
-    padding: 0 8.5px;
+    line-height: 1.23076;
+    min-height: 36px;
+    padding: 8px;
     text-decoration: none;
     text-align: center;
     transition: all 0.3s;
+    @media(min-width: $sm) {
+        font-size: 16px;
+        height: 52px;
+        line-height: 1.25;
+    }
+    @media(min-width: $fhd) {
+        font-size: 18px;
+        height: 64px;
+        line-height: 1.33333;
+    }
 
     &.disabled,
     &:disabled,
@@ -21,150 +32,48 @@
         pointer-events: none;
     }
 
-    &--red {
-        background-color: var(--red_1);
-        color: var(--white_1);
-        gap: 16px;
-
-        svg {
-            height: 16px;
-            min-width: 16px;
-            width: 16px;
-        }
+    &--primary {
+        background-color: var(--black);
+        color: #fff;
 
         &:not(.disabled),
         &:not(:disabled),
         &:not([data-disabled]) {
             @include hover {
-                background-color: var(--red_4);
-                color: var(--white_1);
-            }
-            @include active {
-                background-color: var(--red_4);
-                color: var(--white_1);
+                background-color: var(--black_ex);
+                color: #fff;
             }
         }
 
         &.disabled,
         &:disabled,
         &[data-disabled] {
-            background-color: var(--grey_3);
-            color: var(--grey_7);
-
-            svg {
-                fill: var(--grey_7);
-            }
+            background-color: #F4F4F4;
+            color: #C9CACA;
         }
     }
 
-    &--blue {
-        background-color: var(--blue_10);
-        color: var(--white_1);
-        gap: 16px;
-
-        svg {
-            height: 16px;
-            min-width: 16px;
-            width: 16px;
-        }
+    &--secondary {
+        background-color: #fff;
+        border-color: var(--black);
+        color: var(--black);
 
         &:not(.disabled),
         &:not(:disabled),
         &:not([data-disabled]) {
             @include hover {
-                background-color: var(--blue_11);
-                color: var(--white_1);
-            }
-            @include active {
-                background-color: var(--blue_11);
-                color: var(--white_1);
+                background-color: rgba(#728197, 0.1);
+                border-color: var(--black_ex);
+                color: var(--black_ex);
             }
         }
 
         &.disabled,
         &:disabled,
         &[data-disabled] {
-            background-color: var(--grey_3);
-            color: var(--grey_7);
-
-            svg {
-                fill: var(--grey_7);
-            }
-        }
-    }
-
-    &--light_blue {
-        background-color: var(--light_blue_1);
-        border-color: var(--blue_6);
-        color: var(--blue_3);
-        gap: 16px;
-
-        svg {
-            height: 16px;
-            min-width: 16px;
-            width: 16px;
-        }
-
-        &:not(.disabled),
-        &:not(:disabled),
-        &:not([data-disabled]) {
-            @include hover {
-                background-color: var(--light_blue_2);
-                border-color: var(--blue_6);
-                color: var(--blue_3);
-            }
-        }
-
-        &.disabled,
-        &:disabled,
-        &[data-disabled] {
-            background-color: var(--grey_3);
-            border-color: var(--grey_3);
-            color: var(--grey_7);
-
-            svg {
-                fill: var(--grey_7);
-            }
-        }
-    }
-
-    &--white {
-        background-color: var(--white_2);
-        border-color: var(--blue_6);
-        color: var(--blue_3);
-        gap: 16px;
-
-        svg {
-            height: 16px;
-            min-width: 16px;
-            width: 16px;
-        }
-
-        &:not(.disabled),
-        &:not(:disabled),
-        &:not([data-disabled]) {
-            @include hover {
-                background-color: var(--light_blue_1);
-                border-color: var(--blue_6);
-                color: var(--blue_3);
-            }
-            @include active {
-                background-color: var(--light_blue_2);
-                border-color: var(--blue_6);
-                color: var(--blue_3);
-            }
-        }
-
-        &.disabled,
-        &:disabled,
-        &[data-disabled] {
-            background-color: var(--grey_3);
-            border-color: var(--grey_3);
-            color: var(--grey_7);
-
-            svg {
-                fill: var(--grey_7);
-            }
+            background-color: #fff;
+            border-color: var(--dark_grey);
+            color: var(--dark_grey);
         }
     }
 }

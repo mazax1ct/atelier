@@ -90,7 +90,7 @@
         @include button-reset;
         @include active-area;
         color: var(--dark_grey);
-        font-size: 'Montserrat', Arial, sans-serif;
+        font-size: var(--secondary_font);
         font-size: 16px;
         font-weight: 500;
         height: 40px;
@@ -133,7 +133,7 @@
 
     &__title {
         color: var(--dark_grey);
-        font-family: 'Montserrat', Arial, sans-serif;
+        font-family: var(--secondary_font);
         font-size: 16px;
         font-weight: 500;
         line-height: 1.375;

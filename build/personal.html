@@ -173,6 +173,72 @@
 
                 <div class="page-columns__content">
                     <h1>Личные данные</h1>
+
+                    <form class="personal-form form">
+                        <div class="form__row">
+                            <div class="input-group">
+                                <div class="input-group__inner">
+                                    <div class="input-group__input-container">
+                                        <input id="name" class="js-input-group__input input-group__input" type="text" name="name" value="">
+                                        <label class="input-group__label" for="name">Имя</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form__row">
+                            <div class="input-group">
+                                <div class="input-group__inner">
+                                    <div class="input-group__input-container">
+                                        <input id="last_name" class="js-input-group__input input-group__input" type="text" name="last_name" value="">
+                                        <label class="input-group__label" for="last_name">Фамилия</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form__row">
+                            <div class="input-group">
+                                <div class="input-group__inner">
+                                    <div class="input-group__input-container">
+                                        <input id="email" class="js-input-group__input js-email-mask input-group__input" type="text" name="email" value="">
+                                        <label class="input-group__label" for="email">E-mail</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form__row">
+                            <label class="checkbox">
+                                <input type="checkbox" value="Y" name="terms" checked>
+                                <span class="checkbox__icon"></span>
+                                <span>Соглашаюсь на <a href="#">обработку персональных данных</a> для получения рекламной и информационной рассылки</span>
+                            </label>
+                        </div>
+
+                        <div class="personal-form__auth-type">
+                            <p class="personal-form__auth-type-title">Вход на сайт по номеру</p>
+                            <p>+7 900 186 10 26</p>
+                        </div>
+
+                        <button class="button button--primary" type="submit">Сохранить данные</button>
+
+                        <p class="warning">
+                            <svg class="warning__icon warning__icon--alert" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#warning_icon" />
+                            </svg>
+
+                            <span class="warning__text">Мы выслали письмо на указанную почту, проверьте почтовый ящик, перейдите по ссылке и подтвердите вашу почту</span>
+                        </p>
+
+                        <p class="warning">
+                            <svg class="warning__icon warning__icon--success" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#success_icon" />
+                            </svg>
+
+                            <span class="warning__text">Ваша почта успешно подтверждена!</span>
+                        </p>
+                    </form>
                 </div>
             </div>
         </div>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Atelier</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/common/favicon.html
+
+    //= template/common/fonts_preload.html
+
+    //= template/common/styles.html
+</head>
+
+<body class="page page--main_page">
+    //= template/common/header.html
+
+    <main class="page__content">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    Личный кабинет
+                </li>
+            </ul>
+
+            <div class="page-columns">
+                <div class="page-columns__aside">
+                    <ul class="left-menu">
+                        <li><a href="#">Личные данные</a></li>
+                        <li><a class="is-active" href="#">Заказы</a></li>
+                        <li><a href="#">Скидки</a></li>
+                        <li><a href="#">Выйти</a></li>
+                    </ul>
+                </div>
+
+                <div class="page-columns__content">
+                    <h1>Заказы</h1>
+
+                    <div class="orders">
+                        <div class="order">
+                            <p class="order__title">Заказ №134557 <span class="order__status order__status--type_1">Ожидает оплаты</span></p>
+
+                            <p class="order__title">Содержание заказа</p>
+
+                            <div class="order__list">
+                                <div class="order-item">
+                                    <a class="order-item__image" href="#">
+                                        <img src="images/content/orders/img_1.jpg" srcset="images/content/orders/img_1@2x.jpg 2x" alt="">
+                                    </a>
+
+                                    <div class="order-item__info">
+                                        <p class="order-item__title">Stella McCartney</p>
+                                        <p class="order-item__prop">Платье в полоску с принтом</p>
+                                        <p class="order-item__prop">Размер: М</p>
+                                    </div>
+
+                                    <div class="order-item__price-block">
+                                        <p class="order-item__price">20 240 ₽</p>
+                                    </div>
+                                </div>
+
+                                <div class="order-item">
+                                    <a class="order-item__image" href="#">
+                                        <img src="images/content/orders/img_2.jpg" srcset="images/content/orders/img_2@2x.jpg 2x" alt="">
+                                    </a>
+
+                                    <div class="order-item__info">
+                                        <p class="order-item__title">Dolce & Gabbana</p>
+                                        <p class="order-item__prop">Босоножки белые с принтом текстом на платформе</p>
+                                        <p class="order-item__prop">Размер: 32</p>
+                                    </div>
+
+                                    <div class="order-item__price-block">
+                                        <p class="order-item__price">19 500 ₽</p>
+                                        <p class="order-item__price order-item__price--old">25 240 ₽</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="order__result">
+                                <p class="order__result-title">Итого</p>
+                                <p class="order__price">39 700 ₽</p>
+                            </div>
+
+                            <div class="order__props">
+                                <p>Дата создания: 16.01.24</p>
+                                <p>Регион доставки: Москва, Московская область, Центр, Россия</p>
+                                <p>Доставка: СДЭК (До пункта выдачи)</p>
+                                <p>Оплата: Онлайн оплата ЮKassa</p>
+                            </div>
+
+                            <div class="order__buttons">
+                                <a class="button button--secondary" href="#">Оплатить</a>
+
+                                <button class="order__cancel" type="button">Отменить заказ</button>
+                            </div>
+
+                            <p class="order__cancel-text">Обращаем ваше внимание на то, что если заказ не будет оплачен в течение 14:59, он будет отменён автоматически</p>
+                        </div>
+
+                        <div class="order">
+                            <p class="order__title">Заказ №134557 <span class="order__status order__status--type_2">Выполнен</span></p>
+
+                            <p class="order__title">Содержание заказа</p>
+
+                            <div class="order__list">
+                                <div class="order-item">
+                                    <a class="order-item__image" href="#">
+                                        <img src="images/content/orders/img_1.jpg" srcset="images/content/orders/img_1@2x.jpg 2x" alt="">
+                                    </a>
+
+                                    <div class="order-item__info">
+                                        <p class="order-item__title">Stella McCartney</p>
+                                        <p class="order-item__prop">Платье в полоску с принтом</p>
+                                        <p class="order-item__prop">Размер: М</p>
+                                    </div>
+
+                                    <div class="order-item__price-block">
+                                        <p class="order-item__price">20 240 ₽</p>
+                                    </div>
+                                </div>
+
+                                <div class="order-item">
+                                    <a class="order-item__image" href="#">
+                                        <img src="images/content/orders/img_2.jpg" srcset="images/content/orders/img_2@2x.jpg 2x" alt="">
+                                    </a>
+
+                                    <div class="order-item__info">
+                                        <p class="order-item__title">Dolce & Gabbana</p>
+                                        <p class="order-item__prop">Босоножки белые с принтом текстом на платформе</p>
+                                        <p class="order-item__prop">Размер: 32</p>
+                                    </div>
+
+                                    <div class="order-item__price-block">
+                                        <p class="order-item__price">19 500 ₽</p>
+                                        <p class="order-item__price order-item__price--old">25 240 ₽</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="order__result">
+                                <p class="order__result-title">Итого</p>
+                                <p class="order__price">39 700 ₽</p>
+                            </div>
+
+                            <div class="order__props">
+                                <p>Дата создания: 16.01.24</p>
+                                <p>Регион доставки: Москва, Московская область, Центр, Россия</p>
+                                <p>Доставка: СДЭК (До пункта выдачи)</p>
+                                <p>Оплата: Онлайн оплата ЮKassa</p>
+                            </div>
+                        </div>
+
+                        <div class="order">
+                            <p class="order__title">Заказ №134557 <span class="order__status order__status--type_1">Отменён</span></p>
+
+                            <p class="order__title">Содержание заказа</p>
+
+                            <div class="order__list">
+                                <div class="order-item">
+                                    <a class="order-item__image" href="#">
+                                        <img src="images/content/orders/img_1.jpg" srcset="images/content/orders/img_1@2x.jpg 2x" alt="">
+                                    </a>
+
+                                    <div class="order-item__info">
+                                        <p class="order-item__title">Stella McCartney</p>
+                                        <p class="order-item__prop">Платье в полоску с принтом</p>
+                                        <p class="order-item__prop">Размер: М</p>
+                                    </div>
+
+                                    <div class="order-item__price-block">
+                                        <p class="order-item__price">20 240 ₽</p>
+                                    </div>
+                                </div>
+
+                                <div class="order-item">
+                                    <a class="order-item__image" href="#">
+                                        <img src="images/content/orders/img_2.jpg" srcset="images/content/orders/img_2@2x.jpg 2x" alt="">
+                                    </a>
+
+                                    <div class="order-item__info">
+                                        <p class="order-item__title">Dolce & Gabbana</p>
+                                        <p class="order-item__prop">Босоножки белые с принтом текстом на платформе</p>
+                                        <p class="order-item__prop">Размер: 32</p>
+                                    </div>
+
+                                    <div class="order-item__price-block">
+                                        <p class="order-item__price">19 500 ₽</p>
+                                        <p class="order-item__price order-item__price--old">25 240 ₽</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="order__result">
+                                <p class="order__result-title">Итого</p>
+                                <p class="order__price">39 700 ₽</p>
+                            </div>
+
+                            <div class="order__props">
+                                <p>Дата создания: 16.01.24</p>
+                                <p>Регион доставки: Москва, Московская область, Центр, Россия</p>
+                                <p>Доставка: СДЭК (До пункта выдачи)</p>
+                                <p>Оплата: Онлайн оплата ЮKassa</p>
+                                <p class="dark-grey">Деньги возвращены на карту</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        //= template/common/float-block.html
+    </main>
+
+    //= template/common/footer.html
+
+    //= template/common/popups.html
+
+    //= template/common/scripts.html
+</body>
+
+</html>
