@@ -58,6 +58,18 @@ html {
             padding-top: 220px;
         }
     }
+
+    &__section {
+        &:not(:last-child) {
+            margin-bottom: 32px;
+            @media(min-width: $sm) {
+                margin-bottom: 48px;
+            }
+            @media(min-width: $fhd) {
+                margin-bottom: 96px;
+            }
+        }
+    }
 }
 
 .container {
