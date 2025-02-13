@@ -1,0 +1,100 @@
+.sections_2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    @media(min-width: $hd) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    &__link {
+        display: block;
+        font-family: var(--secondary_font);
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.33333;
+        text-decoration: none;
+        text-align: center;
+        @media(min-width: $sm) {
+            font-size: 22px;
+            line-height: 1.45454;
+        }
+        @media(max-width: $hd - 0.02px) {
+            width: calc(100% / 2 - 16px / 2);
+        }
+        @media(min-width: $fhd) {
+            font-size: 24px;
+            line-height: 1.33333;
+        }
+        @include hover {
+            .sections_2__image {
+                img {
+                    transform: scale(1.02);
+                }
+            }
+        }
+
+        &:nth-child(2),
+        &:nth-child(3) {
+            @media(min-width: $hd) {
+                display: flex;
+                flex-direction: column;
+                height: calc(100% / 2 - 16px / 2);
+                grid-column: 2;
+                grid-row: 1;
+            }
+
+            .sections_2__image {
+                @media(min-width: $hd) {
+                    height: 100%;
+                }
+            }
+        }
+
+        &:nth-child(3) {
+            @media(min-width: $hd) {
+                transform: translateY(calc(100% + 16px));
+            }
+        }
+
+        &:nth-child(4) {
+            @media(min-width: $hd) {
+                grid-column: 3;
+                grid-row: 1;
+            }
+        }
+    }
+
+    &__image {
+        display: block;
+        overflow: hidden;
+
+        &:not(:last-child) {
+            margin-bottom: 8px;
+            @media(min-width: $fhd) {
+                margin-bottom: 20px;
+            }
+        }
+
+        img {
+            display: block;
+            min-height: 180px;
+            object-fit: cover;
+            object-position: center;
+            transform: scale(1);
+            transition: transform 0.3s;
+            width: 100%;
+            @media(max-width: $sm - 0.02px) {
+                aspect-ratio: 1/1.15;
+            }
+            @media(min-width: $sm) and (max-width: $hd - 0.02px) {
+                aspect-ratio: 1;
+                object-position: center top;
+            }
+        }
+    }
+
+    &__title {
+        display: block;
+    }
+}

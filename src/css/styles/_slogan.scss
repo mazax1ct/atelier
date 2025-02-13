@@ -1,0 +1,42 @@
+.slogan {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.33333;
+    text-align: center;
+    @media(min-width: $sm) {
+        font-size: 30px;
+    }
+    @media(min-width: $fhd) {
+        font-size: 52px;
+    }
+
+    & > span {
+        display: inline-block;
+        width: 170px;
+        @media(min-width: $sm) {
+            width: 204px;
+        }
+        @media(min-width: $fhd) {
+            width: 266px;
+        }
+
+        & > span {
+            position: absolute;
+            margin: -1px 0 0 -1px;
+            padding: 0;
+            display: block;
+            width: 1px;
+            height: 1px;
+            font-size: 1px;
+            line-height: 1px;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+            border: 0;
+            outline: 0;
+        }
+
+        img {
+            display: block;
+        }
+    }
+}

@@ -65,3 +65,10 @@
         }
     }
 }
+
+h2 + .why {
+    margin-top: 24px;
+    @media(min-width: $hd) {
+        margin-top: 60px;
+    }
+}

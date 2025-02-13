@@ -65,7 +65,7 @@ html {
             @media(min-width: $sm) {
                 margin-bottom: 48px;
             }
-            @media(min-width: $fhd) {
+            @media(min-width: $hd) {
                 margin-bottom: 96px;
             }
         }
@@ -241,7 +241,7 @@ ul {
         list-style: none;
 
         li {
-            padding-left: 22px;
+            padding-left: 24px;
             position: relative;
             z-index: 1;
 
@@ -249,12 +249,12 @@ ul {
                 background-color: currentColor;
                 border-radius: 50%;
                 content: '';
-                height: 3px;
-                left: 11px;
+                height: 6px;
+                left: 12px;
                 position: absolute;
-                top: 0.9em;
+                top: 0.65em;
                 transform: translate(-50%, -50%);
-                width: 3px;
+                width: 6px;
                 z-index: 1;
             }
         }

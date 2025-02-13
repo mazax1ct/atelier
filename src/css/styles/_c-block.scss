@@ -1,0 +1,52 @@
+.c-block {
+    @media(min-width: $hd) {
+        align-items: center;
+        display: flex;
+        gap: 40px;
+        flex-direction: row-reverse;
+    }
+
+    &__text {
+        @media(max-width: $hd - 0.02px) {
+            margin-bottom: 24px;
+        }
+        @media(min-width: $hd) {
+            width: calc(42% - 40px / 2);
+        }
+
+        h1 {
+            font-size: 18px;
+            line-height: 1.33333;
+            margin-bottom: 16px;
+            @media(min-width: $sm) {
+                font-size: 22px;
+                line-height: 1.45454;
+            }
+            @media(min-width: $fhd) {
+                font-size: 24px;
+                line-height: 1.33333;
+                margin-bottom: 24px;
+            }
+        }
+    }
+
+    &__logo {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 16px;
+        width: 130px;
+        @media(min-width: $sm) {
+            margin-bottom: 24px;
+            width: 170px;
+        }
+        @media(min-width: $fhd) {
+            margin-bottom: 32px;
+        }
+    }
+
+    &__image {
+        @media(min-width: $hd) {
+            width: calc(58% - 40px / 2);
+        }
+    }
+}

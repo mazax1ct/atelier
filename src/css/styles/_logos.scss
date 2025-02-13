@@ -1,0 +1,21 @@
+.logos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px 16px;
+    justify-content: center;
+    margin-bottom: 16px;
+    @media(min-width: $sm) {
+        gap: 24px;
+        margin-bottom: 24px;
+    }
+    @media(min-width: $hd) {
+        gap: 32px 24px;
+        margin-bottom: 32px;
+    }
+
+    a {
+        img {
+            display: block;
+        }
+    }
+}
