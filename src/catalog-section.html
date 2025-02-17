@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Atelier</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/common/favicon.html
+
+    //= template/common/fonts_preload.html
+
+    //= template/common/styles.html
+</head>
+
+<body class="page page--main_page">
+    //= template/common/header.html
+
+    <main class="page__content">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a href="#">Каталог</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    Девочки
+                </li>
+            </ul>
+
+            <h1>Девочки</h1>
+
+            <div class="catalog">
+                <div class="catalog__filter-block">
+                    <p class="catalog__filter-title">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#filter_icon" />
+                        </svg>
+                        Фильтры
+
+                        <button class="js-filter-opener filter-opener" type="button"></button>
+                    </p>
+
+                    <form class="catalog__filter">
+                        <button class="js-filter-closer catalog__filter-closer" type="button">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#close_icon" />
+                            </svg>
+                        </button>
+
+                        <div class="catalog__filter-inner">
+                            <div class="catalog__filter-section">
+                                <p class="catalog__filter-section-title">
+                                    Бренд
+                                    <button class="js-filter-section-toggler catalog__filter-section-toggler" type="button">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#plus_icon" />
+                                        </svg>
+                                    </button>
+                                </p>
+
+                                <div class="catalog__section-dropdown">
+                                    <div class="catalog__list"></div>
+                                </div>
+                            </div>
+
+                            <div class="catalog__filter-section">
+                                <p class="catalog__filter-section-title">
+                                    Размер
+                                    <button class="js-filter-section-toggler catalog__filter-section-toggler" type="button">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#plus_icon" />
+                                        </svg>
+                                    </button>
+                                </p>
+
+                                <div class="catalog__section-dropdown">
+                                    <div class="catalog__list">
+                                        <label class="checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">8 лет</span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">10 лет</span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">12 лет</span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">14 лет</span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">16 лет</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="catalog__filter-section">
+                                <p class="catalog__filter-section-title">
+                                    Наличие в магазинах
+                                    <button class="js-filter-section-toggler catalog__filter-section-toggler" type="button">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#plus_icon" />
+                                        </svg>
+                                    </button>
+                                </p>
+
+                                <div class="catalog__section-dropdown">
+                                    <div class="catalog__list">
+                                        <label class="checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Atelier детства Ростов</span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Atelier детства Discount Ростов</span>
+                                        </label>
+
+                                        <label class="checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkbox__icon"></span>
+                                            <span class="checkbox__text">Atelier детства Краснодар</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="catalog__filter-section">
+                                <p class="catalog__filter-section-title">
+                                    Цена
+                                    <button class="js-filter-section-toggler catalog__filter-section-toggler" type="button">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#plus_icon" />
+                                        </svg>
+                                    </button>
+                                </p>
+
+                                <div class="catalog__section-dropdown">
+                                    слайдер цены
+                                </div>
+                            </div>
+
+                            <div class="catalog__filter-buttons">
+                                <button class="catalog__filter-apply button button--primary" type="submit">Применить</button>
+                                <button class="catalog__filter-reset" type="reset">Сбросить</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="catalog__content">
+                    <div class="catalog__top-block"></div>
+
+
+                </div>
+            </div>
+        </div>
+
+        //= template/common/float-block.html
+    </main>
+
+    //= template/common/footer.html
+
+    //= template/common/popups.html
+
+    //= template/common/scripts.html
+
+    <script src="js/catalog.js"></script>
+</body>
+
+</html>
