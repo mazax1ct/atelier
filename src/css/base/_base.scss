@@ -69,6 +69,26 @@ html {
                 margin-bottom: 96px;
             }
         }
+
+        &--grey {
+            background-color: var(--bg);
+            overflow: hidden;
+            padding-top: 24px;
+            padding-bottom: 24px;
+            @media(min-width: $sm) {
+                padding-top: 48px;
+                padding-bottom: 48px;
+            }
+            @media(min-width: $hd) {
+                padding-top: 60px;
+                padding-bottom: 60px;
+            }
+
+            & > .page__section-inner {
+                position: relative;
+                z-index: 1;
+            }
+        }
     }
 }
 
@@ -80,6 +100,19 @@ html {
     padding-right: var(--container_padding);
     @media(min-width: $hd) and (max-width: $fhd - 0.02px) {
         width: 94%;
+    }
+}
+
+.full-width {
+    margin-left: calc(0.02px - var(--container_padding));
+    margin-right: calc(0.02px - var(--container_padding));
+    @media(min-width: $hd) and (max-width: $fhd - 0.02px) {
+        margin-left: calc(0.02px - var(--container_padding) - 3.5%);
+        margin-right: calc(0.02px - var(--container_padding) - 3.5%);
+    }
+    @media(min-width: 1920px) {
+        margin-left: calc(-100vw / 2 + var(--container_max_width) / 2 - var(--container_padding));
+        margin-right: calc(-100vw / 2 + var(--container_max_width) / 2 - var(--container_padding));
     }
 }
 
