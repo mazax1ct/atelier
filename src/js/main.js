@@ -89,3 +89,15 @@ $(document).on('click', '.js-header-catalog-toggler', function () {
   }
   return false;
 });
+
+$(document).on('click', '.js-combobox-toggler', function () {
+  var combobox = $(this).closest('.combobox');
+
+  if(combobox.hasClass('is-open')) {
+    combobox.removeClass('is-open')
+  } else {
+    $('.combobox').removeClass('is-open');
+    combobox.addClass('is-open')
+  }
+  return false;
+});
