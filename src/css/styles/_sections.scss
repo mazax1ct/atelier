@@ -16,7 +16,7 @@
             font-size: 22px;
             line-height: 1.45454;
         }
-        @media(min-width: $hd) {
+        @media(min-width: $md) {
             width: calc(100% / 3 - 16px * 2 / 3);
         }
         @media(min-width: $fhd) {
@@ -24,27 +24,25 @@
             line-height: 1.33333;
         }
 
-        &:first-child {
-            @media(max-width: $hd - 0.02px) {
+        &:nth-child(3n-2) {
+            @media(max-width: $md - 0.02px) {
                 width: 100%;
             }
-
-            img {
+            /*img {
                 @media(max-width: $hd - 0.02px) {
                     aspect-ratio: 2/1;
                     object-position: center top;
                 }
-            }
+            }*/
         }
-
-        &:nth-child(2),
+        /*&:nth-child(2),
         &:nth-child(3) {
             img {
                 @media(min-width: $sm) and (max-width: $hd - 0.02px) {
                     aspect-ratio: 1;
                 }
             }
-        }
+        }*/
         @include hover {
             .sections__image {
                 img {
@@ -67,7 +65,7 @@
 
         img {
             display: block;
-            min-height: 180px;
+            //min-height: 180px;
             object-fit: cover;
             object-position: center;
             transform: scale(1);
