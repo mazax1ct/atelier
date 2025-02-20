@@ -77,6 +77,29 @@
         }
     }
 
+    &--white_black {
+        background-color: #fff;
+        border-color: transparent;
+        color: var(--black);
+
+        &:not(.disabled),
+        &:not(:disabled),
+        &:not([data-disabled]) {
+            @include hover {
+                background-color: var(--black);
+                color: #fff;
+            }
+        }
+
+        &.disabled,
+        &:disabled,
+        &[data-disabled] {
+            background-color: #fff;
+            border-color: var(--dark_grey);
+            color: var(--dark_grey);
+        }
+    }
+
     &--w_330 {
         max-width: 330px;
         width: 100%;

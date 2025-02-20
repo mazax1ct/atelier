@@ -43,6 +43,12 @@ html {
         overflow: hidden;
     }
 
+    &--main_page {
+        .page__content {
+            padding-top: var(--header_min_height);
+        }
+    }
+
     &__content {
         flex: 1 0 auto;
         padding-top: 80px;

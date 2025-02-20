@@ -22,4 +22,10 @@ $fhd: 1900px;
     --container_max_width: 1652px;
     --primary_font: 'Nunito', Arial, sans-serif;
     --secondary_font: 'Montserrat', Arial, sans-serif;
+    @media(min-width: $hd) {
+        --header_min_height: 132px;
+    }
+    @media(min-width: $fhd) {
+        --header_min_height: 170px;
+    }
 }

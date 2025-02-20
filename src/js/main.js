@@ -59,6 +59,43 @@ $(document).on('keyup', '.js-input-group__input', function () {
   }
 });
 
+//открытие мобильного меню
+$(document).on('click', '.js-mobile-menu-opener', function () {
+  $('body').addClass('is-overflow');
+  $('.mobile-menu').fadeIn();
+  return false;
+});
+
+//закрытие мобильного меню
+$(document).on('click', '.js-mobile-menu-closer', function () {
+  $('.mobile-menu').fadeOut(function () {
+    $('body').removeClass('is-overflow');
+    $('.mobile-menu__bottom').removeClass('is-overflow');
+    $('.m-menu__section').removeClass('is-overflow');
+  });
+  return false;
+});
+
+//открытие вложенного меню
+$(document).on('click', '.js-lvl-opener', function () {
+  $('.mobile-menu__bottom').addClass('is-overflow');
+  $(this).closest('.root').scrollTop(0);
+  $(this).closest('.root').addClass('is-overflow');
+  $(this).next('.m-menu__section').addClass('is-open');
+  return false;
+});
+
+$(document).on('click', '.js-lvl-closer', function () {
+  var _this = $(this);
+  _this.closest('.m-menu__section').removeClass('is-open');
+  _this.closest('.root').removeClass('is-overflow');
+  if(_this.closest('.root').hasClass('lvl_2')){
+    $('.mobile-menu__bottom').removeClass('is-overflow');
+  }
+  return false;
+});
+
+
 //тогглер меню в футере
 $(document).on('click', '.js-footer-menu-toggler', function () {
   if(!$(this).hasClass('is-active')) {
@@ -71,6 +108,7 @@ $(document).on('click', '.js-footer-menu-toggler', function () {
   return false;
 });
 
+//тогглер десктопного меню в шапке
 $(document).on('click', '.js-header-catalog-toggler', function () {
   var _this = $(this);
   if(!_this.hasClass('is-active')) {
@@ -90,6 +128,7 @@ $(document).on('click', '.js-header-catalog-toggler', function () {
   return false;
 });
 
+//тогглер комбобокса
 $(document).on('click', '.js-combobox-toggler', function () {
   var combobox = $(this).closest('.combobox');
 

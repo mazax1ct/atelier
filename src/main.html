@@ -23,7 +23,62 @@
     <main class="page__content">
 
         <div class="container">
-            <section class="page__section">баннер</section>
+            <section class="page__section">
+                <div class="full-width">
+                    <div class="main-slider">
+                        <div class="js-main-slider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <picture>
+                                        <source srcset="images/content/main-slider/img_desk.jpg, images/content/main-slider/img_desk@2x.jpg 2x" media="(min-width: 1024px)">
+                                        <img src="images/content/main-slider/img_mob.jpg" srcset="images/content/main-slider/img_mob@2x.jpg 2x" alt="">
+                                    </picture>
+                                </div>
+                                <div class="swiper-slide">
+                                    <picture>
+                                        <source srcset="images/content/main-slider/img_desk.jpg, images/content/main-slider/img_desk@2x.jpg 2x" media="(min-width: 1024px)">
+                                        <img src="images/content/main-slider/img_mob.jpg" srcset="images/content/main-slider/img_mob@2x.jpg 2x" alt="">
+                                    </picture>
+                                </div>
+                                <div class="swiper-slide">
+                                    <picture>
+                                        <source srcset="images/content/main-slider/img_desk.jpg, images/content/main-slider/img_desk@2x.jpg 2x" media="(min-width: 1024px)">
+                                        <img src="images/content/main-slider/img_mob.jpg" srcset="images/content/main-slider/img_mob@2x.jpg 2x" alt="">
+                                    </picture>
+                                </div>
+                            </div>
+
+                            <div class="main-slider__nav">
+                                <button class="js-main-slider-prev main-slider__arrow main-slider__arrow--prev" title="Назад">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#arrow_left_icon" />
+                                    </svg>
+                                </button>
+
+                                <button class="js-main-slider-next main-slider__arrow main-slider__arrow--next" title="Вперед">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#arrow_right_icon" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="main-slider__bottom">
+                            <div class="js-secondary-slider secondary-slider swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">Мальчики</div>
+                                    <div class="swiper-slide">Новинки</div>
+                                    <div class="swiper-slide">Девочки</div>
+                                </div>
+                            </div>
+
+                            <div class="main-slider__button-block">
+                                <a class="main-slider__button button button--white_black" href="#">В каталог</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <section class="page__section">
                 <div class="logos">
@@ -166,12 +221,12 @@
                         </div>
 
                         <div class="f-slider__secondary">
+                            <h2 class="set-block-title">Готовые образы</h2>
+
                             <div class="js-set-slider swiper">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="set-block">
-                                            <p class="set-block__title">Готовые образы</p>
-
                                             <div class="set">
                                                 <div class="set__list">
                                                     <div class="set-item">
@@ -249,8 +304,6 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="set-block">
-                                            <p class="set-block__title">Готовые образы</p>
-
                                             <div class="set">
                                                 <div class="set__list">
                                                     <div class="set-item">
@@ -311,8 +364,6 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="set-block">
-                                            <p class="set-block__title">Готовые образы</p>
-
                                             <div class="set">
                                                 <div class="set__list">
                                                     <div class="set-item">
@@ -356,8 +407,6 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="set-block">
-                                            <p class="set-block__title">Готовые образы</p>
-
                                             <div class="set">
                                                 <div class="set__list">
                                                     <div class="set-item">
@@ -501,6 +550,8 @@
     //= template/common/scripts.html
 
     <script src="js/swiper-bundle.min.js"></script>
+
+    <script src="js/main-slider.js"></script>
 
     <script src="js/f-slider.js"></script>
 </body>

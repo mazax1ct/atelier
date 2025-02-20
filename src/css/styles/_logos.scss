@@ -1,11 +1,13 @@
 .logos {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 2px 16px;
-    justify-content: center;
     margin-bottom: 16px;
     @media(min-width: $sm) {
+        display: flex;
+        flex-wrap: wrap;
         gap: 24px;
+        justify-content: center;
         margin-bottom: 24px;
     }
     @media(min-width: $hd) {
@@ -14,6 +16,19 @@
     }
 
     a {
+        @media(max-width: $sm - 0.02px) {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            min-height: 44px;
+        }
+
+        &:nth-child(8) {
+            & ~ a {
+                display: none;
+            }
+        }
+
         img {
             display: block;
         }

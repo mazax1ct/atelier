@@ -32,7 +32,7 @@
                     <a href="tel:+79282016262">+7 (928)-201-62-62</a>
                 </div>
     
-                <button class="header__burger header__button" type="button" title="Меню">
+                <button class="js-mobile-menu-opener header__burger header__button" type="button" title="Меню">
                     <svg aria-hidden="true">
                         <use xlink:href="images/sprite.svg#burger_icon" />
                     </svg>
@@ -149,7 +149,308 @@
             </div>
         </div>
     
-        <div class="header__catalog"></div>
+        <div class="header__catalog">
+            <div class="header__catalog-inner container">
+                <ul class="header__catalog-section">
+                    <li class="header__catalog-item header__catalog-item--title"><a class="header__catalog-link" href="#">Девочки</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Аксессуары</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Бельё</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Блузки. Рубашки</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Брюки. Легинсы</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Верхняя одежда</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Джемперы. Свитера. Кардиганы</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Джинсы</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Классические костюмы. Пиджаки</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Комбинезоны</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Купальники</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Лонгсливы</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Футболки, Топы</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Платья</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Свитшоты. Толстовки. Худи</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Спортивные костюмы. Комплекты</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Шорты</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Юбки</a></li>
+                </ul>
+    
+                <ul class="header__catalog-section">
+                    <li class="header__catalog-item header__catalog-item--title"><a class="header__catalog-link" href="#">Мальчики</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Аксессуары</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Бельё</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Брюки</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Верхняя одежда</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Джемперы. Свитера. Кардиганы</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Джинсы</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Классические костюмы. Пиджаки</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Лонгсливы</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Футболки</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Плавки</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Поло</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Рубашки</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Свитшоты. Толстовки. Худи</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Спортивные костюмы. Комплекты</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Шорты</a></li>
+                </ul>
+    
+                <ul class="header__catalog-section">
+                    <li class="header__catalog-item header__catalog-item--title"><a class="header__catalog-link" href="#">Малыши</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Девочки 0-3 года</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Мальчики 0-3 года</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Пинетки</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Пледы</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Сумки для мам</a></li>
+                </ul>
+    
+                <div class="header__catalog-section">
+                    <a class="header__catalog-image-link" href="#">
+                        <span>
+                            <img src="images/content/menu/img_1.jpg" srcset="images/content/menu/img_1@2x.jpg 2x" alt="">
+                        </span>
+                        Перейти в каталог
+                    </a>
+    
+                    <a class="header__catalog-image-link" href="#">
+                        <span>
+                            <img src="images/content/menu/img_2.jpg" srcset="images/content/menu/img_2@2x.jpg 2x" alt="">
+                        </span>
+                        Все хиты
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="mobile-menu">
+            <div class="mobile-menu__inner">
+                <div class="mobile-menu__top">
+                    <button class="js-mobile-menu-closer mobile-menu__closer" type="button" title="Закрыть меню">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#close_light_icon" />
+                        </svg>
+                    </button>
+                </div>
+    
+                <div class="mobile-menu__bottom">
+    
+                    <div class="m-menu">
+                        <div class="m-menu__section root">
+                            <button class="js-lvl-opener m-menu__item m-menu__item--type_1" type="button">
+                                <span>Девочки</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#chevron_right" />
+                                </svg>
+                            </button>
+    
+                            <div class="m-menu__section lvl_2 root m-menu__section--type_2">
+                                <button class="js-lvl-closer m-menu__item m-menu__item--type_2" type="button">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#chevron_left" />
+                                    </svg>
+                                    <span>Девочки</span>
+                                </button>
+                                <a class="m-menu__item m-menu__item--type_3" href="#">
+                                    <span>Смотреть все</span>
+                                </a>
+    
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Аксессуары</span></a>
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Бельё</span></a>
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Блузки. Рубашки</span></a>
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Брюки. Легинсы</span></a>
+    
+                                <button class="js-lvl-opener m-menu__item m-menu__item--type_1" type="button">
+                                    <span>Верхняя одежда</span>
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#chevron_right" />
+                                    </svg>
+                                </button>
+    
+                                <div class="m-menu__section m-menu__section--type_2">
+                                    <button class="js-lvl-closer m-menu__item m-menu__item--type_2" type="button">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#chevron_left" />
+                                        </svg>
+                                        <span>Верхняя одежда</span>
+                                    </button>
+                                    <a class="m-menu__item m-menu__item--type_3" href="#">
+                                        <span>Смотреть все</span>
+                                    </a>
+                                    <a class="m-menu__item m-menu__item--type_1" href="#"><span>Жилеты</span></a>
+                                    <a class="m-menu__item m-menu__item--type_1" href="#"><span>Куртки</span></a>
+                                    <a class="m-menu__item m-menu__item--type_1" href="#"><span>Пальто</span></a>
+                                    <a class="m-menu__item m-menu__item--type_1" href="#"><span>Ветровки</span></a>
+                                    <a class="m-menu__item m-menu__item--type_1" href="#"><span>Плащи</span></a>
+                                    <a class="m-menu__item m-menu__item--type_1" href="#"><span>Джинсовые куртки</span></a>
+                                    <a class="m-menu__item m-menu__item--type_1" href="#"><span>Спортивные костюмы</span></a>
+                                </div>
+    
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Джемперы. Свитера. Кардиганы</span></a>
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Джинсы</span></a>
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Классические костюмы. Пиджаки</span></a>
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Комбинезоны</span></a>
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Купальники</span></a>
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Лонгсливы</span></a>
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Футболки, Топы</span></a>
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Платья</span></a>
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Свитшоты. Толстовки. Худи</span></a>
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Спортивные костюмы. Комплекты</span></a>
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Шорты</span></a>
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Юбки</span></a>
+                            </div>
+                        </div>
+    
+                        <div class="m-menu__section root">
+                            <button class="js-lvl-opener m-menu__item m-menu__item--type_1" type="button">
+                                <span>Мальчики</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#chevron_right" />
+                                </svg>
+                            </button>
+    
+                            <div class="m-menu__section lvl_2 root m-menu__section--type_2">
+                                <button class="js-lvl-closer m-menu__item m-menu__item--type_2" type="button">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#chevron_left" />
+                                    </svg>
+                                    <span>Мальчики</span>
+                                </button>
+                                <a class="m-menu__item m-menu__item--type_3" href="#">
+                                    <span>Смотреть все</span>
+                                </a>
+    
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Аксессуары</span></a>
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Бельё</span></a>
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Блузки. Рубашки</span></a>
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Брюки. Легинсы</span></a>
+                            </div>
+                        </div>
+    
+                        <div class="m-menu__section root">
+                            <button class="js-lvl-opener m-menu__item m-menu__item--type_1" type="button">
+                                <span>Текстиль</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#chevron_right" />
+                                </svg>
+                            </button>
+    
+                            <div class="m-menu__section lvl_2 root m-menu__section--type_2">
+                                <button class="js-lvl-closer m-menu__item m-menu__item--type_2" type="button">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#chevron_left" />
+                                    </svg>
+                                    <span>Текстиль</span>
+                                </button>
+                                <a class="m-menu__item m-menu__item--type_3" href="#">
+                                    <span>Смотреть все</span>
+                                </a>
+    
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Аксессуары</span></a>
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Бельё</span></a>
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Блузки. Рубашки</span></a>
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Брюки. Легинсы</span></a>
+                            </div>
+                        </div>
+    
+                        <div class="m-menu__section">
+                            <a class="m-menu__item m-menu__item--type_1" href="#">
+                                <span>Образы</span>
+                            </a>
+                        </div>
+    
+                        <div class="m-menu__section root">
+                            <button class="js-lvl-opener m-menu__item m-menu__item--type_1" type="button">
+                                <span>Покупателям</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#chevron_right" />
+                                </svg>
+                            </button>
+    
+                            <div class="m-menu__section lvl_2 m-menu__section--type_2">
+                                <button class="js-lvl-closer m-menu__item m-menu__item--type_2" type="button">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#chevron_left" />
+                                    </svg>
+                                    <span>Покупателям</span>
+                                </button>
+                                <a class="m-menu__item m-menu__item--type_3" href="#">
+                                    <span>Смотреть все</span>
+                                </a>
+    
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Оплата</span></a>
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Доставка</span></a>
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Возврат</span></a>
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Подарочные сертификаты</span></a>
+                            </div>
+                        </div>
+    
+                        <div class="m-menu__section root">
+                            <button class="js-lvl-opener m-menu__item m-menu__item--type_1" type="button">
+                                <span>О бутике</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#chevron_right" />
+                                </svg>
+                            </button>
+    
+                            <div class="m-menu__section lvl_2 m-menu__section--type_2">
+                                <button class="js-lvl-closer m-menu__item m-menu__item--type_2" type="button">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#chevron_left" />
+                                    </svg>
+                                    <span>О бутике</span>
+                                </button>
+                                <a class="m-menu__item m-menu__item--type_3" href="#">
+                                    <span>Смотреть все</span>
+                                </a>
+    
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>О нас</span></a>
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Реквизиты</span></a>
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Партнёры</span></a>
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Мероприятия</span></a>
+                            </div>
+                        </div>
+    
+                        <div class="m-menu__section">
+                            <a class="m-menu__item m-menu__item--type_1" href="#">
+                                <span>Бренды</span>
+                            </a>
+                        </div>
+    
+                        <div class="m-menu__section">
+                            <a class="m-menu__item m-menu__item--type_1" href="#">
+                                <span>Контакты</span>
+                            </a>
+                        </div>
+    
+                        <div class="m-menu__section m-menu__section--type_1">
+                            <a class="m-menu__item m-menu__item--type_1" href="#">
+                                <span>Войти</span>
+                            </a>
+                        </div>
+                    </div>
+    
+                    <div class="mobile-menu__contacts">
+                        <a class="contact-phone" href="tel:+79282016262">+7 (928)-201-62-62</a>
+    
+                        <div class="social-links">
+                            <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer" title="Наш Whatsapp">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#wa_icon" />
+                                </svg>
+                            </a>
+    
+                            <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer" title="Наш Telegram">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#tg_icon" />
+                                </svg>
+                            </a>
+    
+                            <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer" title="Мы Вконтакте">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#vk_icon" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
 
     <main class="page__content">
@@ -267,7 +568,7 @@
             </div>
         </div>
 
-        <div class="float-block compensate-for-scrollbar">
+        <div class="float-block float-block--type_3 compensate-for-scrollbar">
             <div class="container"><span>Скидка 5% на первый заказ! Используйте промокод «welcome», чтобы получить её.</span></div>
         </div>
     </main>
@@ -310,7 +611,7 @@
                     </div>
     
                     <div class="footer-form__phone-block">
-                        <a class="footer-phone" href="tel:+7 (928)-201-62-62">+7 (928)-201-62-62</a>
+                        <a class="contact-phone" href="tel:+79282016262">+7 (928)-201-62-62</a>
     
                         <div class="social-links">
                             <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer" title="Наш Whatsapp">
@@ -468,7 +769,7 @@
                     </div>
     
                     <div class="footer__menu-item footer__menu-contacts">
-                        <a class="footer-phone" href="tel:+7 (928)-201-62-62">+7 (928)-201-62-62</a>
+                        <a class="contact-phone" href="tel:+7 (928)-201-62-62">+7 (928)-201-62-62</a>
     
                         <div class="social-links">
                             <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer" title="Наш Whatsapp">

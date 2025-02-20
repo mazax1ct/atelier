@@ -1,5 +1,5 @@
 .float-block {
-    background-color: #F5FAED;
+    background-color: #fff;
     bottom: 0;
     font-size: 11px;
     font-weight: 700;
@@ -26,6 +26,18 @@
         margin-top: 96px;
         margin-bottom: 40px;
         position: sticky;
+    }
+
+    &--type_1 {
+        background-color: #F5FAED;
+    }
+
+    &--type_2 {
+        background-color: #F0F0F0;
+    }
+
+    &--type_3 {
+        background-color: #FFF2E2;
     }
 
     .container {
