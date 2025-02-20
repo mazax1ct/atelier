@@ -17,7 +17,8 @@ $(document).ready(function() {
     effect: 'fade',
     fadeEffect: {
       crossFade: true
-    }
+    },
+    allowTouchMove: false
   });
 
   fSlider.on('slideChange', function () {

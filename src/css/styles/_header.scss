@@ -245,6 +245,7 @@
         position: relative;
 
         &:not(.--jsfied) {
+            @include scrollbar;
             overflow-x: auto;
             -webkit-overflow-scrolling: touch;
         }
@@ -260,8 +261,8 @@
             > li {
                 flex-grow: 1;
 
-                > button,
-                > a {
+                > a,
+                > button {
                     align-items: center;
                     display: flex;
                     gap: 8px;

@@ -10,7 +10,8 @@ $(document).ready(function() {
   var secondarySlider = new Swiper(".js-secondary-slider", {
     slidesPerView: 3,
     initialSlide: 1,
-    centeredSlides: true
+    centeredSlides: true,
+    allowTouchMove: false
   });
 
   mainSlider.on('slideChange', function () {

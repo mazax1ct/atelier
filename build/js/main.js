@@ -71,7 +71,7 @@ $(document).on('click', '.js-mobile-menu-closer', function () {
   $('.mobile-menu').fadeOut(function () {
     $('body').removeClass('is-overflow');
     $('.mobile-menu__bottom').removeClass('is-overflow');
-    $('.m-menu__section').removeClass('is-overflow');
+    $('.m-menu__section').removeClass('is-overflow').removeClass('is-open');
   });
   return false;
 });
