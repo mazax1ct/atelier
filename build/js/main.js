@@ -6,19 +6,19 @@ var header = $('.header'),
 var resize_scroll = function(e) {
   var scrolled = $(window).scrollTop();
 
-  if (scrolled > $('.header').height() * 0.5) {
+  if (scrolled > $('.header').height() * 2) {
 		header.addClass('is-scrolled');
-    toTop.addClass('is-active');
-	} else {
-		header.removeClass('is-scrolled');
-    toTop.removeClass('is-active');
 	}
 
-  /*if ( scrolled > $('.header').height() && scrolled > scrollPrev ) {
+  if (scrolled == 0) {
+		header.removeClass('is-scrolled');
+	}
+
+  if ( scrolled > $('.header').height() && scrolled > scrollPrev ) {
 		header.addClass('is-out');
 	} else {
 		header.removeClass('is-out');
-	}*/
+	}
 
 	scrollPrev = scrolled;
 };
@@ -95,7 +95,6 @@ $(document).on('click', '.js-lvl-closer', function () {
   return false;
 });
 
-
 //тогглер меню в футере
 $(document).on('click', '.js-footer-menu-toggler', function () {
   if(!$(this).hasClass('is-active')) {
@@ -138,5 +137,14 @@ $(document).on('click', '.js-combobox-toggler', function () {
     $('.combobox').removeClass('is-open');
     combobox.addClass('is-open')
   }
+  return false;
+});
+
+//выбор варианта в комбобоксе
+$(document).on('click', '.combobox__link', function () {
+  $(this).closest('.combobox').find('.combobox__link').removeClass('is-active');
+  $(this).addClass('is-active');
+  $(this).closest('.combobox').find('.combobox__value').text($(this).text()).addClass('is-active');
+  $(this).closest('.combobox').removeClass('is-open');
   return false;
 });

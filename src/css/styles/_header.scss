@@ -1,21 +1,21 @@
 .header {
     background-color: #fff;
     left: 0;
-    position: fixed;
+    position: absolute;
     right: 0;
     top: 0;
     z-index: 10;
 
     &.is-out {
-        //transform: translateY(-100%);
+        transform: translateY(-100%);
     }
 
     &.is-scrolled {
         @media(min-width: $hd) {
             box-shadow: 0 0 3px 0 rgba(0,0,0,0.1);
         }
-        //position: fixed;
-        //transition: transform 0.2s;
+        position: fixed;
+        transition: transform 0.2s;
     }
 
     &.is-open {

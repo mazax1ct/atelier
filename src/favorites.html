@@ -27,283 +27,66 @@
                     <a href="#">Главная</a>
                 </li>
                 <li class="breadcrumbs__item">
-                    <a href="#">Каталог</a>
-                </li>
-                <li class="breadcrumbs__item">
-                    Девочки
+                    Избранное
                 </li>
             </ul>
 
-            <div class="catalog-brand">
-                <div class="catalog-brand__logo">
-                    <img src="images/content/catalog-section/brand.jpg" srcset="images/content/catalog-section/brand@2x.jpg 2x" alt="">
-                </div>
-
-                <div class="catalog-brand__info">
-                    <h1>Stella McCartney</h1>
-                    <p>Stella McCartney – модная торговая марка из Великобритании. Основана известным модельером Стеллой МакКартни. Компания специализируется на производстве одежды, аксессуаров, парфюмерии. Стелла создает вещи, созданные специально
-                        для женщин, опираясь на их запросы: удобные, функциональные, с выраженной индивидуальностью, но при этот совершенно не вычурные.</p>
-                </div>
-            </div>
-
             <div class="catalog">
-                <div class="catalog__inner">
-                    <div class="catalog__filter-block">
-                        <div class="catalog__filter-block-inner">
-                            <p class="catalog__filter-title">
+                <div class="catalog__top-block">
+                    <h1>Избранное</h1>
+
+                    <div class="catalog__sorting">
+                        <div class="combobox">
+                            <button class="js-combobox-toggler combobox__value-block" type="button">
+                                <div class="combobox__title">Категории</div>
+                                <div class="combobox__value">Все категории</div>
                                 <svg aria-hidden="true">
-                                    <use xlink:href="images/sprite.svg#filter_icon" />
+                                    <use xlink:href="images/sprite.svg#chevron_down_light" />
                                 </svg>
-                                Фильтры
+                            </button>
 
-                                <button class="js-filter-opener filter-opener" type="button"></button>
-                            </p>
-
-                            <form class="filter">
-                                <button class="js-filter-closer filter__closer" type="button">
-                                    <svg aria-hidden="true">
-                                        <use xlink:href="images/sprite.svg#close_icon" />
-                                    </svg>
-                                </button>
-
-                                <div class="filter__inner">
-                                    <div class="filter__section">
-                                        <p class="filter__section-title">
-                                            Бренд
-                                            <button class="js-filter-section-toggler filter__section-toggler" type="button">
-                                                <svg aria-hidden="true">
-                                                    <use xlink:href="images/sprite.svg#plus_icon" />
-                                                </svg>
-                                            </button>
-                                        </p>
-
-                                        <div class="filter__section-dropdown">
-                                            <div class="filter__section-list">
-                                                <label class="checkbox">
-                                                    <input type="checkbox">
-                                                    <span class="checkbox__icon"></span>
-                                                    <span class="checkbox__text">ATELIER</span>
-                                                </label>
-                                                <label class="checkbox">
-                                                    <input type="checkbox">
-                                                    <span class="checkbox__icon"></span>
-                                                    <span class="checkbox__text">ADD</span>
-                                                </label>
-                                                <label class="checkbox">
-                                                    <input type="checkbox">
-                                                    <span class="checkbox__icon"></span>
-                                                    <span class="checkbox__text">AFTER LABEL</span>
-                                                </label>
-                                                <label class="checkbox">
-                                                    <input type="checkbox">
-                                                    <span class="checkbox__icon"></span>
-                                                    <span class="checkbox__text">AHURA</span>
-                                                </label>
-                                                <label class="checkbox">
-                                                    <input type="checkbox">
-                                                    <span class="checkbox__icon"></span>
-                                                    <span class="checkbox__text">AI RIDERS ON THE STORM</span>
-                                                </label>
-
-                                                <div class="filter__section-cut">
-                                                    <label class="checkbox">
-                                                        <input type="checkbox">
-                                                        <span class="checkbox__icon"></span>
-                                                        <span class="checkbox__text">ALETTA</span>
-                                                    </label>
-                                                    <label class="checkbox">
-                                                        <input type="checkbox">
-                                                        <span class="checkbox__icon"></span>
-                                                        <span class="checkbox__text">ANDREA MONTELPARE</span>
-                                                    </label>
-                                                    <label class="checkbox">
-                                                        <input type="checkbox">
-                                                        <span class="checkbox__icon"></span>
-                                                        <span class="checkbox__text">ANTONY MORATO</span>
-                                                    </label>
-                                                    <label class="checkbox">
-                                                        <input type="checkbox">
-                                                        <span class="checkbox__icon"></span>
-                                                        <span class="checkbox__text">Antonio Juan</span>
-                                                    </label>
-                                                </div>
-
-                                                <button class="js-filter-section-cut filter__section-cut-toggler" type="button" data-text="Скрыть">Показать все</button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="filter__section">
-                                        <p class="filter__section-title">
-                                            Размер
-                                            <button class="js-filter-section-toggler filter__section-toggler" type="button">
-                                                <svg aria-hidden="true">
-                                                    <use xlink:href="images/sprite.svg#plus_icon" />
-                                                </svg>
-                                            </button>
-                                        </p>
-
-                                        <div class="filter__section-dropdown">
-                                            <div class="filter__section-list">
-                                                <label class="checkbox">
-                                                    <input type="checkbox">
-                                                    <span class="checkbox__icon"></span>
-                                                    <span class="checkbox__text">8 лет</span>
-                                                </label>
-
-                                                <label class="checkbox">
-                                                    <input type="checkbox">
-                                                    <span class="checkbox__icon"></span>
-                                                    <span class="checkbox__text">10 лет</span>
-                                                </label>
-
-                                                <label class="checkbox">
-                                                    <input type="checkbox">
-                                                    <span class="checkbox__icon"></span>
-                                                    <span class="checkbox__text">12 лет</span>
-                                                </label>
-
-                                                <label class="checkbox">
-                                                    <input type="checkbox">
-                                                    <span class="checkbox__icon"></span>
-                                                    <span class="checkbox__text">14 лет</span>
-                                                </label>
-
-                                                <label class="checkbox">
-                                                    <input type="checkbox">
-                                                    <span class="checkbox__icon"></span>
-                                                    <span class="checkbox__text">16 лет</span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="filter__section">
-                                        <p class="filter__section-title">
-                                            Наличие в магазинах
-                                            <button class="js-filter-section-toggler filter__section-toggler" type="button">
-                                                <svg aria-hidden="true">
-                                                    <use xlink:href="images/sprite.svg#plus_icon" />
-                                                </svg>
-                                            </button>
-                                        </p>
-
-                                        <div class="filter__section-dropdown">
-                                            <div class="filter__section-list">
-                                                <label class="checkbox">
-                                                    <input type="checkbox">
-                                                    <span class="checkbox__icon"></span>
-                                                    <span class="checkbox__text">Atelier детства Ростов</span>
-                                                </label>
-
-                                                <label class="checkbox">
-                                                    <input type="checkbox">
-                                                    <span class="checkbox__icon"></span>
-                                                    <span class="checkbox__text">Atelier детства Discount Ростов</span>
-                                                </label>
-
-                                                <label class="checkbox">
-                                                    <input type="checkbox">
-                                                    <span class="checkbox__icon"></span>
-                                                    <span class="checkbox__text">Atelier детства Краснодар</span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="filter__section">
-                                        <p class="filter__section-title">
-                                            Цена
-                                            <button class="js-filter-section-toggler filter__section-toggler" type="button">
-                                                <svg aria-hidden="true">
-                                                    <use xlink:href="images/sprite.svg#plus_icon" />
-                                                </svg>
-                                            </button>
-                                        </p>
-
-                                        <div class="filter__section-dropdown">
-                                            <div class="price-inputs">
-                                                <div class="price-inputs__item">
-                                                    <span class="price-inputs__item-title">от</span>
-
-                                                    <div class="input-group">
-                                                        <input id="min" class="input-group__input" type="text" placeholder="25000" value="25000">
-                                                    </div>
-                                                </div>
-
-                                                <div class="price-inputs__item">
-                                                    <span class="price-inputs__item-title">до</span>
-
-                                                    <div class="input-group">
-                                                        <input id="max" class="input-group__input" type="text" placeholder="75000" value="75000">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <input class="js-price-slider" type="text" name="price_range" value="" />
-                                        </div>
-                                    </div>
-
-                                    <div class="filter__buttons">
-                                        <button class="filter__apply button button--primary" type="submit">Применить</button>
-                                        <button class="filter__reset" type="reset">Сбросить</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-
-                    <div class="catalog__content">
-                        <div class="catalog__top-block">
-                            <div class="catalog__sorting">
-                                <div class="combobox">
-                                    <button class="js-combobox-toggler combobox__value-block" type="button">
-                                        <div class="combobox__title">Категории</div>
-                                        <div class="combobox__value">Все категории</div>
-                                        <svg aria-hidden="true">
-                                            <use xlink:href="images/sprite.svg#chevron_down_light" />
-                                        </svg>
-                                    </button>
-
-                                    <div class="combobox__dropdown">
-                                        <div class="combobox__list">
-                                            <a class="combobox__link is-active" href="#">Все категории</a>
-                                            <a class="combobox__link" href="#">Аксессуары</a>
-                                            <a class="combobox__link" href="#">Бельё</a>
-                                            <a class="combobox__link" href="#">Блузки. Рубашки</a>
-                                            <a class="combobox__link" href="#">Брюки. Легинсы</a>
-                                            <a class="combobox__link" href="#">Аксессуары</a>
-                                            <a class="combobox__link" href="#">Бельё</a>
-                                            <a class="combobox__link" href="#">Блузки. Рубашки</a>
-                                            <a class="combobox__link" href="#">Брюки. Легинсы</a>
-                                            <a class="combobox__link" href="#">Аксессуары</a>
-                                            <a class="combobox__link" href="#">Бельё</a>
-                                            <a class="combobox__link" href="#">Блузки. Рубашки</a>
-                                            <a class="combobox__link" href="#">Брюки. Легинсы</a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="combobox">
-                                    <button class="js-combobox-toggler combobox__value-block" type="button">
-                                        <div class="combobox__title">Сортировать</div>
-                                        <div class="combobox__value">Без сортировки</div>
-                                        <svg aria-hidden="true">
-                                            <use xlink:href="images/sprite.svg#chevron_down_light" />
-                                        </svg>
-                                    </button>
-
-                                    <div class="combobox__dropdown">
-                                        <div class="combobox__list">
-                                            <a class="combobox__link is-active" href="#">Без сортировки</a>
-                                            <a class="combobox__link" href="#">По убыванию цены</a>
-                                            <a class="combobox__link" href="#">По возрастанию цены</a>
-                                            <a class="combobox__link" href="#">По популярности</a>
-                                        </div>
-                                    </div>
+                            <div class="combobox__dropdown">
+                                <div class="combobox__list">
+                                    <a class="combobox__link is-active" href="#">Все категории</a>
+                                    <a class="combobox__link" href="#">Аксессуары</a>
+                                    <a class="combobox__link" href="#">Бельё</a>
+                                    <a class="combobox__link" href="#">Блузки. Рубашки</a>
+                                    <a class="combobox__link" href="#">Брюки. Легинсы</a>
+                                    <a class="combobox__link" href="#">Аксессуары</a>
+                                    <a class="combobox__link" href="#">Бельё</a>
+                                    <a class="combobox__link" href="#">Блузки. Рубашки</a>
+                                    <a class="combobox__link" href="#">Брюки. Легинсы</a>
+                                    <a class="combobox__link" href="#">Аксессуары</a>
+                                    <a class="combobox__link" href="#">Бельё</a>
+                                    <a class="combobox__link" href="#">Блузки. Рубашки</a>
+                                    <a class="combobox__link" href="#">Брюки. Легинсы</a>
                                 </div>
                             </div>
                         </div>
 
+                        <div class="combobox">
+                            <button class="js-combobox-toggler combobox__value-block" type="button">
+                                <div class="combobox__title">Сортировать</div>
+                                <div class="combobox__value">Без сортировки</div>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#chevron_down_light" />
+                                </svg>
+                            </button>
+
+                            <div class="combobox__dropdown">
+                                <div class="combobox__list">
+                                    <a class="combobox__link is-active" href="#">Без сортировки</a>
+                                    <a class="combobox__link" href="#">По убыванию цены</a>
+                                    <a class="combobox__link" href="#">По возрастанию цены</a>
+                                    <a class="combobox__link" href="#">По популярности</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalog__inner">
+                    <div class="catalog__content">
                         <div class="catalog__list catalog__list--grid">
                             <div class="card">
                                 <div class="card__image-block">
@@ -366,9 +149,9 @@
                                         <img src="images/content/catalog-section/img_2.jpg" srcset="images/content/catalog-section/img_2@2x.jpg 2x" alt="">
                                     </a>
 
-                                    <button class="card__favorite" type="button" title="Добавить в избранное">
+                                    <button class="card__favorite is-active" type="button" title="Убрать из избранного">
                                         <svg aria-hidden="true">
-                                            <use xlink:href="images/sprite.svg#fav_icon" />
+                                            <use xlink:href="images/sprite.svg#fav_filled_icon" />
                                         </svg>
                                     </button>
 
@@ -420,9 +203,9 @@
                                         <img src="images/content/catalog-section/img_3.jpg" srcset="images/content/catalog-section/img_3@2x.jpg 2x" alt="">
                                     </a>
 
-                                    <button class="card__favorite" type="button" title="Добавить в избранное">
+                                    <button class="card__favorite is-active" type="button" title="Убрать из избранного">
                                         <svg aria-hidden="true">
-                                            <use xlink:href="images/sprite.svg#fav_icon" />
+                                            <use xlink:href="images/sprite.svg#fav_filled_icon" />
                                         </svg>
                                     </button>
                                 </div>
@@ -470,9 +253,9 @@
                                         <img src="images/content/catalog-section/img_1.jpg" srcset="images/content/catalog-section/img_1@2x.jpg 2x" alt="">
                                     </a>
 
-                                    <button class="card__favorite" type="button" title="Добавить в избранное">
+                                    <button class="card__favorite is-active" type="button" title="Убрать из избранного">
                                         <svg aria-hidden="true">
-                                            <use xlink:href="images/sprite.svg#fav_icon" />
+                                            <use xlink:href="images/sprite.svg#fav_filled_icon" />
                                         </svg>
                                     </button>
 
@@ -525,9 +308,9 @@
                                         <img src="images/content/catalog-section/img_2.jpg" srcset="images/content/catalog-section/img_2@2x.jpg 2x" alt="">
                                     </a>
 
-                                    <button class="card__favorite" type="button" title="Добавить в избранное">
+                                    <button class="card__favorite is-active" type="button" title="Убрать из избранного">
                                         <svg aria-hidden="true">
-                                            <use xlink:href="images/sprite.svg#fav_icon" />
+                                            <use xlink:href="images/sprite.svg#fav_filled_icon" />
                                         </svg>
                                     </button>
 
@@ -579,9 +362,9 @@
                                         <img src="images/content/catalog-section/img_3.jpg" srcset="images/content/catalog-section/img_3@2x.jpg 2x" alt="">
                                     </a>
 
-                                    <button class="card__favorite" type="button" title="Добавить в избранное">
+                                    <button class="card__favorite is-active" type="button" title="Убрать из избранного">
                                         <svg aria-hidden="true">
-                                            <use xlink:href="images/sprite.svg#fav_icon" />
+                                            <use xlink:href="images/sprite.svg#fav_filled_icon" />
                                         </svg>
                                     </button>
                                 </div>
@@ -629,9 +412,9 @@
                                         <img src="images/content/catalog-section/img_1.jpg" srcset="images/content/catalog-section/img_1@2x.jpg 2x" alt="">
                                     </a>
 
-                                    <button class="card__favorite" type="button" title="Добавить в избранное">
+                                    <button class="card__favorite is-active" type="button" title="Убрать из избранного">
                                         <svg aria-hidden="true">
-                                            <use xlink:href="images/sprite.svg#fav_icon" />
+                                            <use xlink:href="images/sprite.svg#fav_filled_icon" />
                                         </svg>
                                     </button>
 
@@ -684,9 +467,9 @@
                                         <img src="images/content/catalog-section/img_2.jpg" srcset="images/content/catalog-section/img_2@2x.jpg 2x" alt="">
                                     </a>
 
-                                    <button class="card__favorite" type="button" title="Добавить в избранное">
+                                    <button class="card__favorite is-active" type="button" title="Убрать из избранного">
                                         <svg aria-hidden="true">
-                                            <use xlink:href="images/sprite.svg#fav_icon" />
+                                            <use xlink:href="images/sprite.svg#fav_filled_icon" />
                                         </svg>
                                     </button>
 
@@ -738,9 +521,9 @@
                                         <img src="images/content/catalog-section/img_3.jpg" srcset="images/content/catalog-section/img_3@2x.jpg 2x" alt="">
                                     </a>
 
-                                    <button class="card__favorite" type="button" title="Добавить в избранное">
+                                    <button class="card__favorite is-active" type="button" title="Убрать из избранного">
                                         <svg aria-hidden="true">
-                                            <use xlink:href="images/sprite.svg#fav_icon" />
+                                            <use xlink:href="images/sprite.svg#fav_filled_icon" />
                                         </svg>
                                     </button>
                                 </div>
@@ -788,9 +571,9 @@
                                         <img src="images/content/catalog-section/img_1.jpg" srcset="images/content/catalog-section/img_1@2x.jpg 2x" alt="">
                                     </a>
 
-                                    <button class="card__favorite" type="button" title="Добавить в избранное">
+                                    <button class="card__favorite is-active" type="button" title="Убрать из избранного">
                                         <svg aria-hidden="true">
-                                            <use xlink:href="images/sprite.svg#fav_icon" />
+                                            <use xlink:href="images/sprite.svg#fav_filled_icon" />
                                         </svg>
                                     </button>
 
@@ -843,9 +626,9 @@
                                         <img src="images/content/catalog-section/img_2.jpg" srcset="images/content/catalog-section/img_2@2x.jpg 2x" alt="">
                                     </a>
 
-                                    <button class="card__favorite" type="button" title="Добавить в избранное">
+                                    <button class="card__favorite is-active" type="button" title="Убрать из избранного">
                                         <svg aria-hidden="true">
-                                            <use xlink:href="images/sprite.svg#fav_icon" />
+                                            <use xlink:href="images/sprite.svg#fav_filled_icon" />
                                         </svg>
                                     </button>
 
@@ -897,9 +680,9 @@
                                         <img src="images/content/catalog-section/img_3.jpg" srcset="images/content/catalog-section/img_3@2x.jpg 2x" alt="">
                                     </a>
 
-                                    <button class="card__favorite" type="button" title="Добавить в избранное">
+                                    <button class="card__favorite is-active" type="button" title="Убрать из избранного">
                                         <svg aria-hidden="true">
-                                            <use xlink:href="images/sprite.svg#fav_icon" />
+                                            <use xlink:href="images/sprite.svg#fav_filled_icon" />
                                         </svg>
                                     </button>
                                 </div>

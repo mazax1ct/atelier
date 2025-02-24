@@ -2,6 +2,40 @@
     position: relative;
     z-index: 1;
 
+    &--small {
+        .combobox__value-block {
+            color: var(--dark_grey);
+            height: 44px;
+            padding-right: 44px;
+            padding-left: 10px;
+
+            svg {
+                right: 10px;
+            }
+        }
+
+        .combobox__value {
+            color: var(--dark_grey);
+            @media(min-width: $fhd) {
+                font-size: 16px;
+                line-height: 1.32;
+            }
+
+            &.is-active {
+                color: var(--black);
+            }
+        }
+
+        .combobox__dropdown {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .combobox__list {
+            font-size: 15px;
+        }
+    }
+
     &.is-open {
         z-index: 2;
 
@@ -57,6 +91,7 @@
     }
 
     &__value {
+        color: var(--black);
         font-size: 14px;
         line-height: 1.28571;
         @media(min-width: $fhd) {
