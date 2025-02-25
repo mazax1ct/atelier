@@ -6,9 +6,11 @@
     gap: 12px;
     line-height: 1.33333;
     margin-bottom: 12px;
+    @media(min-width: $hd) {
+        gap: 20px;
+    }
     @media(min-width: $fhd) {
         font-size: 18px;
-        gap: 20px;
         margin-bottom: 24px;
     }
 

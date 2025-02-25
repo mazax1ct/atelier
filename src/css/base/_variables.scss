@@ -18,14 +18,14 @@ $fhd: 1900px;
     --red_rose: #DD3152;
     --blue: #368FFF;
     --container_padding: 16px;
-    --header_min_height: 66px;
+    --header_min_height: 65px;
     --container_max_width: 1652px;
     --primary_font: 'Nunito', Arial, sans-serif;
     --secondary_font: 'Montserrat', Arial, sans-serif;
     @media(min-width: $hd) {
-        --header_min_height: 132px;
+        --header_min_height: 135px;
     }
     @media(min-width: $fhd) {
-        --header_min_height: 170px;
+        --header_min_height: 165px;
     }
 }

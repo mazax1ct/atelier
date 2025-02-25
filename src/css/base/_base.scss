@@ -51,17 +51,13 @@ html {
 
     &__content {
         flex: 1 0 auto;
-        padding-top: 80px;
+        padding-top: calc(var(--header_min_height) + 10px);
         padding-bottom: 40px;
         @media(min-width: $sm) {
             padding-bottom: 48px;
         }
         @media(min-width: $hd) {
             padding-bottom: 0;
-            padding-top: 132px;
-        }
-        @media(min-width: $fhd) {
-            padding-top: 220px;
         }
     }
 
