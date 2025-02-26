@@ -148,3 +148,10 @@ $(document).on('click', '.combobox__link', function () {
   $(this).closest('.combobox').removeClass('is-open');
   return false;
 });
+
+//тогглер раздела информации
+$(document).on('click', '.detail__accordion-toggler', function () {
+  $(this).toggleClass('is-active');
+  $(this).closest('.detail__accordion').find('.detail__accordion-dropdown').slideToggle();
+  return false;
+});
