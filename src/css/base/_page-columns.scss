@@ -45,10 +45,16 @@
     }
     @media(min-width: $hd) {
         position: sticky;
-        top: 165px;
+        top: 20px;
     }
-    @media(min-width: $fhd) {
-        top: 200px;
+
+    &.is-scrolled {
+        @media(min-width: $hd) {
+            top: 165px;
+        }
+        @media(min-width: $fhd) {
+            top: 200px;
+        }
     }
 
     li {

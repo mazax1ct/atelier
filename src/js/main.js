@@ -20,6 +20,14 @@ var resize_scroll = function(e) {
 		header.removeClass('is-out');
 	}
 
+  if (scrolled > scrollPrev) {
+    $('.detail__info-inner').removeClass('is-scrolled');
+    $('.left-menu').removeClass('is-scrolled');
+	} else {
+    $('.detail__info-inner').addClass('is-scrolled');
+    $('.left-menu').addClass('is-scrolled');
+	}
+
 	scrollPrev = scrolled;
 };
 
@@ -149,9 +157,24 @@ $(document).on('click', '.combobox__link', function () {
   return false;
 });
 
-//тогглер раздела информации
-$(document).on('click', '.detail__accordion-toggler', function () {
-  $(this).toggleClass('is-active');
-  $(this).closest('.detail__accordion').find('.detail__accordion-dropdown').slideToggle();
+//информационный попап
+$(document).on('click', '.js-info-popup-opener', function () {
+  var _this = $(this);
+  $('html').addClass('is-overflow');
+  $('body').addClass('is-overflow');
+  $('#' + _this.attr('data-popup')).fadeIn(function () {
+    $('#' + _this.attr('data-popup')).find('.info-popup__popup').addClass('is-open');
+  });
+
+  return false;
+});
+
+$(document).on('click', '.js-info-popup-closer', function () {
+  $(this).closest('.info-popup').find('.info-popup__popup').removeClass('is-open');
+  $(this).closest('.info-popup').fadeOut(function () {
+    $('html').removeClass('is-overflow');
+    $('body').removeClass('is-overflow');
+  });
+
   return false;
 });

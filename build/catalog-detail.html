@@ -21,6 +21,7 @@
 
     <link rel="stylesheet" href="css_plugins/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css_plugins/ion.rangeSlider.css" />
+    <link rel="stylesheet" href="css_plugins/jquery.fancybox.css" />
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -468,177 +469,678 @@
             </ul>
 
             <div class="detail">
-                <div class="detail__images"></div>
+                <div class="detail__images">
+                    <div class="detail__main-image">
+                        <img class="js-main-image" src="images/content/detail/thumb_desk_1.jpg" srcset="images/content/detail/thumb_desk_1@2x.jpg 2x" alt="">
+                    </div>
+
+                    <div class="detail__thumbs">
+                        <div class="detail__thumb is-active">
+                            <picture>
+                                <source srcset="images/content/detail/thumb_desk_1.jpg, images/content/detail/thumb_desk_1@2x.jpg 2x" media="(min-width: 1024px)">
+                                <img src="images/content/detail/thumb_1.jpg" srcset="images/content/detail/thumb_1@2x.jpg 2x" alt="">
+                            </picture>
+
+                            <div class="js-detail-thumb-mobile detail__thumb-mobile" data-src="images/content/detail/thumb_desk_1.jpg" data-retina="images/content/detail/thumb_desk_1@2x.jpg 2x"></div>
+
+                            <a class="detail__thumb-desktop" href="images/content/detail/thumb_desk_1@2x.jpg" data-fancybox="images"></a>
+                        </div>
+
+                        <div class="detail__thumb">
+                            <picture>
+                                <source srcset="images/content/detail/thumb_desk_2.jpg, images/content/detail/thumb_desk_2@2x.jpg 2x" media="(min-width: 1024px)">
+                                <img src="images/content/detail/thumb_2.jpg" srcset="images/content/detail/thumb_2@2x.jpg 2x" alt="">
+                            </picture>
+
+                            <div class="js-detail-thumb-mobile detail__thumb-mobile" data-src="images/content/detail/thumb_desk_2.jpg" data-retina="images/content/detail/thumb_desk_2@2x.jpg 2x"></div>
+
+                            <a class="detail__thumb-desktop" href="images/content/detail/thumb_desk_2@2x.jpg" data-fancybox="images"></a>
+                        </div>
+
+                        <div class="detail__thumb">
+                            <picture>
+                                <source srcset="images/content/detail/thumb_desk_3.jpg, images/content/detail/thumb_desk_3@2x.jpg 2x" media="(min-width: 1024px)">
+                                <img src="images/content/detail/thumb_3.jpg" srcset="images/content/detail/thumb_3@2x.jpg 2x" alt="">
+                            </picture>
+
+                            <div class="js-detail-thumb-mobile detail__thumb-mobile" data-src="images/content/detail/thumb_desk_3.jpg" data-retina="images/content/detail/thumb_desk_3@2x.jpg 2x"></div>
+
+                            <a class="detail__thumb-desktop" href="images/content/detail/thumb_desk_3@2x.jpg" data-fancybox="images"></a>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="detail__info">
-                    <p class="detail__brand"><a href="#">BILLIEBLUSH</a></p>
+                    <div class="detail__info-inner">
+                        <p class="detail__brand"><a href="#">BILLIEBLUSH</a></p>
 
-                    <p class="detail__art">Артикул: U20403</p>
+                        <p class="detail__art">Артикул: U20403</p>
 
-                    <h1 class="detail__title">Платье в полоску с принтом</h1>
+                        <h1 class="detail__title">Платье в полоску с принтом</h1>
 
-                    <p class="detail__price">9 600 ₽</p>
+                        <p class="detail__price">9 600 ₽</p>
 
-                    <div class="detail__sizes">
-                        <label class="detail__size">
-                            <input type="radio" name="size" value="1">
-                            <span class="detail__size-inner">8 лет</span>
-                        </label>
+                        <div class="detail__sizes">
+                            <label class="detail__size">
+                                <input type="radio" name="size" value="1">
+                                <span class="detail__size-inner">8 лет</span>
+                            </label>
 
-                        <label class="detail__size">
-                            <input type="radio" name="size" value="2">
-                            <span class="detail__size-inner">10 лет</span>
-                        </label>
+                            <label class="detail__size">
+                                <input type="radio" name="size" value="2">
+                                <span class="detail__size-inner">10 лет</span>
+                            </label>
 
-                        <label class="detail__size">
-                            <input type="radio" name="size" value="3">
-                            <span class="detail__size-inner">12 лет</span>
-                        </label>
+                            <label class="detail__size">
+                                <input type="radio" name="size" value="3">
+                                <span class="detail__size-inner">12 лет</span>
+                            </label>
 
-                        <label class="detail__size">
-                            <input type="radio" name="size" value="4">
-                            <span class="detail__size-inner">14 лет</span>
-                        </label>
+                            <label class="detail__size">
+                                <input type="radio" name="size" value="4">
+                                <span class="detail__size-inner">14 лет</span>
+                            </label>
 
-                        <label class="detail__size">
-                            <input type="radio" name="size" value="5">
-                            <span class="detail__size-inner">16 лет</span>
-                        </label>
-                    </div>
-
-                    <p><a href="#">Таблица размеров</a></p>
-
-                    <div class="detail__button-block">
-                        <a class="button button--primary" href="#">Добавить в корзину</a>
-
-                        <button class="detail__fav is-active" type="button" title="Убрать из избранного">
-                            <svg aria-hidden="true">
-                                <use xlink:href="images/sprite.svg#fav_filled_icon" />
-                            </svg>
-                        </button>
-                    </div>
-
-                    <div class="detail__accordion">
-                        <p class="detail__accordion-title">
-                            <span>Описание товара</span>
-
-                            <button class="detail__accordion-toggler" type="button" title="Открыть">
-                                <svg aria-hidden="true">
-                                    <use xlink:href="images/sprite.svg#plus_icon" />
-                                </svg>
-                            </button>
-                        </p>
-
-                        <div class="detail__accordion-dropdown">
-                            <p>Для изготовления костюма оттенка фуксии с кремовым геометрическим паттерном мастера марки использовали тонкую пряжу из вискозы и нейлона, поэтому изделия прочные, хорошо держат форму и цвет и не сковывают движения. На
-                                укороченном свитшоте разместили надпись с логотипом бренда в контрастном черном цвете. За комфортную посадку прямой юбки отвечает широкий эластичный пояс и боковые ремни.</p>
+                            <label class="detail__size">
+                                <input type="radio" name="size" value="5">
+                                <span class="detail__size-inner">16 лет</span>
+                            </label>
                         </div>
-                    </div>
 
-                    <div class="detail__accordion">
-                        <p class="detail__accordion-title">
-                            <span>Наличие в бутиках</span>
+                        <p><a class="js-info-popup-opener" href="javascript:void(0)" data-popup="sizes_popup">Таблица размеров</a></p>
 
-                            <button class="detail__accordion-toggler" type="button" title="Открыть">
+                        <div class="detail__button-block">
+                            <a class="button button--primary" href="#">Добавить в корзину</a>
+
+                            <button class="detail__fav is-active" type="button" title="Убрать из избранного">
                                 <svg aria-hidden="true">
-                                    <use xlink:href="images/sprite.svg#plus_icon" />
+                                    <use xlink:href="images/sprite.svg#fav_filled_icon" />
                                 </svg>
                             </button>
-                        </p>
-
-                        <div class="detail__accordion-dropdown">
-                            <p>
-                                ATELIER детства г. Ростов-на-Дону, просп. Чехова, 76<br>
-                                Осталось: 1, размер 8 лет<br>
-                                Телефон: 8 (989)-631-06-65<br>
-                                График работы: с 10:00 до 21:00
-                            </p>
                         </div>
-                    </div>
 
-                    <div class="detail__accordion">
-                        <p class="detail__accordion-title">
-                            <span>Состав</span>
+                        <div class="detail__accordion">
+                            <p class="detail__accordion-title">
+                                <span>Описание товара</span>
 
-                            <button class="detail__accordion-toggler" type="button" title="Открыть">
-                                <svg aria-hidden="true">
-                                    <use xlink:href="images/sprite.svg#plus_icon" />
-                                </svg>
-                            </button>
-                        </p>
-
-                        <div class="detail__accordion-dropdown">
-                            <p>100% Хлопок</p>
-                        </div>
-                    </div>
-
-                    <div class="detail__accordion">
-                        <p class="detail__accordion-title">
-                            <span>Страна дизайна</span>
-
-                            <button class="detail__accordion-toggler" type="button" title="Открыть">
-                                <svg aria-hidden="true">
-                                    <use xlink:href="images/sprite.svg#plus_icon" />
-                                </svg>
-                            </button>
-                        </p>
-
-                        <div class="detail__accordion-dropdown">
-                            <p>Италия</p>
-                        </div>
-                    </div>
-
-                    <div class="detail__accordion">
-                        <p class="detail__accordion-title">
-                            <span>Страна производства</span>
-
-                            <button class="detail__accordion-toggler" type="button" title="Открыть">
-                                <svg aria-hidden="true">
-                                    <use xlink:href="images/sprite.svg#plus_icon" />
-                                </svg>
-                            </button>
-                        </p>
-
-                        <div class="detail__accordion-dropdown">
-                            <p>Италия</p>
-                        </div>
-                    </div>
-
-                    <div class="detail__accordion">
-                        <p class="detail__accordion-title">
-                            <span>Доставка и возврат</span>
-
-                            <button class="detail__accordion-toggler" type="button" title="Открыть">
-                                <svg aria-hidden="true">
-                                    <use xlink:href="images/sprite.svg#plus_icon" />
-                                </svg>
-                            </button>
-                        </p>
-
-                        <div class="detail__accordion-dropdown">
-                            <p>Бесплатная доставка по России при покупке от 30 000 pуб.</p>
-
-                            <p><a href="#">Способы доставки</a></p>
-
-                            <p>
-                                Вы можете вернуть товар:<br>
-                                в любое время до его передачи;<br>
-                                в течение 7 дней после передачи;<br>
-                                обменять не подошедшее изделие в течение 14 суток с момента его приобретения.
+                                <button class="detail__accordion-toggler" type="button" title="Открыть">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#plus_icon" />
+                                    </svg>
+                                </button>
                             </p>
 
-                            <p>
-                                Вернуть товар в указанные сроки можно, еслисоблюдены следующие условия:<br>
-                                1) сохранен товарный вид, потребительские свойства товара, имеется документ, подтверждающий факт и условия покупки указанного товара, сохранены все ярлыки и бирки;<br>
-                                2) товар не имеет индивидуально-определенных свойств, в силу которых он может быть использован исключительно потребителем (бельевые, чулочно-носочные изделия, предметы личной гигиены: зубные щетки и пасты и другие
-                                аналогичные товары, а также ювелирные изделия).
+                            <div class="detail__accordion-dropdown">
+                                <p>
+                                    Для изготовления костюма оттенка фуксии с кремовым геометрическим паттерном мастера марки использовали тонкую пряжу из вискозы и нейлона, поэтому изделия прочные, хорошо держат форму и цвет и не сковывают движения.
+                                    На укороченном свитшоте разместили надпись с логотипом бренда в контрастном черном цвете. За комфортную посадку прямой юбки отвечает широкий эластичный пояс и боковые ремни.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="detail__accordion">
+                            <p class="detail__accordion-title">
+                                <span>Наличие в бутиках</span>
+
+                                <button class="detail__accordion-toggler" type="button" title="Открыть">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#plus_icon" />
+                                    </svg>
+                                </button>
                             </p>
 
-                            <p><a href="#">Возврат товара</a></p>
+                            <div class="detail__accordion-dropdown">
+                                <p>
+                                    ATELIER детства г. Ростов-на-Дону, просп. Чехова, 76<br>
+                                    Осталось: 1, размер 8 лет<br>
+                                    Телефон: 8 (989)-631-06-65<br>
+                                    График работы: с 10:00 до 21:00
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="detail__accordion">
+                            <p class="detail__accordion-title">
+                                <span>Состав</span>
+
+                                <button class="detail__accordion-toggler" type="button" title="Открыть">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#plus_icon" />
+                                    </svg>
+                                </button>
+                            </p>
+
+                            <div class="detail__accordion-dropdown">
+                                <p>100% Хлопок</p>
+                            </div>
+                        </div>
+
+                        <div class="detail__accordion">
+                            <p class="detail__accordion-title">
+                                <span>Страна дизайна</span>
+
+                                <button class="detail__accordion-toggler" type="button" title="Открыть">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#plus_icon" />
+                                    </svg>
+                                </button>
+                            </p>
+
+                            <div class="detail__accordion-dropdown">
+                                <p>Италия</p>
+                            </div>
+                        </div>
+
+                        <div class="detail__accordion">
+                            <p class="detail__accordion-title">
+                                <span>Страна производства</span>
+
+                                <button class="detail__accordion-toggler" type="button" title="Открыть">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#plus_icon" />
+                                    </svg>
+                                </button>
+                            </p>
+
+                            <div class="detail__accordion-dropdown">
+                                <p>Италия</p>
+                            </div>
+                        </div>
+
+                        <div class="detail__accordion">
+                            <p class="detail__accordion-title">
+                                <span>Доставка и возврат</span>
+
+                                <button class="detail__accordion-toggler" type="button" title="Открыть">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#plus_icon" />
+                                    </svg>
+                                </button>
+                            </p>
+
+                            <div class="detail__accordion-dropdown">
+                                <p>Бесплатная доставка по России при покупке от 30 000 pуб.</p>
+
+                                <p><a href="#">Способы доставки</a></p>
+
+                                <p>
+                                    Вы можете вернуть товар:<br>
+                                    в любое время до его передачи;<br>
+                                    в течение 7 дней после передачи;<br>
+                                    обменять не подошедшее изделие в течение 14 суток с момента его приобретения.
+                                </p>
+
+                                <p>
+                                    Вернуть товар в указанные сроки можно, еслисоблюдены следующие условия:<br>
+                                    1) сохранен товарный вид, потребительские свойства товара, имеется документ, подтверждающий факт и условия покупки указанного товара, сохранены все ярлыки и бирки;<br>
+                                    2) товар не имеет индивидуально-определенных свойств, в силу которых он может быть использован исключительно потребителем (бельевые, чулочно-носочные изделия, предметы личной гигиены: зубные щетки и пасты и другие
+                                    аналогичные товары, а также ювелирные изделия).
+                                </p>
+
+                                <p><a href="#">Возврат товара</a></p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div id="sizes_popup" class="info-popup">
+                <div class="js-info-popup-closer info-popup__bg"></div>
+
+                <div class="info-popup__popup info-popup__popup--right">
+                    <button class="js-info-popup-closer info-popup__closer" type="button" title="Закрыть">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#close_icon" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <section class="page__section page__section--bg_color page__section--bg_grey full-width">
+                <div class="container">
+                    <h2>С чем носить?</h2>
+
+                    <div class="catalog catalog--swipe_grid_list">
+                        <div class="catalog__list catalog__list--swipe_grid">
+                            <div class="card">
+                                <div class="card__image-block">
+                                    <a href="#">
+                                        <img src="images/content/catalog-section/img_1.jpg" srcset="images/content/catalog-section/img_1@2x.jpg 2x" alt="">
+                                    </a>
+
+                                    <button class="card__favorite is-active" type="button" title="Убрать из избранного">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#fav_filled_icon" />
+                                        </svg>
+                                    </button>
+
+                                    <div class="card__labels">
+                                        <div class="card__label card__label--type_1">-40%</div>
+                                        <div class="card__label card__label--type_2">best seller</div>
+                                    </div>
+                                </div>
+
+                                <div class="card__info-block">
+                                    <div class="card__info-block-inner">
+                                        <div class="card__info">
+                                            <p class="card__brand"><a href="#">Stella McCartney</a></p>
+                                            <p class="card__title"><a href="#">Платье</a></p>
+                                            <p class="card__price">35 240 ₽</p>
+                                        </div>
+
+                                        <a class="card__to-cart" href="#" title="Добавить в корзину">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#cart_icon" />
+                                            </svg>
+                                        </a>
+                                    </div>
+
+                                    <div class="combobox combobox--small">
+                                        <button class="js-combobox-toggler combobox__value-block" type="button">
+                                            <div class="combobox__value">Размер</div>
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#chevron_down_light" />
+                                            </svg>
+                                        </button>
+
+                                        <div class="combobox__dropdown">
+                                            <div class="combobox__list">
+                                                <a class="combobox__link" href="#">12 мес</a>
+                                                <a class="combobox__link" href="#">18 мес</a>
+                                                <a class="combobox__link" href="#">XXS/104</a>
+                                                <a class="combobox__link" href="#">M/140</a>
+                                                <a class="combobox__link" href="#">XL</a>
+                                                <a class="combobox__link" href="#">58</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card__image-block">
+                                    <a href="#">
+                                        <img src="images/content/catalog-section/img_2.jpg" srcset="images/content/catalog-section/img_2@2x.jpg 2x" alt="">
+                                    </a>
+
+                                    <button class="card__favorite" type="button" title="Добавить в избранное">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#fav_icon" />
+                                        </svg>
+                                    </button>
+
+                                    <div class="card__labels">
+                                        <div class="card__label card__label--type_3">хит сезона</div>
+                                    </div>
+                                </div>
+
+                                <div class="card__info-block">
+                                    <div class="card__info-block-inner">
+                                        <div class="card__info">
+                                            <p class="card__brand"><a href="#">Stella McCartney</a></p>
+                                            <p class="card__title"><a href="#">Босоножки</a></p>
+                                            <p class="card__price">35 240 ₽</p>
+                                        </div>
+
+                                        <a class="card__to-cart" href="#" title="Добавить в корзину">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#cart_icon" />
+                                            </svg>
+                                        </a>
+                                    </div>
+
+                                    <div class="combobox combobox--small">
+                                        <button class="js-combobox-toggler combobox__value-block" type="button">
+                                            <div class="combobox__value">Размер</div>
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#chevron_down_light" />
+                                            </svg>
+                                        </button>
+
+                                        <div class="combobox__dropdown">
+                                            <div class="combobox__list">
+                                                <a class="combobox__link" href="#">12 мес</a>
+                                                <a class="combobox__link" href="#">18 мес</a>
+                                                <a class="combobox__link" href="#">XXS/104</a>
+                                                <a class="combobox__link" href="#">M/140</a>
+                                                <a class="combobox__link" href="#">XL</a>
+                                                <a class="combobox__link" href="#">58</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card__image-block">
+                                    <a href="#">
+                                        <img src="images/content/catalog-section/img_3.jpg" srcset="images/content/catalog-section/img_3@2x.jpg 2x" alt="">
+                                    </a>
+
+                                    <button class="card__favorite" type="button" title="Добавить в избранное">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#fav_icon" />
+                                        </svg>
+                                    </button>
+                                </div>
+
+                                <div class="card__info-block">
+                                    <div class="card__info-block-inner">
+                                        <div class="card__info">
+                                            <p class="card__brand"><a href="#">Stella McCartney</a></p>
+                                            <p class="card__title"><a href="#">Ободок</a></p>
+                                            <p class="card__price">35 240 ₽</p>
+                                        </div>
+
+                                        <a class="card__to-cart" href="#" title="Добавить в корзину">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#cart_icon" />
+                                            </svg>
+                                        </a>
+                                    </div>
+
+                                    <div class="combobox combobox--small">
+                                        <button class="js-combobox-toggler combobox__value-block" type="button">
+                                            <div class="combobox__value">Размер</div>
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#chevron_down_light" />
+                                            </svg>
+                                        </button>
+
+                                        <div class="combobox__dropdown">
+                                            <div class="combobox__list">
+                                                <a class="combobox__link" href="#">12 мес</a>
+                                                <a class="combobox__link" href="#">18 мес</a>
+                                                <a class="combobox__link" href="#">XXS/104</a>
+                                                <a class="combobox__link" href="#">M/140</a>
+                                                <a class="combobox__link" href="#">XL</a>
+                                                <a class="combobox__link" href="#">58</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card__image-block">
+                                    <a href="#">
+                                        <img src="images/content/catalog-section/img_1.jpg" srcset="images/content/catalog-section/img_1@2x.jpg 2x" alt="">
+                                    </a>
+
+                                    <button class="card__favorite" type="button" title="Добавить в избранное">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#fav_icon" />
+                                        </svg>
+                                    </button>
+
+                                    <div class="card__labels">
+                                        <div class="card__label card__label--type_1">-40%</div>
+                                        <div class="card__label card__label--type_2">best seller</div>
+                                    </div>
+                                </div>
+
+                                <div class="card__info-block">
+                                    <div class="card__info-block-inner">
+                                        <div class="card__info">
+                                            <p class="card__brand"><a href="#">Stella McCartney</a></p>
+                                            <p class="card__title"><a href="#">Платье</a></p>
+                                            <p class="card__price">35 240 ₽</p>
+                                        </div>
+
+                                        <a class="card__to-cart" href="#" title="Добавить в корзину">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#cart_icon" />
+                                            </svg>
+                                        </a>
+                                    </div>
+
+                                    <div class="combobox combobox--small">
+                                        <button class="js-combobox-toggler combobox__value-block" type="button">
+                                            <div class="combobox__value">Размер</div>
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#chevron_down_light" />
+                                            </svg>
+                                        </button>
+
+                                        <div class="combobox__dropdown">
+                                            <div class="combobox__list">
+                                                <a class="combobox__link" href="#">12 мес</a>
+                                                <a class="combobox__link" href="#">18 мес</a>
+                                                <a class="combobox__link" href="#">XXS/104</a>
+                                                <a class="combobox__link" href="#">M/140</a>
+                                                <a class="combobox__link" href="#">XL</a>
+                                                <a class="combobox__link" href="#">58</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="page__section">
+                <h2>Похожие модели</h2>
+
+                <div class="catalog">
+                    <div class="catalog__list catalog__list--grid">
+                        <div class="card">
+                            <div class="card__image-block">
+                                <a href="#">
+                                    <img src="images/content/catalog-section/img_1.jpg" srcset="images/content/catalog-section/img_1@2x.jpg 2x" alt="">
+                                </a>
+
+                                <button class="card__favorite is-active" type="button" title="Убрать из избранного">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#fav_filled_icon" />
+                                    </svg>
+                                </button>
+
+                                <div class="card__labels">
+                                    <div class="card__label card__label--type_1">-40%</div>
+                                    <div class="card__label card__label--type_2">best seller</div>
+                                </div>
+                            </div>
+
+                            <div class="card__info-block">
+                                <div class="card__info-block-inner">
+                                    <div class="card__info">
+                                        <p class="card__brand"><a href="#">Stella McCartney</a></p>
+                                        <p class="card__title"><a href="#">Платье</a></p>
+                                        <p class="card__price">35 240 ₽</p>
+                                    </div>
+
+                                    <a class="card__to-cart" href="#" title="Добавить в корзину">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#cart_icon" />
+                                        </svg>
+                                    </a>
+                                </div>
+
+                                <div class="combobox combobox--small">
+                                    <button class="js-combobox-toggler combobox__value-block" type="button">
+                                        <div class="combobox__value">Размер</div>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#chevron_down_light" />
+                                        </svg>
+                                    </button>
+
+                                    <div class="combobox__dropdown">
+                                        <div class="combobox__list">
+                                            <a class="combobox__link" href="#">12 мес</a>
+                                            <a class="combobox__link" href="#">18 мес</a>
+                                            <a class="combobox__link" href="#">XXS/104</a>
+                                            <a class="combobox__link" href="#">M/140</a>
+                                            <a class="combobox__link" href="#">XL</a>
+                                            <a class="combobox__link" href="#">58</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card__image-block">
+                                <a href="#">
+                                    <img src="images/content/catalog-section/img_2.jpg" srcset="images/content/catalog-section/img_2@2x.jpg 2x" alt="">
+                                </a>
+
+                                <button class="card__favorite" type="button" title="Добавить в избранное">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#fav_icon" />
+                                    </svg>
+                                </button>
+
+                                <div class="card__labels">
+                                    <div class="card__label card__label--type_3">хит сезона</div>
+                                </div>
+                            </div>
+
+                            <div class="card__info-block">
+                                <div class="card__info-block-inner">
+                                    <div class="card__info">
+                                        <p class="card__brand"><a href="#">Stella McCartney</a></p>
+                                        <p class="card__title"><a href="#">Босоножки</a></p>
+                                        <p class="card__price">35 240 ₽</p>
+                                    </div>
+
+                                    <a class="card__to-cart" href="#" title="Добавить в корзину">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#cart_icon" />
+                                        </svg>
+                                    </a>
+                                </div>
+
+                                <div class="combobox combobox--small">
+                                    <button class="js-combobox-toggler combobox__value-block" type="button">
+                                        <div class="combobox__value">Размер</div>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#chevron_down_light" />
+                                        </svg>
+                                    </button>
+
+                                    <div class="combobox__dropdown">
+                                        <div class="combobox__list">
+                                            <a class="combobox__link" href="#">12 мес</a>
+                                            <a class="combobox__link" href="#">18 мес</a>
+                                            <a class="combobox__link" href="#">XXS/104</a>
+                                            <a class="combobox__link" href="#">M/140</a>
+                                            <a class="combobox__link" href="#">XL</a>
+                                            <a class="combobox__link" href="#">58</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card__image-block">
+                                <a href="#">
+                                    <img src="images/content/catalog-section/img_3.jpg" srcset="images/content/catalog-section/img_3@2x.jpg 2x" alt="">
+                                </a>
+
+                                <button class="card__favorite" type="button" title="Добавить в избранное">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#fav_icon" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="card__info-block">
+                                <div class="card__info-block-inner">
+                                    <div class="card__info">
+                                        <p class="card__brand"><a href="#">Stella McCartney</a></p>
+                                        <p class="card__title"><a href="#">Ободок</a></p>
+                                        <p class="card__price">35 240 ₽</p>
+                                    </div>
+
+                                    <a class="card__to-cart" href="#" title="Добавить в корзину">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#cart_icon" />
+                                        </svg>
+                                    </a>
+                                </div>
+
+                                <div class="combobox combobox--small">
+                                    <button class="js-combobox-toggler combobox__value-block" type="button">
+                                        <div class="combobox__value">Размер</div>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#chevron_down_light" />
+                                        </svg>
+                                    </button>
+
+                                    <div class="combobox__dropdown">
+                                        <div class="combobox__list">
+                                            <a class="combobox__link" href="#">12 мес</a>
+                                            <a class="combobox__link" href="#">18 мес</a>
+                                            <a class="combobox__link" href="#">XXS/104</a>
+                                            <a class="combobox__link" href="#">M/140</a>
+                                            <a class="combobox__link" href="#">XL</a>
+                                            <a class="combobox__link" href="#">58</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card__image-block">
+                                <a href="#">
+                                    <img src="images/content/catalog-section/img_1.jpg" srcset="images/content/catalog-section/img_1@2x.jpg 2x" alt="">
+                                </a>
+
+                                <button class="card__favorite" type="button" title="Добавить в избранное">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#fav_icon" />
+                                    </svg>
+                                </button>
+
+                                <div class="card__labels">
+                                    <div class="card__label card__label--type_1">-40%</div>
+                                    <div class="card__label card__label--type_2">best seller</div>
+                                </div>
+                            </div>
+
+                            <div class="card__info-block">
+                                <div class="card__info-block-inner">
+                                    <div class="card__info">
+                                        <p class="card__brand"><a href="#">Stella McCartney</a></p>
+                                        <p class="card__title"><a href="#">Платье</a></p>
+                                        <p class="card__price">35 240 ₽</p>
+                                    </div>
+
+                                    <a class="card__to-cart" href="#" title="Добавить в корзину">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#cart_icon" />
+                                        </svg>
+                                    </a>
+                                </div>
+
+                                <div class="combobox combobox--small">
+                                    <button class="js-combobox-toggler combobox__value-block" type="button">
+                                        <div class="combobox__value">Размер</div>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#chevron_down_light" />
+                                        </svg>
+                                    </button>
+
+                                    <div class="combobox__dropdown">
+                                        <div class="combobox__list">
+                                            <a class="combobox__link" href="#">12 мес</a>
+                                            <a class="combobox__link" href="#">18 мес</a>
+                                            <a class="combobox__link" href="#">XXS/104</a>
+                                            <a class="combobox__link" href="#">M/140</a>
+                                            <a class="combobox__link" href="#">XL</a>
+                                            <a class="combobox__link" href="#">58</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
 
         <div class="float-block float-block--type_3 compensate-for-scrollbar">
@@ -896,7 +1398,13 @@
     
     <script src="js/collapsing-menu.js"></script>
     
+    <script src="js/jquery.fancybox.min.js"></script>
+    
+    <script src="js/fancybox-defaults.js"></script>
+    
     <script src="js/main.js"></script>
+
+    <script src="js/detail.js"></script>
 </body>
 
 </html>
