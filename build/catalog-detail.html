@@ -518,16 +518,19 @@
 
                         <h1 class="detail__title">Платье в полоску с принтом</h1>
 
-                        <p class="detail__price">9 600 ₽</p>
+                        <div class="detail__price-block">
+                            <p class="detail__price">9 600 ₽</p>
+                            <p class="detail__price detail__price--old">12 900 ₽</p>
+                        </div>
 
                         <div class="detail__sizes">
                             <label class="detail__size">
-                                <input type="radio" name="size" value="1">
+                                <input type="radio" name="size" value="1" checked>
                                 <span class="detail__size-inner">8 лет</span>
                             </label>
 
-                            <label class="detail__size">
-                                <input type="radio" name="size" value="2">
+                            <label class="detail__size disabled">
+                                <input type="radio" name="size" value="2" disabled>
                                 <span class="detail__size-inner">10 лет</span>
                             </label>
 

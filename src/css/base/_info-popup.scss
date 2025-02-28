@@ -30,6 +30,9 @@
         transition: transform 0.3s;
         width: 100%;
         z-index: 2;
+        @media(min-width: $sm) {
+            padding: 64px;
+        }
 
         &--left {
             left: 0;

@@ -45,7 +45,9 @@
     }
     @media(min-width: $hd) {
         position: sticky;
+        transition: top 0.3s;
         top: 20px;
+        z-index: 1;
     }
 
     &.is-scrolled {

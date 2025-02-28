@@ -43,11 +43,18 @@
     &__filter-block-inner {
         @media(min-width: $hd) {
             position: sticky;
-            top: 160px;
+            top: 20px;
+            transition: top 0.3s;
             z-index: 1;
         }
-        @media(min-width: $fhd) {
-            top: 180px;
+
+        &.is-scrolled {
+            @media(min-width: $hd) {
+                top: 165px;
+            }
+            @media(min-width: $fhd) {
+                top: 200px;
+            }
         }
     }
 
@@ -609,6 +616,15 @@
         @media(min-width: $fhd) {
             font-size: 20px;
             line-height: 1.2;
+        }
+
+        &--old {
+            color: var(--dark_grey);
+            text-decoration: line-through;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 4px;
         }
     }
 

@@ -162,17 +162,29 @@
         }
     }
 
+    &__price-block {
+        margin-bottom: 24px;
+    }
+
     &__price {
         font-family: var(--secondary_font);
         font-size: 18px;
         font-weight: 600;
         line-height: 1.33333;
-        margin-bottom: 24px;
         @media(min-width: $sm) {
             font-size: 22px;
         }
         @media(min-width: $fhd) {
             font-size: 24px;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 4px;
+        }
+
+        &--old {
+            color: var(--dark_grey);
+            text-decoration: line-through;
         }
     }
 
@@ -187,7 +199,12 @@
         box-shadow: 0 0 0 1px inset var(--stroke);
         display: block;
         position: relative;
+        user-select: none;
         z-index: 1;
+
+        &.disabled {
+            box-shadow: 0 0 0 1px inset #C7CDD5;
+        }
 
         input {
             position: absolute;
@@ -199,6 +216,11 @@
             &:checked ~ .detail__size-inner {
                 border-color: var(--black);
                 box-shadow: none;
+            }
+
+            &:disabled ~ .detail__size-inner {
+                color: #C7CDD5;
+                cursor: default;
             }
         }
     }

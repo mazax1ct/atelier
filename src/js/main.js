@@ -23,9 +23,11 @@ var resize_scroll = function(e) {
   if (scrolled > scrollPrev) {
     $('.detail__info-inner').removeClass('is-scrolled');
     $('.left-menu').removeClass('is-scrolled');
+    $('.catalog__filter-block-inner').removeClass('is-scrolled');
 	} else {
     $('.detail__info-inner').addClass('is-scrolled');
     $('.left-menu').addClass('is-scrolled');
+    $('.catalog__filter-block-inner').addClass('is-scrolled');
 	}
 
 	scrollPrev = scrolled;
