@@ -11,11 +11,11 @@
                 </svg>
             </button>
 
-            <a class="header__search header__button" href="#" title="Поиск">
+            <button class="js-search-opener header__search header__button" type="button" title="Поиск">
                 <svg aria-hidden="true">
                     <use xlink:href="images/sprite.svg#search_icon" />
                 </svg>
-            </a>
+            </button>
 
             <a class="header__logo" href="#">
                 <img src="images/logo.png" srcset="images/logo@2x.png 2x" alt="ATELIER">
@@ -417,6 +417,231 @@
                             </svg>
                         </a>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="search">
+        <div class="js-search-closer search__bg"></div>
+
+        <div class="search__inner">
+            <div class="search__container container">
+                <div class="search__form-block">
+                    <div class="search__form-top">
+                        <button class="js-search-closer search__closer" type="button">
+                            <span>Отменить</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#close_light_icon" />
+                            </svg>
+                        </button>
+
+                        <form class="search__form" action="">
+                            <div class="input-group">
+                                <div class="input-group__inner">
+                                    <div class="input-group__input-container">
+                                        <input id="q" class="js-input-group__input input-group__input" type="text" name="q">
+                                        <label class="input-group__label" for="q">Поиск по сайту</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="search__submit" type="submit" title="Искать">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#search_icon" />
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="search__pre-vars">
+                        <button class="js-search-var search__pre-var" type="button"><span>Платье</span></button>
+                        <button class="js-search-var search__pre-var" type="button"><span>Пальто</span></button>
+                        <button class="js-search-var search__pre-var" type="button"><span>Жилет</span></button>
+                        <button class="js-search-var search__pre-var" type="button"><span>Кардиган</span></button>
+                    </div>
+
+                    <p class="search__vars-title">Часто ищут</p>
+
+                    <div class="search__vars">
+                        <button class="js-search-var search__var" type="button">
+                            <span>Платье</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#search_icon" />
+                            </svg>
+                        </button>
+
+                        <button class="js-search-var search__var" type="button">
+                            <span>Розвое платье</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#search_icon" />
+                            </svg>
+                        </button>
+
+                        <button class="js-search-var search__var" type="button">
+                            <span>Белое платье</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#search_icon" />
+                            </svg>
+                        </button>
+
+                        <button class="js-search-var search__var" type="button">
+                            <span>Обувь в школу</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#search_icon" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <p class="search__vars-title">Искать в категориях</p>
+
+                    <div class="search__vars">
+                        <a class="search__var" type="button" href="#">
+                            <span>Девочки / Платья</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </a>
+
+                        <a class="search__var" type="button" href="#">
+                            <span>Мальчики / Верхняя одежда</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </a>
+
+                        <a class="search__var" type="button" href="#">
+                            <span>Девочки / Верхняя одежда</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </a>
+
+                        <a class="search__var" type="button" href="#">
+                            <span>Текстиль / Для дома</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="search__results-block">
+                    <p class="search__results-title">Вам могут понравиться</p>
+
+                    <div class="search__results-list">
+                        <div class="card">
+                            <div class="card__image-block">
+                                <a href="#">
+                                    <img src="images/content/catalog-section/img_1.jpg" srcset="images/content/catalog-section/img_1@2x.jpg 2x" alt="">
+                                </a>
+
+                                <button class="card__favorite is-active" type="button" title="Убрать из избранного">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#fav_filled_icon" />
+                                    </svg>
+                                </button>
+
+                                <div class="card__labels">
+                                    <div class="card__label card__label--type_1">-40%</div>
+                                    <div class="card__label card__label--type_2">best seller</div>
+                                </div>
+                            </div>
+
+                            <div class="card__info-block">
+                                <div class="card__info-block-inner">
+                                    <div class="card__info">
+                                        <p class="card__brand"><a href="#">Stella McCartney</a></p>
+                                        <p class="card__title"><a href="#">Платье</a></p>
+                                        <p class="card__price">35 240 ₽</p>
+                                        <p class="card__price card__price--old">37 540 ₽</p>
+                                    </div>
+
+                                    <a class="card__to-cart" href="#" title="Добавить в корзину">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#cart_icon" />
+                                        </svg>
+                                    </a>
+                                </div>
+
+                                <div class="combobox combobox--small">
+                                    <button class="js-combobox-toggler combobox__value-block" type="button">
+                                        <div class="combobox__value">Размер</div>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#chevron_down_light" />
+                                        </svg>
+                                    </button>
+
+                                    <div class="combobox__dropdown">
+                                        <div class="combobox__list">
+                                            <a class="combobox__link" href="#">12 мес</a>
+                                            <a class="combobox__link" href="#">18 мес</a>
+                                            <a class="combobox__link" href="#">XXS/104</a>
+                                            <a class="combobox__link" href="#">M/140</a>
+                                            <a class="combobox__link" href="#">XL</a>
+                                            <a class="combobox__link" href="#">58</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card__image-block">
+                                <a href="#">
+                                    <img src="images/content/catalog-section/img_2.jpg" srcset="images/content/catalog-section/img_2@2x.jpg 2x" alt="">
+                                </a>
+
+                                <button class="card__favorite" type="button" title="Добавить в избранное">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#fav_icon" />
+                                    </svg>
+                                </button>
+
+                                <div class="card__labels">
+                                    <div class="card__label card__label--type_3">хит сезона</div>
+                                </div>
+                            </div>
+
+                            <div class="card__info-block">
+                                <div class="card__info-block-inner">
+                                    <div class="card__info">
+                                        <p class="card__brand"><a href="#">Stella McCartney</a></p>
+                                        <p class="card__title"><a href="#">Босоножки</a></p>
+                                        <p class="card__price">35 240 ₽</p>
+                                    </div>
+
+                                    <a class="card__to-cart" href="#" title="Добавить в корзину">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#cart_icon" />
+                                        </svg>
+                                    </a>
+                                </div>
+
+                                <div class="combobox combobox--small">
+                                    <button class="js-combobox-toggler combobox__value-block" type="button">
+                                        <div class="combobox__value">Размер</div>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#chevron_down_light" />
+                                        </svg>
+                                    </button>
+
+                                    <div class="combobox__dropdown">
+                                        <div class="combobox__list">
+                                            <a class="combobox__link" href="#">12 мес</a>
+                                            <a class="combobox__link" href="#">18 мес</a>
+                                            <a class="combobox__link" href="#">XXS/104</a>
+                                            <a class="combobox__link" href="#">M/140</a>
+                                            <a class="combobox__link" href="#">XL</a>
+                                            <a class="combobox__link" href="#">58</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="button button--secondary" href="#">Смотреть все</a>
                 </div>
             </div>
         </div>

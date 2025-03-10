@@ -293,13 +293,13 @@
         pointer-events: none;
         transition: all 0.3s;
         text-overflow: ellipsis;
-        top: 14px;
+        top: 16px;
         white-space: nowrap;
         width: 100%;
         @media(min-width: $sm) {
             padding-left: 20px;
             padding-right: 20px;
-            top: 18px;
+            top: 19px;
         }
         @media(min-width: $fhd) {
             font-size: 18px;
@@ -314,7 +314,7 @@
     font-size: 15px;
     font-weight: 700;
     line-height: 1.33333;
-    margin-top: 12px;
+    margin-top: 6px;
 }
 
 textarea {

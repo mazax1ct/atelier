@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Atelier</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/common/favicon.html
+
+    //= template/common/fonts_preload.html
+
+    //= template/common/styles.html
+</head>
+
+<body class="page">
+    //= template/common/header.html
+
+    <main class="page__content">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    Вход или регистрация
+                </li>
+            </ul>
+
+            <div class="auth">
+                <h1>Вход или регистрация</h1>
+
+                <form action="">
+                    <div class="input-group error">
+                        <div class="input-group__inner">
+                            <div class="input-group__input-container">
+                                <input id="auth_phone" class="js-input-group__input js-phone-mask input-group__input" type="text" name="">
+                                <label class="input-group__label" for="auth_phone">Мобильный телефон</label>
+                            </div>
+                        </div>
+
+                        <p class="error-text">Укажите номер телефона</p>
+                    </div>
+
+                    <p class="auth__note">Оставляя свои данные в любой форме обратной связи на сайте atelierkids.ru, вы соглашаетесь с <a href="#">пользовательским соглашением</a> и <a href="#">политикой обработки данных</a></p>
+
+                    <button class="button button--primary" type="submit">Войти или зарегистрироваться</button>
+                </form>
+            </div>
+
+            <style>
+                @media(max-width: 1279.98px) {
+                    .footer-form__inner {
+                        display: none
+                    }
+                }
+            </style>
+        </div>
+
+        //= template/common/float-block.html
+    </main>
+
+    //= template/common/footer.html
+
+    //= template/common/popups.html
+
+    //= template/common/scripts.html
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+.auth {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 444px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    @media(min-width: $lg) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .button {
+        min-height: 40px;
+        margin-top: 32px;
+        width: 100%;
+    }
+
+    &__note {
+        color: var(--dark_grey);
+        font-size: 14px;
+        margin-top: 12px;
+        @media(min-width: $fhd) {
+            margin-top: 16px;
+            margin-bottom: 32px;
+        }
+
+        a {
+            color: var(--dark_grey);
+            @include hover {
+                color: var(--black);
+            }
+        }
+    }
+
+    &__back {
+        align-items: center;
+        display: flex;
+        gap: 8px;
+        font-size: 15px;
+        font-weight: 700;
+        height: 44px;
+        margin-bottom: 12px;
+        text-decoration: none;
+        @media(min-width: $lg) {
+            font-size: 16px;
+        }
+        @media(min-width: $fhd) {
+            font-size: 18px;
+        }
+
+        svg {
+            fill: currentColor;
+            height: 20px;
+            width: 20px;
+        }
+    }
+
+    &__code {
+        font-size: 24px;
+        padding-top: 10px;
+        text-align: center;
+
+        &::-webkit-input-placeholder {
+            color: var(--dark_grey);
+            opacity: 1;
+        }
+
+        &::-moz-placeholder {
+            color: var(--dark_grey);
+            opacity: 1;
+        }
+
+        &:-ms-input-placeholder {
+            color: var(--dark_grey);
+            opacity: 1;
+        }
+    }
+
+    &__hint-toggler {
+        @include button-reset;
+        @include active-area;
+        cursor: pointer;
+        display: block;
+        font-size: 16px;
+        font-weight: 600;
+        position: relative;
+        text-align: left;
+        text-decoration: underline;
+        transition: color 0.3s;
+        z-index: 1;
+        @media(min-width: $fhd) {
+            font-size: 18px;
+        }
+        @include hover {
+            color: var(--dark_grey);
+        }
+    }
+
+    &__hint {
+        display: none;
+        padding-top: 16px;
+
+        &.is-open {
+            display: block;
+        }
+    }
+}

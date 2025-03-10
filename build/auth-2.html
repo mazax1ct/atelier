@@ -683,30 +683,54 @@
                     <a href="#">Главная</a>
                 </li>
                 <li class="breadcrumbs__item">
-                    Личный кабинет
+                    Вход или регистрация
                 </li>
             </ul>
 
-            <div class="page-columns">
-                <div class="page-columns__aside">
-                    <ul class="left-menu">
-                        <li><a href="#">Личные данные</a></li>
-                        <li><a class="is-active" href="#">Заказы</a></li>
-                        <li><a href="#">Скидки</a></li>
-                        <li><a href="#">Выйти</a></li>
-                    </ul>
-                </div>
+            <div class="auth">
+                <a class="auth__back" href="#">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#chevron_left" />
+                    </svg>
+                    <span>Назад</span>
+                </a>
 
-                <div class="page-columns__content">
-                    <h1>Заказы</h1>
+                <h1>Введите код, который мы<br> отправили на ваш номер</h1>
 
-                    <div class="orders-empty">
-                        <p class="big-text">Здесь пока нет заказов. Давайте выберем что-нибудь?</p>
+                <form action="">
+                    <div class="input-group error">
+                        <div class="input-group__inner">
+                            <input id="auth_code" class="js-code-mask input-group__input auth__code" type="text" name="" placeholder="* * * *">
+                        </div>
 
-                        <a class="button button--primary" href="#">Перейти в каталог</a>
+                        <p class="error-text">Вы ввели неверный код. Проверьте код подтверждения и введите его повторно.<br> Осталось 2 попытки</p>
                     </div>
-                </div>
+
+                    <p class="auth__note">Оставляя свои данные в любой форме обратной связи на сайте atelierkids.ru, вы соглашаетесь с <a href="#">пользовательским соглашением</a> и <a href="#">политикой обработки данных</a></p>
+
+                    <p>Через <span>2:59</span> код можно получить повторно</p>
+
+                    <button class="js-auth-hint-toggler auth__hint-toggler" type="button">Не приходит код?</button>
+
+                    <div class="auth__hint">
+                        <ul>
+                            <li>Убедитесь, что правильно вы правильно указали свой номер</li>
+
+                            <li>Напишите нам на почту <a href="mailto:info@atelierkids.ru">info@atelierkids.ru</a> и сообщите о проблеме</li>
+                        </ul>
+                    </div>
+
+                    <button class="button button--primary" type="submit">Войти или зарегистрироваться</button>
+                </form>
             </div>
+
+            <style>
+                @media(max-width: 1279.98px) {
+                    .footer-form__inner {
+                        display: none
+                    }
+                }
+            </style>
         </div>
 
         <div class="float-block float-block--type_3 compensate-for-scrollbar">

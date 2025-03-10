@@ -180,3 +180,40 @@ $(document).on('click', '.js-info-popup-closer', function () {
 
   return false;
 });
+
+//открытие поиска в шапке
+$(document).on('click', '.js-search-opener', function () {
+  $('html').addClass('is-overflow');
+  $('body').addClass('is-overflow');
+  $('.search').fadeIn(function() {
+    $('.search__inner').addClass('is-open');
+  });
+
+  return false;
+});
+
+//закрытие поиска в шапке
+$(document).on('click', '.js-search-closer', function () {
+  $('.search__inner').removeClass('is-open');
+  $('.search').fadeOut(function() {
+    $('html').removeClass('is-overflow');
+    $('body').removeClass('is-overflow');
+  });
+
+  return false;
+});
+
+//быстрый поиск
+$(document).on('click', '.js-search-var', function () {
+  var text = $(this).find('span').text();
+  var input = $('.search__form .input-group__input');
+  input.focus().val(text);
+  input.closest('.input-group').addClass('is-filled');
+  return false;
+});
+
+//тогглел подсказки в форме авторизации
+$(document).on('click', '.js-auth-hint-toggler', function () {
+  $('.auth__hint').toggleClass('is-open');
+  return false;
+});

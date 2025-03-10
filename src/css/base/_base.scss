@@ -294,6 +294,10 @@ ul {
             position: relative;
             z-index: 1;
 
+            &:not(:last-child) {
+                margin-bottom: 4px;
+            }
+
             &::before {
                 background-color: currentColor;
                 border-radius: 50%;
