@@ -81,9 +81,11 @@
         color: var(--black);
         display: block;
         height: 32px;
+        position: relative;
         transition: color 0.3s;
         text-decoration: none;
         width: 32px;
+        z-index: 1;
         @include hover {
             color: var(--dark_grey);
         }
@@ -92,6 +94,21 @@
             fill: currentColor;
             height: 32px;
             width: 32px;
+        }
+
+        .counter {
+            background-color: var(--red_rose);
+            border-radius: 18px;
+            color: #fff;
+            font-size: 11px;
+            font-weight: 700;
+            height: 14px;
+            padding-left: 3px;
+            padding-right: 3px;
+            position: absolute;
+            left: 20px;
+            top: 0;
+            z-index: 1;
         }
     }
 
@@ -269,8 +286,8 @@
             > li {
                 flex-grow: 1;
 
-                > button,
-                > a {
+                > a,
+                > button {
                     align-items: center;
                     display: flex;
                     gap: 8px;

@@ -1,0 +1,28 @@
+<div id="cart_add" class="info-popup">
+    <div class="js-info-popup-closer info-popup__bg"></div>
+
+    <div class="info-popup__popup info-popup__popup--right">
+        <button class="js-info-popup-closer info-popup__closer" type="button" title="Закрыть">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#close_icon" />
+            </svg>
+        </button>
+
+        <div class="cart-add">
+            <p class="cart-add__title">Товар добавлен в корзину</p>
+
+            <picture class="cart-add__product-image">
+                <source srcset="images/content/cart-add/img_desk.jpg, images/content/cart-add/img_desk@2x.jpg 2x" media="(min-width: 768px)">
+                <img src="images/content/cart-add/img_mob.jpg" srcset="images/content/cart-add/img_mob@2x.jpg 2x" alt="">
+            </picture>
+
+            <p class="cart-add__product-title">Платье в полоску с принтом</p>
+
+            <div class="cart-add__buttons">
+                <a class="button button--primary" href="#">Перейти в корзину</a>
+
+                <button class="js-info-popup-closer button button--secondary" type="button">Продолжить покупки</button>
+            </div>
+        </div>
+    </div>
+</div>

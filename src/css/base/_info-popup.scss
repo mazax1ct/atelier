@@ -19,6 +19,7 @@
     }
 
     &__popup {
+        @include scrollbar;
         background-color: #fff;
         height: 100%;
         left: 0;
@@ -73,6 +74,37 @@
             fill: currentColor;
             height: 24px;
             width: 24px;
+        }
+    }
+
+    &__text-block {
+        table {
+            border: none;
+            border-collapse: collapse;
+            width: 100%;
+
+            tr {
+                &:not(:last-child) {
+                    td {
+                        border-bottom: 1px solid var(--stroke);
+                    }
+                }
+            }
+
+            td,
+            th {
+                font-weight: 400;
+                padding: 8px;
+                text-align: center;
+
+                &:not(:last-child) {
+                    border-right: 1px solid var(--stroke);
+                }
+            }
+
+            th {
+                border-bottom: 1px solid var(--stroke);
+            }
         }
     }
 }
