@@ -1,16 +1,15 @@
 .input-group {
     &.is-filled {
         .input-group__label {
+            background-color: var(--bg);
             color: var(--dark_grey);
             font-size: 12px;
             top: 8px;
         }
 
-        &.input-group--textarea {
-            .input-group__label {
-                color: var(--blue_4);
-                font-size: 12px;
-            }
+        .input-group__textarea + .input-group__label {
+            padding-top: 8px;
+            top: 2px;
         }
 
         &:not(.is-disabled) {
@@ -44,8 +43,12 @@
             }
         }
 
-        .input-group__pseudo-textarea {
+        .input-group__textarea {
             border-color: var(--warning);
+
+            &:focus {
+                border-color: var(--warning);
+            }
         }
     }
 
@@ -59,40 +62,9 @@
             }
         }
 
-        .input-group__pseudo-textarea {
+        .input-group__textarea {
             border-color: var(--grey_7) !important;
             background-color: var(--grey_1);
-        }
-    }
-
-    &--textarea {
-        .input-group__textarea {
-            &:focus {
-                & + .input-group__label {
-                    color: var(--blue_4);
-                    font-size: 12px;
-                }
-
-                & + .input-group__pseudo-textarea {
-                    border-color: var(--blue_1);
-                }
-            }
-        }
-
-        .input-group__clear {
-            top: 22px;
-            transform: none;
-        }
-
-        .input-group__label {
-            pointer-events: auto;
-            padding-top: 16px;
-            top: 0;
-        }
-        @include hover {
-            .input-group__pseudo-textarea {
-                border-color: var(--blue_6);
-            }
         }
     }
 
@@ -193,49 +165,46 @@
         }
     }
 
-    &__pseudo-textarea {
-        border-radius: 7px;
-        border: 1px solid transparent;
-        background-color: var(--light_blue_1);
-        color: inherit;
-        font-size: 16px;
-        font-weight: 400;
-        height: 150px;
-        transition: background-color 0.3s, border-color 0.3s;
-        width: 100%;
-    }
-
     &__textarea {
         @include scrollbar;
-        background: none;
-        border: none;
-        border-radius: 0 0 7px 7px;
-        height: 118px;
-        left: 0;
+        border-radius: 0;
+        border: 2px solid var(--stroke);
+        background-color: var(--bg);
+        color: var(--black);
+        font-size: 15px;
+        font-weight: 400;
+        height: 120px;
         margin: 0;
-        padding: 0 16px 16px;
-        position: absolute;
+        padding: 24px 16px 10px;
         resize: none;
-        top: 32px;
+        transition: background-color 0.3s, border-color 0.3s;
         width: 100%;
+        @media(min-width: $sm) {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        @media(min-width: $fhd) {
+            font-size: 18px;
+            line-height: 1.32;
+        }
 
         &::-webkit-input-placeholder {
-            color: var(--grey_6);
+            color: var(--dark_grey);
             opacity: 0;
         }
 
         &::-moz-placeholder {
-            color: var(--grey_6);
+            color: var(--dark_grey);
             opacity: 0;
         }
 
         &:-ms-input-placeholder {
-            color: var(--grey_6);
+            color: var(--dark_grey);
             opacity: 0;
         }
 
         &:focus {
-            border-color: var(--blue_1) !important;
+            border-color: var(--black);
 
             &::-webkit-input-placeholder {
                 opacity: 1;
@@ -249,14 +218,17 @@
                 opacity: 1;
             }
 
-            & ~ .input-group__label {
+            & + .input-group__label {
+                color: var(--dark_grey);
                 font-size: 12px;
+                padding-top: 8px;
+                top: 2px;
             }
         }
 
         &:disabled {
-            /*background-color: var(--grey_1);
-            border-color: var(--grey_7);*/
+            background-color: var(--grey_1);
+            border-color: var(--grey_7);
             color: var(--grey_7);
 
             &::-webkit-input-placeholder {
@@ -271,7 +243,7 @@
                 opacity: 0;
             }
 
-            & ~ .input-group__label {
+            & + .input-group__label {
                 color: var(--grey_7);
 
                 .req,
@@ -284,7 +256,7 @@
 
     &__label {
         font-size: 15px;
-        left: 0;
+        left: 2px;
         line-height: 1.33333;
         overflow: hidden;
         padding-left: 16px;
@@ -295,7 +267,7 @@
         text-overflow: ellipsis;
         top: 16px;
         white-space: nowrap;
-        width: 100%;
+        width: calc(100% - 4px);
         @media(min-width: $sm) {
             padding-left: 20px;
             padding-right: 20px;

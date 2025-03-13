@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Atelier</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+
+    
+
+    <link rel="preload" href="fonts/subset-Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Nunito-ExtraBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Nunito-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Nunito-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css_plugins/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css_plugins/ion.rangeSlider.css" />
+    <link rel="stylesheet" href="css_plugins/jquery.fancybox.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="page">
+    <header class="header compensate-for-scrollbar">
+        <div class="container">
+            <div class="header__top">
+                <div class="header__phone">
+                    <a href="tel:+79282016262">+7 (928)-201-62-62</a>
+                </div>
+    
+                <button class="js-mobile-menu-opener header__burger header__button" type="button" title="Меню">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#burger_icon" />
+                    </svg>
+                </button>
+    
+                <button class="js-search-opener header__search header__button" type="button" title="Поиск">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#search_icon" />
+                    </svg>
+                </button>
+    
+                <a class="header__logo" href="#">
+                    <img src="images/logo.png" srcset="images/logo@2x.png 2x" alt="ATELIER">
+                </a>
+    
+                <a class="header__favorite header__button" href="#" title="Избранное">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#fav_icon" />
+                    </svg>
+                    <span class="counter">12</span>
+                </a>
+    
+                <a class="header__cart header__button" href="#" title="Корзина">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#cart_icon" />
+                    </svg>
+                    <span class="counter">99+</span>
+                </a>
+    
+                <a class="header__personal header__button" href="#" title="Личный кабинет">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#user_icon" />
+                    </svg>
+                </a>
+            </div>
+    
+            <div class="header__bottom">
+                <button class="js-header-catalog-toggler header__catalog-toggler" type="button">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#catalog_icon" />
+                    </svg>
+                    <span>Каталог</span>
+                </button>
+    
+                <div class="collapsing-menu">
+                    <nav class="collapsing-menu__nav">
+                        <ul class="-primary">
+                            <li>
+                                <a href="#">Девочки</a>
+                            </li>
+                            <li>
+                                <a href="#">Мальчики</a>
+                            </li>
+                            <li>
+                                <a href="#">Текстиль</a>
+                            </li>
+                            <li>
+                                <a href="#">Образы</a>
+                            </li>
+                            <li>
+                                <a href="#">Доставка</a>
+                            </li>
+                            <li>
+                                <a href="#">О нас</a>
+                            </li>
+                            <li>
+                                <a href="#">Контакты</a>
+                            </li>
+                            <li>
+                                <a href="#">Бренды</a>
+                            </li>
+                            <li>
+                                <a href="#">Подарочные сертификаты</a>
+                            </li>
+                            <li>
+                                <a href="#">Оплата</a>
+                            </li>
+                            <li>
+                                <a href="#">Возврат товара</a>
+                            </li>
+                            <li>
+                                <a href="#">Реквизиты</a>
+                            </li>
+                            <li>
+                                <a href="#">Партнёры</a>
+                            </li>
+                            <li>
+                                <a href="#">Мероприятия</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+    
+                <div class="social-links">
+                    <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer" title="Наш Whatsapp">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#wa_icon" />
+                        </svg>
+                    </a>
+    
+                    <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer" title="Наш Telegram">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#tg_icon" />
+                        </svg>
+                    </a>
+    
+                    <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer" title="Мы Вконтакте">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#vk_icon" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="header__catalog">
+            <div class="header__catalog-inner container">
+                <ul class="header__catalog-section">
+                    <li class="header__catalog-item header__catalog-item--title"><a class="header__catalog-link" href="#">Девочки</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Аксессуары</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Бельё</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Блузки. Рубашки</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Брюки. Легинсы</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Верхняя одежда</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Джемперы. Свитера. Кардиганы</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Джинсы</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Классические костюмы. Пиджаки</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Комбинезоны</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Купальники</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Лонгсливы</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Футболки, Топы</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Платья</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Свитшоты. Толстовки. Худи</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Спортивные костюмы. Комплекты</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Шорты</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Юбки</a></li>
+                </ul>
+    
+                <ul class="header__catalog-section">
+                    <li class="header__catalog-item header__catalog-item--title"><a class="header__catalog-link" href="#">Мальчики</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Аксессуары</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Бельё</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Брюки</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Верхняя одежда</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Джемперы. Свитера. Кардиганы</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Джинсы</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Классические костюмы. Пиджаки</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Лонгсливы</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Футболки</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Плавки</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Поло</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Рубашки</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Свитшоты. Толстовки. Худи</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Спортивные костюмы. Комплекты</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Шорты</a></li>
+                </ul>
+    
+                <ul class="header__catalog-section">
+                    <li class="header__catalog-item header__catalog-item--title"><a class="header__catalog-link" href="#">Малыши</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Девочки 0-3 года</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Мальчики 0-3 года</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Пинетки</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Пледы</a></li>
+                    <li class="header__catalog-item"><a class="header__catalog-link" href="#">Сумки для мам</a></li>
+                </ul>
+    
+                <div class="header__catalog-section">
+                    <a class="header__catalog-image-link" href="#">
+                        <span>
+                            <img src="images/content/menu/img_1.jpg" srcset="images/content/menu/img_1@2x.jpg 2x" alt="">
+                        </span>
+                        Перейти в каталог
+                    </a>
+    
+                    <a class="header__catalog-image-link" href="#">
+                        <span>
+                            <img src="images/content/menu/img_2.jpg" srcset="images/content/menu/img_2@2x.jpg 2x" alt="">
+                        </span>
+                        Все хиты
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="mobile-menu">
+            <div class="mobile-menu__inner">
+                <div class="mobile-menu__top">
+                    <button class="js-mobile-menu-closer mobile-menu__closer" type="button" title="Закрыть меню">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#close_light_icon" />
+                        </svg>
+                    </button>
+                </div>
+    
+                <div class="mobile-menu__bottom">
+    
+                    <div class="m-menu">
+                        <div class="m-menu__section root">
+                            <button class="js-lvl-opener m-menu__item m-menu__item--type_1" type="button">
+                                <span>Девочки</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#chevron_right" />
+                                </svg>
+                            </button>
+    
+                            <div class="m-menu__section lvl_2 root m-menu__section--type_2">
+                                <button class="js-lvl-closer m-menu__item m-menu__item--type_2" type="button">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#chevron_left" />
+                                    </svg>
+                                    <span>Девочки</span>
+                                </button>
+                                <a class="m-menu__item m-menu__item--type_3" href="#">
+                                    <span>Смотреть все</span>
+                                </a>
+    
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Аксессуары</span></a>
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Бельё</span></a>
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Блузки. Рубашки</span></a>
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Брюки. Легинсы</span></a>
+    
+                                <button class="js-lvl-opener m-menu__item m-menu__item--type_1" type="button">
+                                    <span>Верхняя одежда</span>
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#chevron_right" />
+                                    </svg>
+                                </button>
+    
+                                <div class="m-menu__section m-menu__section--type_2">
+                                    <button class="js-lvl-closer m-menu__item m-menu__item--type_2" type="button">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#chevron_left" />
+                                        </svg>
+                                        <span>Верхняя одежда</span>
+                                    </button>
+                                    <a class="m-menu__item m-menu__item--type_3" href="#">
+                                        <span>Смотреть все</span>
+                                    </a>
+                                    <a class="m-menu__item m-menu__item--type_1" href="#"><span>Жилеты</span></a>
+                                    <a class="m-menu__item m-menu__item--type_1" href="#"><span>Куртки</span></a>
+                                    <a class="m-menu__item m-menu__item--type_1" href="#"><span>Пальто</span></a>
+                                    <a class="m-menu__item m-menu__item--type_1" href="#"><span>Ветровки</span></a>
+                                    <a class="m-menu__item m-menu__item--type_1" href="#"><span>Плащи</span></a>
+                                    <a class="m-menu__item m-menu__item--type_1" href="#"><span>Джинсовые куртки</span></a>
+                                    <a class="m-menu__item m-menu__item--type_1" href="#"><span>Спортивные костюмы</span></a>
+                                </div>
+    
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Джемперы. Свитера. Кардиганы</span></a>
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Джинсы</span></a>
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Классические костюмы. Пиджаки</span></a>
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Комбинезоны</span></a>
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Купальники</span></a>
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Лонгсливы</span></a>
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Футболки, Топы</span></a>
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Платья</span></a>
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Свитшоты. Толстовки. Худи</span></a>
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Спортивные костюмы. Комплекты</span></a>
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Шорты</span></a>
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Юбки</span></a>
+                            </div>
+                        </div>
+    
+                        <div class="m-menu__section root">
+                            <button class="js-lvl-opener m-menu__item m-menu__item--type_1" type="button">
+                                <span>Мальчики</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#chevron_right" />
+                                </svg>
+                            </button>
+    
+                            <div class="m-menu__section lvl_2 root m-menu__section--type_2">
+                                <button class="js-lvl-closer m-menu__item m-menu__item--type_2" type="button">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#chevron_left" />
+                                    </svg>
+                                    <span>Мальчики</span>
+                                </button>
+                                <a class="m-menu__item m-menu__item--type_3" href="#">
+                                    <span>Смотреть все</span>
+                                </a>
+    
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Аксессуары</span></a>
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Бельё</span></a>
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Блузки. Рубашки</span></a>
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Брюки. Легинсы</span></a>
+                            </div>
+                        </div>
+    
+                        <div class="m-menu__section root">
+                            <button class="js-lvl-opener m-menu__item m-menu__item--type_1" type="button">
+                                <span>Текстиль</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#chevron_right" />
+                                </svg>
+                            </button>
+    
+                            <div class="m-menu__section lvl_2 root m-menu__section--type_2">
+                                <button class="js-lvl-closer m-menu__item m-menu__item--type_2" type="button">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#chevron_left" />
+                                    </svg>
+                                    <span>Текстиль</span>
+                                </button>
+                                <a class="m-menu__item m-menu__item--type_3" href="#">
+                                    <span>Смотреть все</span>
+                                </a>
+    
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Аксессуары</span></a>
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Бельё</span></a>
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Блузки. Рубашки</span></a>
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Брюки. Легинсы</span></a>
+                            </div>
+                        </div>
+    
+                        <div class="m-menu__section">
+                            <a class="m-menu__item m-menu__item--type_1" href="#">
+                                <span>Образы</span>
+                            </a>
+                        </div>
+    
+                        <div class="m-menu__section root">
+                            <button class="js-lvl-opener m-menu__item m-menu__item--type_1" type="button">
+                                <span>Покупателям</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#chevron_right" />
+                                </svg>
+                            </button>
+    
+                            <div class="m-menu__section lvl_2 m-menu__section--type_2">
+                                <button class="js-lvl-closer m-menu__item m-menu__item--type_2" type="button">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#chevron_left" />
+                                    </svg>
+                                    <span>Покупателям</span>
+                                </button>
+                                <a class="m-menu__item m-menu__item--type_3" href="#">
+                                    <span>Смотреть все</span>
+                                </a>
+    
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Оплата</span></a>
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Доставка</span></a>
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Возврат</span></a>
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Подарочные сертификаты</span></a>
+                            </div>
+                        </div>
+    
+                        <div class="m-menu__section root">
+                            <button class="js-lvl-opener m-menu__item m-menu__item--type_1" type="button">
+                                <span>О бутике</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#chevron_right" />
+                                </svg>
+                            </button>
+    
+                            <div class="m-menu__section lvl_2 m-menu__section--type_2">
+                                <button class="js-lvl-closer m-menu__item m-menu__item--type_2" type="button">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#chevron_left" />
+                                    </svg>
+                                    <span>О бутике</span>
+                                </button>
+                                <a class="m-menu__item m-menu__item--type_3" href="#">
+                                    <span>Смотреть все</span>
+                                </a>
+    
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>О нас</span></a>
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Реквизиты</span></a>
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Партнёры</span></a>
+                                <a class="m-menu__item m-menu__item--type_1" href="#"><span>Мероприятия</span></a>
+                            </div>
+                        </div>
+    
+                        <div class="m-menu__section">
+                            <a class="m-menu__item m-menu__item--type_1" href="#">
+                                <span>Бренды</span>
+                            </a>
+                        </div>
+    
+                        <div class="m-menu__section">
+                            <a class="m-menu__item m-menu__item--type_1" href="#">
+                                <span>Контакты</span>
+                            </a>
+                        </div>
+    
+                        <div class="m-menu__section m-menu__section--type_1">
+                            <a class="m-menu__item m-menu__item--type_1" href="#">
+                                <span>Войти</span>
+                            </a>
+                        </div>
+                    </div>
+    
+                    <div class="mobile-menu__contacts">
+                        <a class="contact-phone" href="tel:+79282016262">+7 (928)-201-62-62</a>
+    
+                        <div class="social-links">
+                            <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer" title="Наш Whatsapp">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#wa_icon" />
+                                </svg>
+                            </a>
+    
+                            <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer" title="Наш Telegram">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#tg_icon" />
+                                </svg>
+                            </a>
+    
+                            <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer" title="Мы Вконтакте">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#vk_icon" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="search">
+            <div class="js-search-closer search__bg"></div>
+    
+            <div class="search__inner">
+                <div class="search__container container">
+                    <div class="search__form-block">
+                        <div class="search__form-top">
+                            <button class="js-search-closer search__closer" type="button">
+                                <span>Отменить</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#close_light_icon" />
+                                </svg>
+                            </button>
+    
+                            <form class="search__form" action="">
+                                <div class="input-group">
+                                    <div class="input-group__inner">
+                                        <div class="input-group__input-container">
+                                            <input id="q" class="js-input-group__input input-group__input" type="text" name="q">
+                                            <label class="input-group__label" for="q">Поиск по сайту</label>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <button class="search__submit" type="submit" title="Искать">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#search_icon" />
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+    
+                        <div class="search__pre-vars">
+                            <button class="js-search-var search__pre-var" type="button"><span>Платье</span></button>
+                            <button class="js-search-var search__pre-var" type="button"><span>Пальто</span></button>
+                            <button class="js-search-var search__pre-var" type="button"><span>Жилет</span></button>
+                            <button class="js-search-var search__pre-var" type="button"><span>Кардиган</span></button>
+                        </div>
+    
+                        <p class="search__vars-title">Часто ищут</p>
+    
+                        <div class="search__vars">
+                            <button class="js-search-var search__var" type="button">
+                                <span>Платье</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#search_icon" />
+                                </svg>
+                            </button>
+    
+                            <button class="js-search-var search__var" type="button">
+                                <span>Розвое платье</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#search_icon" />
+                                </svg>
+                            </button>
+    
+                            <button class="js-search-var search__var" type="button">
+                                <span>Белое платье</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#search_icon" />
+                                </svg>
+                            </button>
+    
+                            <button class="js-search-var search__var" type="button">
+                                <span>Обувь в школу</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#search_icon" />
+                                </svg>
+                            </button>
+                        </div>
+    
+                        <p class="search__vars-title">Искать в категориях</p>
+    
+                        <div class="search__vars">
+                            <a class="search__var" type="button" href="#">
+                                <span>Девочки / Платья</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#chevron_right" />
+                                </svg>
+                            </a>
+    
+                            <a class="search__var" type="button" href="#">
+                                <span>Мальчики / Верхняя одежда</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#chevron_right" />
+                                </svg>
+                            </a>
+    
+                            <a class="search__var" type="button" href="#">
+                                <span>Девочки / Верхняя одежда</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#chevron_right" />
+                                </svg>
+                            </a>
+    
+                            <a class="search__var" type="button" href="#">
+                                <span>Текстиль / Для дома</span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#chevron_right" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+    
+                    <div class="search__results-block">
+                        <p class="search__results-title">Вам могут понравиться</p>
+    
+                        <div class="search__results-list">
+                            <div class="card">
+                                <div class="card__image-block">
+                                    <a href="#">
+                                        <img src="images/content/catalog-section/img_1.jpg" srcset="images/content/catalog-section/img_1@2x.jpg 2x" alt="">
+                                    </a>
+    
+                                    <button class="card__favorite is-active" type="button" title="Убрать из избранного">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#fav_filled_icon" />
+                                        </svg>
+                                    </button>
+    
+                                    <div class="card__labels">
+                                        <div class="card__label card__label--type_1">-40%</div>
+                                        <div class="card__label card__label--type_2">best seller</div>
+                                    </div>
+                                </div>
+    
+                                <div class="card__info-block">
+                                    <div class="card__info-block-inner">
+                                        <div class="card__info">
+                                            <p class="card__brand"><a href="#">Stella McCartney</a></p>
+                                            <p class="card__title"><a href="#">Платье</a></p>
+                                            <p class="card__price">35 240 ₽</p>
+                                            <p class="card__price card__price--old">37 540 ₽</p>
+                                        </div>
+    
+                                        <a class="card__to-cart" href="#" title="Добавить в корзину">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#cart_icon" />
+                                            </svg>
+                                        </a>
+                                    </div>
+    
+                                    <div class="combobox combobox--small">
+                                        <button class="js-combobox-toggler combobox__value-block" type="button">
+                                            <div class="combobox__value">Размер</div>
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#chevron_down_light" />
+                                            </svg>
+                                        </button>
+    
+                                        <div class="combobox__dropdown">
+                                            <div class="combobox__list">
+                                                <a class="combobox__link" href="#">12 мес</a>
+                                                <a class="combobox__link" href="#">18 мес</a>
+                                                <a class="combobox__link" href="#">XXS/104</a>
+                                                <a class="combobox__link" href="#">M/140</a>
+                                                <a class="combobox__link" href="#">XL</a>
+                                                <a class="combobox__link" href="#">58</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="card">
+                                <div class="card__image-block">
+                                    <a href="#">
+                                        <img src="images/content/catalog-section/img_2.jpg" srcset="images/content/catalog-section/img_2@2x.jpg 2x" alt="">
+                                    </a>
+    
+                                    <button class="card__favorite" type="button" title="Добавить в избранное">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#fav_icon" />
+                                        </svg>
+                                    </button>
+    
+                                    <div class="card__labels">
+                                        <div class="card__label card__label--type_3">хит сезона</div>
+                                    </div>
+                                </div>
+    
+                                <div class="card__info-block">
+                                    <div class="card__info-block-inner">
+                                        <div class="card__info">
+                                            <p class="card__brand"><a href="#">Stella McCartney</a></p>
+                                            <p class="card__title"><a href="#">Босоножки</a></p>
+                                            <p class="card__price">35 240 ₽</p>
+                                        </div>
+    
+                                        <a class="card__to-cart" href="#" title="Добавить в корзину">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#cart_icon" />
+                                            </svg>
+                                        </a>
+                                    </div>
+    
+                                    <div class="combobox combobox--small">
+                                        <button class="js-combobox-toggler combobox__value-block" type="button">
+                                            <div class="combobox__value">Размер</div>
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#chevron_down_light" />
+                                            </svg>
+                                        </button>
+    
+                                        <div class="combobox__dropdown">
+                                            <div class="combobox__list">
+                                                <a class="combobox__link" href="#">12 мес</a>
+                                                <a class="combobox__link" href="#">18 мес</a>
+                                                <a class="combobox__link" href="#">XXS/104</a>
+                                                <a class="combobox__link" href="#">M/140</a>
+                                                <a class="combobox__link" href="#">XL</a>
+                                                <a class="combobox__link" href="#">58</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <a class="button button--secondary" href="#">Смотреть все</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="page__content">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    Корзина
+                </li>
+            </ul>
+
+            <h1>Корзина</h1>
+
+            <div class="order-make">
+                <div class="order-make__left">
+                    <div class="cart-item">
+                        <div class="cart-item__image">
+                            <img src="images/content/cart/img.jpg" srcset="images/content/cart/img@2x.jpg 2x" alt="">
+                        </div>
+
+                        <div class="cart-item__description">
+                            <p class="cart-item__art">Арт. U20403</p>
+                            <p class="cart-item__title">Босоножки белые с принтом текстом на платформе</p>
+                            <p class="cart-item__stock">Наличие в бутиках : ATELIER детства г. Ростов-на-Дону, просп. Чехова, 76</p>
+                            <p class="cart-item__price">19 500 ₽</p>
+                            <p class="cart-item__price cart-item__price--old">25 240 ₽</p>
+                        </div>
+
+                        <div class="cart-item__controls">
+                            <div class="combobox combobox--small">
+                                <button class="js-combobox-toggler combobox__value-block" type="button">
+                                    <div class="combobox__value is-active">12 мес</div>
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#chevron_down_light" />
+                                    </svg>
+                                </button>
+
+                                <div class="combobox__dropdown">
+                                    <div class="combobox__list">
+                                        <a class="combobox__link is-active" href="#">12 мес</a>
+                                        <a class="combobox__link" href="#">18 мес</a>
+                                        <a class="combobox__link" href="#">XXS/104</a>
+                                        <a class="combobox__link" href="#">M/140</a>
+                                        <a class="combobox__link" href="#">XL</a>
+                                        <a class="combobox__link" href="#">58</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="qnt">
+                                <button class="qnt__button" type="button" title="Уменьшить">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#minus_icon" />
+                                    </svg>
+                                </button>
+
+                                <input class="qnt__input" type="text" name="" value="2" readonly>
+
+                                <button class="qnt__button" type="button" title="Увеличить">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#plus_icon" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <button class="cart-item__delete" type="button" title="Удалить">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#close_icon" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="cart-item">
+                        <div class="cart-item__image">
+                            <img src="images/content/cart/img.jpg" srcset="images/content/cart/img@2x.jpg 2x" alt="">
+                        </div>
+
+                        <div class="cart-item__description">
+                            <p class="cart-item__art">Арт. U20403</p>
+                            <p class="cart-item__title">Босоножки белые с принтом текстом на платформе</p>
+                            <p class="cart-item__stock">Наличие в бутиках : ATELIER детства г. Ростов-на-Дону, просп. Чехова, 76</p>
+                            <p class="cart-item__price">19 500 ₽</p>
+                        </div>
+
+                        <div class="cart-item__controls">
+                            <div class="combobox combobox--small">
+                                <button class="js-combobox-toggler combobox__value-block" type="button">
+                                    <div class="combobox__value is-active">XXS/104</div>
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#chevron_down_light" />
+                                    </svg>
+                                </button>
+
+                                <div class="combobox__dropdown">
+                                    <div class="combobox__list">
+                                        <a class="combobox__link" href="#">12 мес</a>
+                                        <a class="combobox__link" href="#">18 мес</a>
+                                        <a class="combobox__link is-active" href="#">XXS/104</a>
+                                        <a class="combobox__link" href="#">M/140</a>
+                                        <a class="combobox__link" href="#">XL</a>
+                                        <a class="combobox__link" href="#">58</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="qnt">
+                                <button class="qnt__button" type="button" title="Уменьшить">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#minus_icon" />
+                                    </svg>
+                                </button>
+
+                                <input class="qnt__input" type="text" name="" value="2" readonly>
+
+                                <button class="qnt__button" type="button" title="Увеличить">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#plus_icon" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <button class="cart-item__delete" type="button" title="Удалить">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#close_icon" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order-make__right">
+                    <div class="order-make__results">
+                        <p class="order-make__result-item"><span>2 товара</span> <span>20 240 ₽</span></p>
+                        <p class="order-make__result-item"><span>Доставка</span> <span>1 446 ₽</span></p>
+                        <p class="order-make__result-item"><span>Скидка</span> <span class="red">− 2 920 ₽</span></p>
+                        <p class="order-make__result-item"><span>Промокод</span> <span class="red">− 1 500 ₽</span></p>
+                        <p class="order-make__result-item"><span>Итого</span> <span class="order-make__summ">17 754 ₽</span></p>
+
+                        <div class="order-make__promocode-form">
+                            <div class="input-group">
+                                <div class="input-group__inner">
+                                    <div class="input-group__input-container">
+                                        <input id="promocode" class="js-input-group__input input-group__input" type="text" name="">
+                                        <label class="input-group__label" for="promocode">Промокод</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="order-make__promo-add button button--primary" type="button" title="Применить">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_right_icon" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="order-make__promocode">
+                            <svg class="order-make__promocode-icon order-make__promocode-icon--success" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#success_icon" />
+                            </svg>
+
+                            <span>Промокод WELCOME применён<br> (скидка 5%)</span>
+
+                            <button class="order-make__promocode-delete" type="button" title="Удалить">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#close_light_icon" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="order-make__promocode">
+                            <svg class="order-make__promocode-icon order-make__promocode-icon--warning" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#warning_icon" />
+                            </svg>
+
+                            <span>Промокод введён неверно или недействителен</span>
+                        </div>
+
+                        <a class="order-make__make button button--primary" href="#">Оформить заказ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="float-block float-block--type_3 compensate-for-scrollbar">
+            <div class="container"><span>Скидка 5% на первый заказ! Используйте промокод «welcome», чтобы получить её.</span></div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-form">
+                <div class="footer-form__inner">
+                    <h2 class="footer-form__title">Специальные предложения от&nbsp;Atelier</h2>
+    
+                    <p class="footer-form__text">Введите свой номер, чтобы получать скидки и&nbsp;уведомления о&nbsp;новинках</p>
+    
+                    <div class="footer-form__form-block">
+                        <form class="footer-form__form" action="">
+                            <div class="input-group">
+                                <div class="input-group__inner">
+                                    <div class="input-group__input-container">
+                                        <input id="subscribe" class="js-input-group__input js-phone-mask input-group__input" type="text" name="subscribe" value="">
+                                        <label class="input-group__label" for="subscribe">Мобильный телефон</label>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <button class="footer-form__submit" type="submit" title="Отправить">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#send_arrow_icon" />
+                                </svg>
+                            </button>
+                        </form>
+    
+                        <div class="footer-form__note">
+                            <p>Оставляя свои данные в любой форме обратной связи на сайте atelierkids.ru, вы&nbsp;соглашаетесь<br> с&nbsp;<a href="#">пользовательским соглашением</a> и <a href="#">политикой обработки данных</a></p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="footer-form__logo-block">
+                    <div class="footer-form__logo">
+                        <img src="images/logo.png" srcset="images/logo@2x.png 2x" alt="ATELIER">
+                    </div>
+    
+                    <div class="footer-form__phone-block">
+                        <a class="contact-phone" href="tel:+79282016262">+7 (928)-201-62-62</a>
+    
+                        <div class="social-links">
+                            <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer" title="Наш Whatsapp">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#wa_icon" />
+                                </svg>
+                            </a>
+    
+                            <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer" title="Наш Telegram">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#tg_icon" />
+                                </svg>
+                            </a>
+    
+                            <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer" title="Мы Вконтакте">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#vk_icon" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="footer__center">
+                <div class="footer__shops">
+                    <h4>Магазины</h4>
+    
+                    <div class="footer__shops-list">
+                        <div class="shop-info">
+                            <p class="big-text">Краснодар</p>
+                            <p>
+                                <a class="phone" href="tel:+79183289999">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#phone_icon" />
+                                    </svg>
+                                    <span>8 (918)-328-99-99</span>
+                                </a>
+                            </p>
+    
+                            <p class="shop-info__prop">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#pin_icon" />
+                                </svg>
+                                <span>г.&nbsp;Краснодар, ул.&nbsp;Чапаева,&nbsp;42</span>
+                            </p>
+    
+                            <p class="shop-info__prop">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#clock_icon" />
+                                </svg>
+                                <span>с 10:00 до 20:00</span>
+                            </p>
+                        </div>
+    
+                        <div class="shop-info">
+                            <p class="big-text">Ростов-на-Дону</p>
+                            <p>
+                                <a class="phone" href="tel:+79896310665">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#phone_icon" />
+                                    </svg>
+                                    <span>8 (989)-631-06-65</span>
+                                </a>
+                            </p>
+    
+                            <p class="shop-info__prop">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#pin_icon" />
+                                </svg>
+                                <span>г.&nbsp;Ростов-на-Дону, пр.&nbsp;Чехова,&nbsp;76</span>
+                            </p>
+    
+                            <p class="shop-info__prop">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#clock_icon" />
+                                </svg>
+                                <span>с 10:00 до 21:00</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="footer__menu">
+                    <div class="footer__menu-item footer-menu">
+                        <h4 class="footer-menu__title">
+                            <span>Каталог</span>
+                            <button class="js-footer-menu-toggler footer-menu__toggler" type="button">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#plus_icon" />
+                                </svg>
+                            </button>
+                        </h4>
+    
+                        <ul class="footer-menu__list">
+                            <li><a href="#">Новинки</a></li>
+                            <li><a href="#">Мальчики</a></li>
+                            <li><a href="#">Девочки</a></li>
+                            <li><a href="#">Малыши</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer__menu-item footer-menu">
+                        <h4 class="footer-menu__title">
+                            <span>Текстиль для дома</span>
+                            <button class="js-footer-menu-toggler footer-menu__toggler" type="button">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#plus_icon" />
+                                </svg>
+                            </button>
+                        </h4>
+    
+                        <ul class="footer-menu__list">
+                            <li><a href="#">Постельное белье</a></li>
+                            <li><a href="#">Пледы</a></li>
+                            <li><a href="#">Полотенца</a></li>
+                            <li><a href="#">Весь текстиль</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer__menu-item footer-menu">
+                        <h4 class="footer-menu__title">
+                            <span>Интернет-магазин</span>
+                            <button class="js-footer-menu-toggler footer-menu__toggler" type="button">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#plus_icon" />
+                                </svg>
+                            </button>
+                        </h4>
+    
+                        <ul class="footer-menu__list">
+                            <li><a href="#">Оплата</a></li>
+                            <li><a href="#">Доставка</a></li>
+                            <li><a href="#">Возврат товара</a></li>
+                            <li><a href="#">Бренды</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer__menu-item footer-menu">
+                        <h4 class="footer-menu__title">
+                            <span>Atelier</span>
+                            <button class="js-footer-menu-toggler footer-menu__toggler" type="button">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#plus_icon" />
+                                </svg>
+                            </button>
+                        </h4>
+    
+                        <ul class="footer-menu__list">
+                            <li><a href="#">Реквизиты</a></li>
+                            <li><a href="#">О бутике</a></li>
+                            <li><a href="#">Партнёры</a></li>
+                            <li><a href="#">Мероприятия</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer__menu-item footer__menu-contacts">
+                        <a class="contact-phone" href="tel:+7 (928)-201-62-62">+7 (928)-201-62-62</a>
+    
+                        <div class="social-links">
+                            <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer" title="Наш Whatsapp">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#wa_icon" />
+                                </svg>
+                            </a>
+    
+                            <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer" title="Наш Telegram">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#tg_icon" />
+                                </svg>
+                            </a>
+    
+                            <a class="social-link" href="#" target="_blank" rel="nofollow noreferrer" title="Мы Вконтакте">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#vk_icon" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+    
+                    <div class="footer__menu-item footer-menu">
+                        <h4 class="footer-menu__title"><a href="#">Образы</a></h4>
+                    </div>
+    
+                    <div class="footer__menu-item footer-menu">
+                        <h4 class="footer-menu__title"><a href="#">Подарочные карты</a></h4>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="footer__bottom">
+                <ul class="footer__bottom-menu">
+                    <li><a href="#">Договор оферты</a></li>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                </ul>
+    
+                <div class="footer__copyright">2010–2025 © интернет-магазин детской<br> одежды «Ателье Детства»</div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="cart_add" class="info-popup">
+        <div class="js-info-popup-closer info-popup__bg"></div>
+    
+        <div class="info-popup__popup info-popup__popup--right">
+            <button class="js-info-popup-closer info-popup__closer" type="button" title="Закрыть">
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#close_icon" />
+                </svg>
+            </button>
+    
+            <div class="cart-add">
+                <p class="cart-add__title">Товар добавлен в корзину</p>
+    
+                <picture class="cart-add__product-image">
+                    <source srcset="images/content/cart-add/img_desk.jpg, images/content/cart-add/img_desk@2x.jpg 2x" media="(min-width: 768px)">
+                    <img src="images/content/cart-add/img_mob.jpg" srcset="images/content/cart-add/img_mob@2x.jpg 2x" alt="">
+                </picture>
+    
+                <p class="cart-add__product-title">Платье в полоску с принтом</p>
+    
+                <div class="cart-add__buttons">
+                    <a class="button button--primary" href="#">Перейти в корзину</a>
+    
+                    <button class="js-info-popup-closer button button--secondary" type="button">Продолжить покупки</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    
+    <script src="js/jquery.inputmask.min.js"></script>
+    
+    <script src="js/inputmask-init.js"></script>
+    
+    <script src="js/collapsing-menu.js"></script>
+    
+    <script src="js/jquery.fancybox.min.js"></script>
+    
+    <script src="js/fancybox-defaults.js"></script>
+    
+    <script src="js/main.js"></script>
+</body>
+
+</html>

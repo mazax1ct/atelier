@@ -1,0 +1,35 @@
+.qnt {
+    border: 1px solid var(--stroke);
+    display: flex;
+
+    &__button {
+        @include button-reset;
+        align-items: center;
+        color: var(--black);
+        display: flex;
+        height: 42px;
+        justify-content: center;
+        min-width: 44px;
+        transition: color 0.3s;
+        width: 44px;
+        @include hover {
+            color: var(--dark_grey);
+        }
+
+        svg {
+            fill: currentColor;
+            height: 24px;
+            width: 24px;
+        }
+    }
+
+    &__input {
+        border: none;
+        box-shadow: none;
+        height: 42px;
+        min-width: 44px;
+        padding: 0;
+        text-align: center;
+        width: 44px;
+    }
+}

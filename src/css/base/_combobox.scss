@@ -5,7 +5,7 @@
     &--small {
         .combobox__value-block {
             color: var(--dark_grey);
-            height: 44px;
+            height: 42px;
             padding-right: 44px;
             padding-left: 10px;
 
@@ -28,7 +28,7 @@
 
         .combobox__dropdown {
             padding-left: 10px;
-            padding-right: 10px;
+            padding-right: 0;
         }
 
         .combobox__list {
@@ -106,7 +106,7 @@
         border-top: none;
         display: none;
         left: 0;
-        padding: 10px 20px;
+        padding: 10px 0 10px 20px;
         position: absolute;
         top: 100%;
         width: 100%;

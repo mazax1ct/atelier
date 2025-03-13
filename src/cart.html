@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Atelier</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/common/favicon.html
+
+    //= template/common/fonts_preload.html
+
+    //= template/common/styles.html
+</head>
+
+<body class="page">
+    //= template/common/header.html
+
+    <main class="page__content">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    Корзина
+                </li>
+            </ul>
+
+            <h1>Корзина</h1>
+
+            <div class="order-make">
+                <div class="order-make__left">
+                    <div class="cart-item">
+                        <div class="cart-item__image">
+                            <img src="images/content/cart/img.jpg" srcset="images/content/cart/img@2x.jpg 2x" alt="">
+                        </div>
+
+                        <div class="cart-item__description">
+                            <p class="cart-item__art">Арт. U20403</p>
+                            <p class="cart-item__title">Босоножки белые с принтом текстом на платформе</p>
+                            <p class="cart-item__stock">Наличие в бутиках : ATELIER детства г. Ростов-на-Дону, просп. Чехова, 76</p>
+                            <p class="cart-item__price">19 500 ₽</p>
+                            <p class="cart-item__price cart-item__price--old">25 240 ₽</p>
+                        </div>
+
+                        <div class="cart-item__controls">
+                            <div class="combobox combobox--small">
+                                <button class="js-combobox-toggler combobox__value-block" type="button">
+                                    <div class="combobox__value is-active">12 мес</div>
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#chevron_down_light" />
+                                    </svg>
+                                </button>
+
+                                <div class="combobox__dropdown">
+                                    <div class="combobox__list">
+                                        <a class="combobox__link is-active" href="#">12 мес</a>
+                                        <a class="combobox__link" href="#">18 мес</a>
+                                        <a class="combobox__link" href="#">XXS/104</a>
+                                        <a class="combobox__link" href="#">M/140</a>
+                                        <a class="combobox__link" href="#">XL</a>
+                                        <a class="combobox__link" href="#">58</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="qnt">
+                                <button class="qnt__button" type="button" title="Уменьшить">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#minus_icon" />
+                                    </svg>
+                                </button>
+
+                                <input class="qnt__input" type="text" name="" value="2" readonly>
+
+                                <button class="qnt__button" type="button" title="Увеличить">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#plus_icon" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <button class="cart-item__delete" type="button" title="Удалить">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#close_icon" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="cart-item">
+                        <div class="cart-item__image">
+                            <img src="images/content/cart/img.jpg" srcset="images/content/cart/img@2x.jpg 2x" alt="">
+                        </div>
+
+                        <div class="cart-item__description">
+                            <p class="cart-item__art">Арт. U20403</p>
+                            <p class="cart-item__title">Босоножки белые с принтом текстом на платформе</p>
+                            <p class="cart-item__stock">Наличие в бутиках : ATELIER детства г. Ростов-на-Дону, просп. Чехова, 76</p>
+                            <p class="cart-item__price">19 500 ₽</p>
+                        </div>
+
+                        <div class="cart-item__controls">
+                            <div class="combobox combobox--small">
+                                <button class="js-combobox-toggler combobox__value-block" type="button">
+                                    <div class="combobox__value is-active">XXS/104</div>
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#chevron_down_light" />
+                                    </svg>
+                                </button>
+
+                                <div class="combobox__dropdown">
+                                    <div class="combobox__list">
+                                        <a class="combobox__link" href="#">12 мес</a>
+                                        <a class="combobox__link" href="#">18 мес</a>
+                                        <a class="combobox__link is-active" href="#">XXS/104</a>
+                                        <a class="combobox__link" href="#">M/140</a>
+                                        <a class="combobox__link" href="#">XL</a>
+                                        <a class="combobox__link" href="#">58</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="qnt">
+                                <button class="qnt__button" type="button" title="Уменьшить">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#minus_icon" />
+                                    </svg>
+                                </button>
+
+                                <input class="qnt__input" type="text" name="" value="2" readonly>
+
+                                <button class="qnt__button" type="button" title="Увеличить">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#plus_icon" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <button class="cart-item__delete" type="button" title="Удалить">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#close_icon" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order-make__right">
+                    <div class="order-make__results">
+                        <p class="order-make__result-item"><span>2 товара</span> <span>20 240 ₽</span></p>
+                        <p class="order-make__result-item"><span>Доставка</span> <span>1 446 ₽</span></p>
+                        <p class="order-make__result-item"><span>Скидка</span> <span class="red">− 2 920 ₽</span></p>
+                        <p class="order-make__result-item"><span>Промокод</span> <span class="red">− 1 500 ₽</span></p>
+                        <p class="order-make__result-item"><span>Итого</span> <span class="order-make__summ">17 754 ₽</span></p>
+
+                        <div class="order-make__promocode-form">
+                            <div class="input-group">
+                                <div class="input-group__inner">
+                                    <div class="input-group__input-container">
+                                        <input id="promocode" class="js-input-group__input input-group__input" type="text" name="">
+                                        <label class="input-group__label" for="promocode">Промокод</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="order-make__promo-add button button--primary" type="button" title="Применить">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#arrow_right_icon" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="order-make__promocode">
+                            <svg class="order-make__promocode-icon order-make__promocode-icon--success" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#success_icon" />
+                            </svg>
+
+                            <span>Промокод WELCOME применён<br> (скидка 5%)</span>
+
+                            <button class="order-make__promocode-delete" type="button" title="Удалить">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#close_light_icon" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="order-make__promocode">
+                            <svg class="order-make__promocode-icon order-make__promocode-icon--warning" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#warning_icon" />
+                            </svg>
+
+                            <span>Промокод введён неверно или недействителен</span>
+                        </div>
+
+                        <a class="order-make__make button button--primary" href="#">Оформить заказ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        //= template/common/float-block.html
+    </main>
+
+    //= template/common/footer.html
+
+    //= template/common/popups.html
+
+    //= template/common/scripts.html
+</body>
+
+</html>
