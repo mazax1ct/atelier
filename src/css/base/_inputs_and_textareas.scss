@@ -11,27 +11,6 @@
             padding-top: 8px;
             top: 2px;
         }
-
-        &:not(.is-disabled) {
-            &.input-group--datepicker {
-                .input-group__input {
-                    &:focus {
-                        border-radius: 7px 7px 0 0;
-                    }
-                }
-            }
-        }
-
-        &.is-disabled {
-            .input-group__label {
-                color: var(--grey_7);
-
-                .req,
-                .required {
-                    color: var(--grey_7);
-                }
-            }
-        }
     }
 
     &.error {
@@ -49,22 +28,6 @@
             &:focus {
                 border-color: var(--warning);
             }
-        }
-    }
-
-    &.is-disabled {
-        .input-group__label {
-            color: var(--grey_7);
-
-            .req,
-            .required {
-                color: var(--grey_7);
-            }
-        }
-
-        .input-group__textarea {
-            border-color: var(--grey_7) !important;
-            background-color: var(--grey_1);
         }
     }
 
@@ -138,9 +101,9 @@
         }
 
         &:disabled {
-            background-color: var(--grey_1);
-            border-color: var(--grey_7);
-            color: var(--grey_7);
+            background-color: var(--accent_grey);
+            border-color: var(--line_grey);
+            color: var(--line_grey);
 
             &::-webkit-input-placeholder {
                 opacity: 0;
@@ -155,11 +118,12 @@
             }
 
             & + .input-group__label {
-                color: var(--grey_7);
+                background-color: var(--accent_grey);
+                color: var(--line_grey);
 
                 .req,
                 .required {
-                    color: var(--grey_7);
+                    color: var(--line_grey);
                 }
             }
         }
@@ -227,9 +191,9 @@
         }
 
         &:disabled {
-            background-color: var(--grey_1);
-            border-color: var(--grey_7);
-            color: var(--grey_7);
+            background-color: var(--accent_grey);
+            border-color: var(--line_grey);
+            color: var(--line_grey);
 
             &::-webkit-input-placeholder {
                 opacity: 0;
@@ -244,11 +208,12 @@
             }
 
             & + .input-group__label {
-                color: var(--grey_7);
+                background-color: var(--accent_grey);
+                color: var(--line_grey);
 
                 .req,
                 .required {
-                    color: var(--grey_7);
+                    color: var(--line_grey);
                 }
             }
         }
