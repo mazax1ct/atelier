@@ -1,10 +1,17 @@
 .f-slider {
+    //@media(min-width: $hd) {
+    //display: flex;
+    //padding-left: 56px;
+    //padding-right: 56px;
+    position: relative;
+    z-index: 1;
+    //}
     @media(min-width: $hd) {
         display: flex;
         padding-left: 56px;
         padding-right: 56px;
-        position: relative;
-        z-index: 1;
+        //position: relative;
+        //z-index: 1;
     }
 
     &__primary {
@@ -43,6 +50,7 @@
     &__arrow {
         @include button-reset;
         align-items: center;
+        background-color: #fff;
         border: 1px solid currentColor;
         color: var(--dark_grey);
         cursor: pointer;
@@ -50,18 +58,20 @@
         height: 44px;
         justify-content: center;
         position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
+        top: 175px;
         transition: color 0.3s;
         width: 44px;
         z-index: 2;
         @include hover {
             color: var(--black);
         }
-        @media(max-width: $hd - 0.02px) {
-            display: none;
+        @media(min-width: $hd) {
+            top: 50%;
+            transform: translateY(-50%);
         }
-
+        /*@media(max-width: $hd - 0.02px) {
+            display: none;
+        }*/
         &.swiper-button-disabled {
             display: none;
         }

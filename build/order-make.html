@@ -941,7 +941,21 @@
                     <div class="order-make__results">
                         <p class="order-make__result-item"><span>2 товара</span> <span>20 240 ₽</span></p>
                         <p class="order-make__result-item"><span>Доставка</span> <span>1 446 ₽</span></p>
-                        <p class="order-make__result-item"><span>Скидка</span> <span class="red">− 2 920 ₽</span></p>
+                        <p class="js-order-make-discounts order-make__result-item order-make__result-item--toggler">
+                            <span>
+                                Скидка
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#chevron_down_light" />
+                                </svg>
+                            </span>
+                            <span class="red">− 2 920 ₽</span>
+                        </p>
+
+                        <div class="order-make__discounts">
+                            <p class="order-make__result-item"><span>Скидка на товары</span> <span class="red">− 1 920 ₽</span></p>
+                            <p class="order-make__result-item"><span><a href="#">Персональная скидка</a></span> <span class="red">− 1 000 ₽</span></p>
+                        </div>
+
                         <p class="order-make__result-item"><span>Промокод</span> <span class="red">− 1 500 ₽</span></p>
                         <p class="order-make__result-item"><span>Итого</span> <span class="order-make__summ">17 754 ₽</span></p>
 
@@ -1214,9 +1228,9 @@
                         </div>
                     </div>
     
-                    <div class="footer__menu-item footer-menu">
+                    <!--<div class="footer__menu-item footer-menu">
                         <h4 class="footer-menu__title"><a href="#">Образы</a></h4>
-                    </div>
+                    </div>-->
     
                     <div class="footer__menu-item footer-menu">
                         <h4 class="footer-menu__title"><a href="#">Подарочные карты</a></h4>
@@ -1281,6 +1295,8 @@
     <script src="js/fancybox-defaults.js"></script>
     
     <script src="js/main.js"></script>
+
+    <script src="js/order-make.js"></script>
 </body>
 
 </html>

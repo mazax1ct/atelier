@@ -112,6 +112,40 @@
         @media(min-width: $fhd) {
             font-size: 18px;
         }
+
+        &--toggler {
+            @include active-area;
+            cursor: pointer;
+            position: relative;
+            z-index: 1;
+
+            &.is-active {
+                span {
+                    svg {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+
+            span {
+                &:first-child {
+                    align-items: center;
+                    display: flex;
+                    gap: 4px;
+
+                    svg {
+                        fill: currentColor;
+                        height: 16px;
+                        width: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__discounts {
+        display: none;
+        padding-bottom: 12px;
     }
 
     &__summ {
