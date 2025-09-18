@@ -33,13 +33,21 @@
                 margin-bottom: 60px;
             }
             @media(min-width: $fhd) {
-                max-width: 380px;
+                max-width: 540px;
+            }
+
+            img {
+                display: block;
+                width: 100%;
             }
         }
     }
 
     &__secondary {
         @media(min-width: $hd) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             width: 60%;
         }
         @media(min-width: $fhd) {
@@ -113,6 +121,7 @@
 }
 
 .set-slider {
+    width: 100%;
     @media(max-width: 700px - 0.02px) {
         margin-left: calc(0.01px - var(--container_padding));
         margin-right: calc(0.01px - var(--container_padding));
